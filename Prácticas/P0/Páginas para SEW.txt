@@ -1,0 +1,7 @@
+https://validator.w3.org/nu/#file
+https://validator.w3.org/#validate_by_uri
+https://jigsaw.w3.org/css-validator/validator
+https://search.google.com/test/mobile-friendly
+https://bluetree.ai/screenfly/?u=https%3A//www.uniovi.es&a=35&b=17
+https://wave.webaim.org/report#/https://gitblanc.github.io/SEW-UO285176-L06/
+https://achecks.ca/achecker
