@@ -1,0 +1,8 @@
+Códigos HTML5
+<!--Metadatos de los documentos HTML5-->
+<meta name ="author" content ="tu nombre" />
+<meta name ="description" content ="aquí cada documento debe tener la descripción del contenido concreto del mismo" />
+<meta name ="keywords" content ="aquí cada documento debe tener la lista de las palabras clave del mismo separadas por comas" />
+
+<!--Definición de la ventana gráfica-->
+ <meta name ="viewport" content ="width=device-width, initial scale=1.0" />

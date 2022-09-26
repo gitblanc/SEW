@@ -1,0 +1,6 @@
+boceto: dibujo de como será la pagina web y hacerle una foto
+esquema de posicionamiento: que una imagen se muestre siempre a la derecha por ejemplo
+redescargar el archivo de la practica 1 IMPORTANTE
+No se deben agregar enlaces a terceros (los vídeos han de descargarse y han de estar físicamente y tienen que ser pequeños, para no superar el limite del campus de 90 Mb)
+
+NO HAY QUE USAR NI <DIV>, <ID> NI <CLASS>
