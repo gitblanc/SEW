@@ -7,11 +7,11 @@
     <meta charset="UTF-8" />
     <!--Metadatos de los documentos HTML5-->
     <meta name ="author" content ="Eduardo Blanco Bielsa" />
-    <meta name ="description" content ="aquí cada documento debe tener la descripción del contenido concreto del mismo" />
+    <meta name ="description" content ="Página principal" />
     <meta name ="keywords" content ="aquí cada documento debe tener la lista de las palabras clave del mismo separadas por comas" />
 
     <!--Definición de la ventana gráfica-->
-    <meta name ="viewport" content ="width=device-width, initial scale=1.0" />
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
     <title>Ruby</title>
     <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
     <link rel="stylesheet" type="text/css" href="practica1/estilo/estilo.css" />
@@ -20,25 +20,27 @@
 <body>
     <!-- Datos con el contenidos que aparece en el navegador -->
     <h1>Ruby</h1>
-    <h3>¿Qué es Ruby?</h3>
-    <p>Ruby es un lenguaje de programación interpretado, reflexivo y orientado a objetos, creado por el programador japonés Yukihiro "Matz" Matsumoto, quien comenzó a trabajar en Ruby en 1993, y lo presentó públicamente en 1995. Combina una sintaxis inspirada en Python y Perl con características de programación orientada a objetos similares a Smalltalk. Comparte también funcionalidad con otros lenguajes de programación como Lisp, Lua, Dylan y CLU. Ruby es un lenguaje de programación interpretado en una sola pasada y su implementación oficial es distribuida bajo una licencia de software libre.</p>
+    <h2>¿Qué es Ruby?</h2>
+    <p>Ruby es un lenguaje de programación interpretado, reflexivo y orientado a objetos, creado por el programador japonés <a href="autor.html">Yukihiro "Matz" Matsumoto</a>, quien comenzó a trabajar en Ruby en 1993, y lo presentó públicamente en 1995. Combina una sintaxis inspirada en Python y Perl con características de programación orientada a objetos similares a Smalltalk. Comparte también funcionalidad con otros lenguajes de programación como Lisp, Lua, Dylan y CLU. Ruby es un lenguaje de programación interpretado en una sola pasada y su implementación oficial es distribuida bajo una licencia de software libre.
+    Más información en <a href="caracteristicas.html">características de Ruby</a></p>
 
-    <h3>¿Cuál es la filosofía de Ruby?</h3>
+    <h2>¿Cuál es la filosofía de Ruby?</h2>
     <p>El creador del lenguaje, Yukihiro "Matz" Matsumoto, ha dicho que Ruby está diseñado para la productividad y la diversión del desarrollador, siguiendo los principios de una buena interfaz de usuario.2​ Sostiene que el diseño de sistemas necesita enfatizar las necesidades humanas más que las de la máquina:
             <em>A menudo la gente, especialmente los ingenieros en computación, se centran en las máquinas. Ellos piensan, "Haciendo esto, la máquina funcionará más rápido. Haciendo esto, la máquina funcionará de manera más eficiente. Haciendo esto..." Están centrados en las máquinas, pero en realidad necesitamos centrarnos en las personas, en cómo hacen programas o cómo manejan las aplicaciones en los ordenadores. Nosotros somos los jefes. Ellos son los esclavos.
             </em>
     Ruby sigue el principio de la menor sorpresa, lo que significa que el lenguaje debe comportarse de tal manera que minimice la confusión de los usuarios experimentados.
     </p>
-    <h3>¿Qué semántica posee Ruby?</h3>
+    <h2>¿Qué semántica posee Ruby?</h2>
     <p>Ruby es orientado a objetos: todos los tipos de datos son un objeto, incluidas las clases y tipos que otros lenguajes definen como primitivas, (como enteros, booleanos, y nil). Toda función es un método. Las variables siempre son referencias a objetos, no los objetos mismos. Ruby soporta herencia con enlace dinámico, mixins y métodos singleton (pertenecientes y definidos por una sola instancia más que definidos por la clase). A pesar de que Ruby no soporta herencia múltiple, la clases pueden importar módulos como mixins. Es compatible con la sintaxis procedimental, pero todos los métodos definidos fuera del ámbito de un objeto son realmente métodos de la clase Object. Como esta clase es padre de todas las demás, los cambios son visibles para todas las clases y objetos.
     Ruby ha sido descrito como un lenguaje de programación multiparadigma: permite programación procedimental (definiendo funciones y variables fuera de las clases haciéndolas parte del objeto raíz Object), con orientación a objetos, (todo es un objeto) o funcionalmente (tiene funciones anónimas, clausuras y continuaciones; todas las sentencias tiene valores, y las funciones devuelven la última evaluación). Soporta introspección, reflexión y metaprogramación, además de soporte para hilos de ejecución gestionados por el intérprete. Ruby tiene tipado dinámico, y soporta polimorfismo de tipos (permite tratar a subclases utilizando la interfaz de la clase padre). Ruby no requiere de polimorfismo de funciones (sobrecarga de funciones) al ser dinámicamente tipado (los parámetros de una función pueden ser de distinto tipo en cada llamada, encargándose dicha función de determinar el tipo y actuar en consecuencia).</p>
-
-    <!-- la carpeta de recursos gráficos "images" debe estar en el misma carpeta del archivo -->
-    <!-- anadir la sección footer dentro del body despues del párrafo -->
-    <!--<footer>
-        <img src="images/HTML5.png" alt=" HTML5 Válido!" />
-        <img src="images/CSS3.png"  alt="CSS Válido!"  />
-    </footer>
-    -->
+    <h3>Enlaces a otros documentos</h3>
+    <nav>
+        <ul>
+            <li><a href="index.html">Ruby-Inicio</a></li>
+            <li><a href="autor.html">Creador de Ruby</a></li>
+            <li><a href="caracteristicas.html">Características de Ruby</a></li>
+            <li><a href="formulario.html">Formulario de acceso a beta</a></li>
+        </ul>
+    </nav>
 </body>
 </html>

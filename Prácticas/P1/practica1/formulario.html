@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<!--En head va la metainformación y los enlaces a recursos para poder servir el documento-->
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <!--Metadatos de los documentos HTML5-->
+    <meta name ="author" content ="Eduardo Blanco Bielsa" />
+    <meta name ="description" content ="Página para rellenar un formulario" />
+    <meta name ="keywords" content ="aquí cada documento debe tener la lista de las palabras clave del mismo separadas por comas" />
+
+    <!--Definición de la ventana gráfica-->
+    <meta name ="viewport" content ="width=device-width, initial scale=1.0" />
+    <title>Formulario</title>
+    <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
+    <link rel="stylesheet" type="text/css" href="estilo.css" />
+</head>
+<!--Todo el contenido que se visualice ha de estar dentro de body-->
+<body>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    <h1>Ruby</h1>
+    <h2>Formulario para recibir la próxima beta de Ruby</h2>
+    <p>Introduce tus datos para recibir lo antes posible la próxima beta privada de Ruby</p>
+    <form>
+        <p><label for="name">Introduce tu nombre: </label><input id="name"></p>
+        <p><label for="telephone">Telephone: </label><input id="telephone" type=tel></p>
+        <p><label for="email">Email address: </label><input id="email" type=email></p>
+        <fieldset>
+            <legend> ¿Deseas recibir la beta con copia física? </legend>
+            <p><label for="si"> </label><input id="si" type=checkbox name="si" value="si"> Sí </p>
+            <p><label for="no"> </label><input id="no" type=checkbox name="no" value="no"> No </p>
+            <input type="submit" value="Enviar"/>
+        </fieldset>
+    </form>
+    <h3>Enlaces a otros documentos</h3>
+    <nav>
+        <ul>
+            <li><a href="index.html">Ruby-Inicio</a></li>
+            <li><a href="autor.html">Creador de Ruby</a></li>
+            <li><a href="caracteristicas.html">Características de Ruby</a></li>
+            <li><a href="formulario.html">Formulario de acceso a beta</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
