@@ -2,4 +2,54 @@
   Eduardo Blanco - UO285176
   Descripción de los estilos
 **/
+body{
+  background-color: #1E1E1E;
+}
+
+h1{
+  color: whitesmoke;
+  text-align: left;
+  margin-right: 150px;
+  margin-left: 50px;
+}
+
+h2{
+  color: whitesmoke;
+  text-align: left;
+  margin-right: 150px;
+  margin-left: 80px;
+}
+
+p{
+  color: whitesmoke;
+  text-align: left;
+  margin-right: 150px;
+  margin-left: 80px;
+}
+
+a {
+  color: greenyellow;
+}
+
+table{
+  margin-right: 150px;
+  margin-left: 80px;
+}
+
+table, th, td {
+  border: 1px solid greenyellow;
+  padding: 8px;
+}
+
+ul{
+  margin-right: 150px;
+  margin-left: 80px;
+}
+
+img{
+  margin-right: 150px;
+  margin-left: 80px;
+}
+
+
 
