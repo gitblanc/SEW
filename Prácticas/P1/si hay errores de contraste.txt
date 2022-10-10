@@ -1,0 +1,1 @@
+Ir a la página de wave y comprobar el apartado de contraste. Fijarse en los apartados de AA y AAA hasta que pasen correctamente.

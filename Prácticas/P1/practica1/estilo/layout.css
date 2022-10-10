@@ -1,0 +1,43 @@
+/**
+Eduardo Blanco Bielsa
+Módulo para el posicionamiento
+Permitidos -> Flexbox, grid o multicol
+
+NO USAR DISPLAY FLOAT
+NO USAR MEDIAS ABSOLUTAS, USAR em -> 16 px = 0.625 em
+**/
+
+header {grid-area: header;}
+nav {grid-area: menu;}
+main {grid-area: main;}
+aside {grid-area: right;}
+footer {grid-area:footer;}
+
+body {
+  display: grid;
+  grid-template-areas: 
+  'header header header header header header'
+   'menu menu main main right right'
+   'footer footer footer footer footer footer'
+  /*'menu footer footer footer right'*/;
+  gap:1em;
+  padding: 0.26em;
+}
+
+header, nav, main{
+  text-align: left;
+  padding: 1.2em 0;
+}
+
+footer{
+  text-align: right;
+}
+
+aside{
+  text-align: center;
+}
+
+video{
+  width: 20%;
+  height: 20%;
+}
