@@ -15,13 +15,13 @@
     <title>Formulario</title>
     <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
 </head>
 <!--Todo el contenido que se visualice ha de estar dentro de body-->
 <body>
     <!-- Datos con el contenidos que aparece en el navegador -->
-    <h1>Ruby</h1>
-    <h2>Enlaces a otros documentos</h2>
     <nav>
+        <h2>Enlaces a otros documentos</h2>
         <ul>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="autor.html">Creador</a></li>
@@ -29,19 +29,22 @@
             <li><a href="formulario.html">Formulario de acceso a beta</a></li>
         </ul>
     </nav>
-    <h2>Formulario para recibir la próxima beta de Ruby</h2>
-    <p>Introduce tus datos para recibir lo antes posible la próxima beta privada de Ruby</p>
-    <form>
-        <p><label for="name">Introduce tu nombre: </label><input id="name"></p>
-        <p><label for="telephone">Telephone: </label><input id="telephone" type=tel></p>
-        <p><label for="email">Email address: </label><input id="email" type=email></p>
-        <fieldset>
-            <legend> ¿Deseas recibir la beta con copia física? </legend>
-            <p><label for="si"> </label><input id="si" type=checkbox name="si" value="si"> Sí </p>
-            <p><label for="no"> </label><input id="no" type=checkbox name="no" value="no"> No </p>
-            <input type="submit" value="Enviar"/>
-        </fieldset>
-    </form>
+    <main>
+        <h1>Ruby</h1>
+        <h2>Formulario para recibir la próxima beta de Ruby</h2>
+        <p>Introduce tus datos para recibir lo antes posible la próxima beta privada de Ruby</p>
+        <form>
+            <p><label for="name">Introduce tu nombre: </label><input id="name" placeholder="Tu nombre..."></p>
+            <p><label for="telephone">Telephone: </label><input id="telephone" type=tel placeholder="Tu teléfono..."></p>
+            <p><label for="email">Email address: </label><input id="email" type=email placeholder="Tu email..."></p>
+            <fieldset>
+                <legend> ¿Deseas recibir la beta con copia física? </legend>
+                <p><label for="si"> </label><input id="si" type=checkbox name="si" value="si"> Sí </p>
+                <p><label for="no"> </label><input id="no" type=checkbox name="no" value="no"> No </p>
+                <input type="submit" value="Enviar"/>
+            </fieldset>
+        </form>
+    </main>
     <!-- anadir la sección footer dentro del body despues del párrafo -->
     <footer>
         <p>Eduardo Blanco Bielsa - UO285176</p>

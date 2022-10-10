@@ -16,13 +16,17 @@ body{
   font-family: Arial, sans-serif;
 }
 
+h1{
+  color: greenyellow;
+}
+
 a {
   color: greenyellow;
 }
 
-table, th, td {
-  border: 1px solid greenyellow;
-}
+/* table, th, td {
+  border: 0.05em solid greenyellow;
+} */
 
 
 

@@ -6,27 +6,34 @@ Permitidos -> Flexbox, grid o multicol
 NO USAR DISPLAY FLOAT
 NO USAR MEDIAS ABSOLUTAS, USAR em -> 16 px = 0.625 em
 **/
-
-header {grid-area: header;}
 nav {grid-area: menu;}
 main {grid-area: main;}
-aside {grid-area: right;}
+aside {grid-area: left;}
 footer {grid-area:footer;}
 
 body {
   display: grid;
   grid-template-areas: 
-  'header header header header header header'
-   'menu menu main main right right'
-   'footer footer footer footer footer footer'
-  /*'menu footer footer footer right'*/;
-  gap:1em;
+   'menu main main main main main'
+   'left main main main main main'
+   'left footer footer footer footer footer';
+  column-gap: 3.5em;
+  row-gap: 3.5em;
   padding: 0.26em;
 }
 
-header, nav, main{
+nav, main{
   text-align: left;
   padding: 1.2em 0;
+}
+
+main {
+  padding-right: 2.5em;
+}
+
+left {
+  max-width: 20%;
+  max-height: 20%;
 }
 
 footer{
@@ -35,9 +42,23 @@ footer{
 
 aside{
   text-align: center;
+  min-width: 30%;
+  min-height: 30%;
 }
 
 video{
-  width: 20%;
+  width: 50%;
   height: 20%;
+  display: block;
+  margin: 0 auto;
+}
+
+/**Tabla aportaciones**/
+#aportaciones td,thead{
+  border: 1px outset greenyellow;
+  padding: 0.05em;
+}
+
+#aportaciones thead {
+  background-color: #1C5221;
 }
