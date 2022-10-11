@@ -6,6 +6,7 @@ Permitidos -> Flexbox, grid o multicol
 NO USAR DISPLAY FLOAT
 NO USAR MEDIAS ABSOLUTAS, USAR em -> 16 px = 0.625 em
 **/
+header {grid-area: header}
 nav {grid-area: menu;}
 main {grid-area: main;}
 aside {grid-area: left;}
@@ -14,12 +15,10 @@ footer {grid-area:footer;}
 body {
   display: grid;
   grid-template-areas: 
+   'header header header header header header'
    'menu main main main main main'
    'left main main main main main'
    'left footer footer footer footer footer';
-  column-gap: 3.5em;
-  row-gap: 3.5em;
-  padding: 0.26em;
 }
 
 nav, main{
