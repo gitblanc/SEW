@@ -23,11 +23,15 @@ body {
 
 nav, main{
   text-align: left;
-  padding: 1.2em 0;
+}
+
+menu {
+  padding-right: 3em;
 }
 
 main {
   padding-right: 2.5em;
+  padding-left: 2.5em;
 }
 
 left {
