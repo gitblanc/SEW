@@ -34,18 +34,22 @@
     </nav>
     <main>
         <h2>Formulario para recibir la próxima beta de Ruby</h2>
-        <p>Introduce tus datos para recibir lo antes posible la próxima beta privada de Ruby</p>
-        <form>
-            <p><label for="name">Introduce tu nombre: </label><input id="name" placeholder="Tu nombre..."></p>
-            <p><label for="telephone">Telephone: </label><input id="telephone" type=tel placeholder="Tu teléfono..."></p>
-            <p><label for="email">Email address: </label><input id="email" type=email placeholder="Tu email..."></p>
+	    <form name="datos">
+            <p><label for="nombre"> Nombre:  </label> <input id="nombre" type="text" placeholder="Escriba nombre..." required /> </p>
+            <p><label for="apellidos"> Apellidos:  </label> <input id="apellidos" type="text" placeholder="Escriba sus apellidos..." required /> </p>
+            <p><label for="email"> E-mail:  </label> <input id="email" type="email" placeholder="Escriba su email..." required /> </p> 
+            <p><label for="fecha">Fecha de nacimiento: </label><input id="fecha" type="date" /></p>
+            <p><label for="rango">Grado de satisfacción con Ruby </label><input id="rango" type="range" /></p>
             <fieldset>
-                <legend> ¿Deseas recibir la beta con copia física? </legend>
-                <p><label for="si"> </label><input id="si" type=checkbox name="si" value="si"> Sí </p>
-                <p><label for="no"> </label><input id="no" type=checkbox name="no" value="no"> No </p>
-                <input type="submit" value="Enviar"/>
+                <legend> ¿Estas interesado en obtener la nueva beta de Ruby?  </legend>
+                <p><input id="si" type=radio /> <label  for="si">  Si </label></p>
+                <p><input id="no" type=radio  /><label  for="no"> De momento no</label></p>
             </fieldset>
-        </form>
+            <p><label for="texto"> Comentarios (opcionales):  </label> </p>
+            <textarea id="texto" name="comments" maxlength=1000 ></textarea>
+            
+            <p><input type="submit" value="Enviar"></p>
+	</form>
     </main>
     <!-- anadir la sección footer dentro del body despues del párrafo -->
     <footer>

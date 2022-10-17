@@ -1,0 +1,10 @@
+https://validator.w3.org/nu/
+https://validator.w3.org/#validate_by_uri
+https://jigsaw.w3.org/css-validator
+https://search.google.com/test/mobile-friendly
+https://bluetree.ai/screenfly
+https://wave.webaim.org
+https://achecks.ca/achecker
+
+
+crispelayo.github.io/

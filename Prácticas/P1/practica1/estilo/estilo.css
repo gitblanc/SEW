@@ -10,24 +10,42 @@
   poner el tipo de letra en body, para que así lo hereden todos los elementos
 **/
 
+/*Especificidad 001*/
 body{
-  background-color: #1E1E1E;
-  color: whitesmoke;
+  background-color: black;
+  color: white;
   font-family: Arial, sans-serif;
 }
 
+/*Especificidad 001*/
 h1{
-  color: greenyellow;
+  background-color: black;
+  color: white;
 }
 
+/*Especificidad 001*/
 a {
+  background-color: black;
   color: greenyellow;
 }
 
-/* table, th, td {
-  border: 0.05em solid greenyellow;
-} */
+/**Tabla aportaciones**/
+/*Especificidad 001*/
+caption {
+  color: white;
+  background-color: #1C5221;
+}
 
+/*Especificidad 001*/
+tr,td, th{
+  border: 0.1em outset white;
+  padding: 0.05em;
+}
+
+/*Especificidad 001*/
+fieldset{
+  border-color: white;
+}
 
 
 

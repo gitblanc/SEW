@@ -6,12 +6,19 @@ Permitidos -> Flexbox, grid o multicol
 NO USAR DISPLAY FLOAT
 NO USAR MEDIAS ABSOLUTAS, USAR em -> 16 px = 0.625 em
 **/
+
+/*Especificidad 001*/
 header {grid-area: header}
+/*Especificidad 001*/
 nav {grid-area: menu;}
+/*Especificidad 001*/
 main {grid-area: main;}
+/*Especificidad 001*/
 aside {grid-area: left;}
+/*Especificidad 001*/
 footer {grid-area:footer;}
 
+/*Especificidad 001*/
 body {
   display: grid;
   grid-template-areas: 
@@ -21,47 +28,51 @@ body {
    'left footer footer footer footer footer';
 }
 
+/*Especificidad 001*/
 nav, main{
   text-align: left;
 }
 
-menu {
-  padding-right: 3em;
-}
-
-main {
-  padding-right: 2.5em;
+nav{
+  padding-top: 1em;
+  padding-bottom: 1em;
   padding-left: 2.5em;
+  padding-right: 2.5em;
 }
 
+main{
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 4em;
+  padding-right: 4em;
+}
+
+/*Especificidad 001*/
 left {
   max-width: 20%;
   max-height: 20%;
 }
 
+/*Especificidad 001*/
 footer{
   text-align: right;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 2.5em;
+  padding-right: 2.5em;
 }
 
+/*Especificidad 001*/
 aside{
   text-align: center;
   min-width: 30%;
   min-height: 30%;
 }
 
+/*Especificidad 001*/
 video{
   width: 50%;
   height: 20%;
   display: block;
   margin: 0 auto;
-}
-
-/**Tabla aportaciones**/
-#aportaciones td,thead{
-  border: 1px outset greenyellow;
-  padding: 0.05em;
-}
-
-#aportaciones thead {
-  background-color: #1C5221;
 }
