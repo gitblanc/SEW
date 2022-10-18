@@ -8,7 +8,7 @@ NO USAR MEDIAS ABSOLUTAS, USAR em -> 16 px = 0.625 em
 **/
 
 /*Especificidad 001*/
-header {grid-area: header}
+header {grid-area: header;}
 /*Especificidad 001*/
 nav {grid-area: menu;}
 /*Especificidad 001*/
@@ -16,16 +16,23 @@ main {grid-area: main;}
 /*Especificidad 001*/
 aside {grid-area: left;}
 /*Especificidad 001*/
-footer {grid-area:footer;}
+footer {grid-area: footer;}
 
 /*Especificidad 001*/
 body {
   display: grid;
   grid-template-areas: 
-   'header header header header header header'
-   'menu main main main main main'
-   'left main main main main main'
-   'left footer footer footer footer footer';
+   'header header header '
+   'menu main main '
+   'left main main '
+   'left main main '
+   'footer footer footer';
+}
+
+/*Especificidad 001*/
+header {
+  display:grid;
+  padding-left: 1em;
 }
 
 /*Especificidad 001*/
@@ -33,28 +40,26 @@ nav, main{
   text-align: left;
 }
 
+/*Especificidad 001*/
 nav{
   padding-top: 1em;
   padding-bottom: 1em;
-  padding-left: 2.5em;
-  padding-right: 2.5em;
-}
-
-main{
-  padding-top: 1em;
-  padding-bottom: 1em;
-  padding-left: 4em;
-  padding-right: 4em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 /*Especificidad 001*/
-left {
-  max-width: 20%;
-  max-height: 20%;
+main{
+  display: grid;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 /*Especificidad 001*/
 footer{
+  display: grid;
   text-align: right;
   padding-top: 1em;
   padding-bottom: 1em;
@@ -64,15 +69,32 @@ footer{
 
 /*Especificidad 001*/
 aside{
-  text-align: center;
-  min-width: 30%;
-  min-height: 30%;
+  padding-top: 3em;
+}
+
+/*Especificidad 001*/
+img {
+  max-width: 20em;
+  max-height: 20em;
+  padding-left: 1.5em;
 }
 
 /*Especificidad 001*/
 video{
-  width: 50%;
-  height: 20%;
-  display: block;
+  width: 80%;
+  height: 80%;
   margin: 0 auto;
 }
+
+/*Especificidad 001*/
+table{
+  text-align: center;
+  display: grid;
+}
+
+/*Especificidad 001*/
+caption{
+  text-align: left;
+}
+
+

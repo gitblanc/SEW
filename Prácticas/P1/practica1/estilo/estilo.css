@@ -33,18 +33,18 @@ a {
 /*Especificidad 001*/
 caption {
   color: white;
-  background-color: #1C5221;
+  background-color: black;
 }
 
 /*Especificidad 001*/
 tr,td, th{
-  border: 0.1em outset white;
+  border: 0.1em outset greenyellow;
   padding: 0.05em;
 }
 
 /*Especificidad 001*/
 fieldset{
-  border-color: white;
+  border-color: greenyellow;
 }
 
 
