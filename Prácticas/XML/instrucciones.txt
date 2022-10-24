@@ -1,0 +1,3 @@
+Descargar notepad++
+Instalar el plugin xml tools
+Poner dtd prohibition a false
