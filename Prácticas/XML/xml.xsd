@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="persona">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="datos" />
+				<xs:sequence minOccurs="0" maxOccurs="1">
+					<xs:element ref="persona" />
+					<xs:element ref="persona" />
+					<xs:element ref="persona" />
+				</xs:sequence>
+			</xs:sequence>
+			<xs:attribute name="nombre" type="xs:ID" use="required" />
+			<xs:attribute name="apellidos" type="xs:ID" use="required" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="datos">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="fecha" />
+				<xs:element ref="lugar_nacimiento" />
+				<xs:element ref="coordenadas_nacimiento" />
+				<xs:element ref="lugar_residencia" />
+				<xs:element ref="coordenadas_residencia" />
+				<xs:element minOccurs="1" maxOccurs="unbounded" ref="fotografia" />
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="video" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="fecha" type="xs:string" />
+	<xs:element name="lugar_nacimiento" type="xs:string" />
+	<xs:element name="coordenadas_nacimiento" type="xs:string" />
+	<xs:element name="lugar_residencia" type="xs:string" />
+	<xs:element name="coordenadas_residencia" type="xs:string" />
+	<xs:element name="fotografia" type="xs:string" />
+	<xs:element name="video" type="xs:string" />
+	<xs:element name="comentarios" type="xs:string" />
+</xs:schema>
