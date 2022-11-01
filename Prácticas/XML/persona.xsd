@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="Windows-1252"?>
+<xs:schema xmlns="http://tempuri.org/persona" elementFormDefault="qualified" targetNamespace="http://tempuri.org/persona" xmlns:xs="http://www.w3.org/2001/XMLSchema">
 	<xs:element name="persona">
 		<xs:complexType>
 			<xs:sequence>
@@ -10,8 +10,8 @@
 					<xs:element ref="persona" />
 				</xs:sequence>
 			</xs:sequence>
-			<xs:attribute name="nombre" type="xs:ID" use="required" />
-			<xs:attribute name="apellidos" type="xs:ID" use="required" />
+			<xs:attribute name="nombre" type="xs:string" use="required" />
+			<xs:attribute name="apellidos" type="xs:string" use="required" />
 		</xs:complexType>
 	</xs:element>
 	<xs:element name="datos">
@@ -23,7 +23,8 @@
 				<xs:element ref="lugar_residencia" />
 				<xs:element ref="coordenadas_residencia" />
 				<xs:element minOccurs="1" maxOccurs="unbounded" ref="fotografia" />
-				<xs:element minOccurs="0" maxOccurs="unbounded" ref="video" />
+				<xs:element minOccurs="0" maxOccurs="3" ref="video" />
+				<xs:element ref="comentarios" />
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
