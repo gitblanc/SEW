@@ -107,6 +107,6 @@ def escribirLinea(linea, cont):
         linea = re.sub("<comentarios>", "", linea)
         linea = re.sub("</comentarios>", "", linea)
         linea.rstrip()
-        escribirLineaAHTML("\t\t\t\t<p>Comentarios: " + linea + "\t\t\t</h4>\n")
+        escribirLineaAHTML("\t\t\t\t<p>Comentarios: " + linea + "</p>\t\t</h4>\n")
 
 leerXML("xml.xml")
