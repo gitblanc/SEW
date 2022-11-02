@@ -7,9 +7,9 @@
 			<apellidos>Blanco Bielsa</apellidos>
 			<fecha>09/03/2002</fecha>
 			<lugar_nacimiento>Barcelona</lugar_nacimiento>
-			<coordenadas_nacimiento>41,3875° N, 2,16835° E, 12</coordenadas_nacimiento>
+			<coordenadas_nacimiento>41.39367694799984, 2.166965906971403, 12</coordenadas_nacimiento>
 			<lugar_residencia>Oviedo</lugar_residencia>
-			<coordenadas_residencia>43,36271° N, -5,84764° E, 232</coordenadas_residencia>
+			<coordenadas_residencia>41.39367694799984, 2.166965906971403, 232</coordenadas_residencia>
 			<fotografia><![CDATA[https://www.bing.com/images/search?view=detailV2&ccid=6bOVd4RV&id=A98CB66800E2C520C14039C21FF94FEA0D7341A8&thid=OIP.6bOVd4RVeYyW9js7SBH1FgHaFd&mediaurl=https%3a%2f%2fcarreraspopularesasturias.com%2fwp-content%2fuploads%2f2019%2f09%2favil%c3%a9s.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.e9b395778455798c96f63b3b4811f516%3frik%3dqEFzDepP%252bR%252fCOQ%26pid%3dImgRaw%26r%3d0&exph=2373&expw=3219&q=avil%c3%a9s&simid=607997645399159948&FORM=IRPRST&ck=3FAA0C7326763682FD92A168FF36F474&selectedIndex=0&ajaxhist=0&ajaxserp=0]]></fotografia>
 			<video><![CDATA[https://www.bing.com/videos/search?q=python&&view=detail&mid=1545C93E75B4E16939161545C93E75B4E1693916&&FORM=VRDGAR&ru=%2Fvideos%2Fsearch%3Fq%3Dpython%26FORM%3DHDRSC4]]></video>
 			<comentarios>Buen programador</comentarios>
@@ -33,9 +33,9 @@
 					<apellidos>Pérez González</apellidos>
 					<fecha>17/06/1992</fecha>
 					<lugar_nacimiento>Jerusalén</lugar_nacimiento>
-					<coordenadas_nacimiento>31°.46’ N, 35°12’ E, 400</coordenadas_nacimiento>
+					<coordenadas_nacimiento>31.81613964775633, 35.149263829437594, 400</coordenadas_nacimiento>
 					<lugar_residencia>Jerusalén</lugar_residencia>
-					<coordenadas_residencia>31°.46’ N, 35°12’ E, 400</coordenadas_residencia>
+					<coordenadas_residencia>31.81613964775633, 35.149263829437594, 400</coordenadas_residencia>
 					<fotografia><![CDATA[https://www.bing.com/images/search?view=detailV2&ccid=Zzj093L1&id=13F0DB34CB69DDE5B70772362A1F16CC1A4AFA78&thid=OIP.Zzj093L1pOqcO2p7F751hgHaFR&mediaurl=https%3a%2f%2fs1.cdn.autoevolution.com%2fimages%2fgallery%2fNISSAN-GT-R--R35--Nismo-5327_61.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.6738f4f772f5a4ea9c3b6a7b17be7586%3frik%3dePpKGswWHyo2cg%26pid%3dImgRaw%26r%3d0&exph=1140&expw=1600&q=nissan+gtr&simid=608015959142584230&FORM=IRPRST&ck=BDB4CD05F3D7A2AA2A36BE7252A0A89D&selectedIndex=1&ajaxhist=0&ajaxserp=0]]></fotografia>
 					<video><![CDATA[https://www.bing.com/videos/search?q=nissan+gtr&&view=detail&mid=5027A94DFD224ED971D85027A94DFD224ED971D8&&FORM=VRDGAR&ru=%2Fvideos%2Fsearch%3Fq%3Dnissan%2Bgtr%26FORM%3DHDRSC4]]></video>
 					<comentarios>Buen conductor</comentarios>
@@ -76,9 +76,9 @@
 				<apellidos>Pan Wang</apellidos>
 				<fecha>15/06/2001</fecha>
 				<lugar_nacimiento>China</lugar_nacimiento>
-				<coordenadas_nacimiento>35.8617° N 104.1954° E, 2000</coordenadas_nacimiento>
+				<coordenadas_nacimiento>37.509500243330415, 99.34079779110334, 2000</coordenadas_nacimiento>
 				<lugar_residencia>Avilés</lugar_residencia>
-				<coordenadas_residencia>43,36271° N, -5,84764° E, 232</coordenadas_residencia>
+				<coordenadas_residencia>37.509500243330415, 99.34079779110334, 232</coordenadas_residencia>
 				<fotografia><![CDATA[https://www.bing.com/images/search?q=fideos+chinos&form=HDRSC3&first=1&tsc=ImageHoverTitle]]></fotografia>
 				<video><![CDATA[https://www.bing.com/videos/search?q=fideos+chinos&&view=detail&mid=3F1C4671E86031F47A9B3F1C4671E86031F47A9B&&FORM=VRDGAR&ru=%2Fvideos%2Fsearch%3Fq%3Dfideos%2Bchinos%26FORM%3DHDRSC4]]></video>
 				<comentarios>No sabe cocinar</comentarios>
@@ -132,9 +132,9 @@
 				<apellidos>Coalla Martínez</apellidos>
 				<fecha>17/06/2003</fecha>
 				<lugar_nacimiento>Gijón</lugar_nacimiento>
-				<coordenadas_nacimiento>43,52222° N, -5,64083° E, 139</coordenadas_nacimiento>
+				<coordenadas_nacimiento>43.54628952076886, -5.6635084568812095, 139</coordenadas_nacimiento>
 				<lugar_residencia>Avilés</lugar_residencia>
-				<coordenadas_residencia>43,52222° N, -5,64083° E, 139</coordenadas_residencia>
+				<coordenadas_residencia>43.54628952076886, -5.6635084568812095, 139</coordenadas_residencia>
 				<fotografia><![CDATA[https://www.bing.com/images/search?view=detailV2&ccid=Zzj093L1&id=13F0DB34CB69DDE5B70772362A1F16CC1A4AFA78&thid=OIP.Zzj093L1pOqcO2p7F751hgHaFR&mediaurl=https%3a%2f%2fs1.cdn.autoevolution.com%2fimages%2fgallery%2fNISSAN-GT-R--R35--Nismo-5327_61.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.6738f4f772f5a4ea9c3b6a7b17be7586%3frik%3dePpKGswWHyo2cg%26pid%3dImgRaw%26r%3d0&exph=1140&expw=1600&q=nissan+gtr&simid=608015959142584230&FORM=IRPRST&ck=BDB4CD05F3D7A2AA2A36BE7252A0A89D&selectedIndex=1&ajaxhist=0&ajaxserp=0]]></fotografia>
 				<video><![CDATA[https://www.bing.com/videos/search?q=nissan+gtr&&view=detail&mid=5027A94DFD224ED971D85027A94DFD224ED971D8&&FORM=VRDGAR&ru=%2Fvideos%2Fsearch%3Fq%3Dnissan%2Bgtr%26FORM%3DHDRSC4]]></video>
 				<comentarios>Buen conductor</comentarios>

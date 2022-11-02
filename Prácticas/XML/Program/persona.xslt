@@ -5,26 +5,21 @@
 	<html>
 		<body>
 			<h1>Social Network</h1>
+				<!-- Nivel 1 -->
 				<xsl:value-of select="persona">
-					<h2><xsl:value-of select="@nombre"/></h2>
-					<h2><xsl:value-of select="@apellidos"/></h2>
-					<ul>
-						<xsl:value-of select="fecha"/><br/>
-						<xsl:value-of select="lugar_nacimiento"/><br/>
-						<xsl:value-of select="coordenadas_nacimiento"/><br/>
-						<xsl:value-of select="lugar_residencia"/><br/>
-						<xsl:value-of select="coordenadas_residencia"/><br/>
-						<xsl:value-of select="fotografia"/><br/>
-						<xsl:value-of select="video"/><br/>
-						<xsl:value-of select="comentarios"/><br/>
-					</ul>
-					<xsl:for-each select="persona">
-					</xsl:for-each>
-				</xsl:value-of>
-			 
+					<p><xsl:value-of select="nombre" /></p>
+					<p><xsl:value-of select="apellidos" /></p>
+					<p><xsl:value-of select="fecha" /></p>
+					<p><xsl:value-of select="lugar_nacimiento" /></p>
+					<p><xsl:value-of select="coordenadas_nacimiento" /></p>
+					<p><xsl:value-of select="lugar_residencia" /></p>
+					<p><xsl:value-of select="coordenadas_residencia" /></p>
+					<p><xsl:value-of select="fotografia" /></p>
+					<p><xsl:value-of select="video" /></p>
+					<p><xsl:value-of select="comentarios" /></p>
+				</xsl:value-of> 
 		</body>
 	</html>
 </xsl:template>
 
 </xsl:stylesheet>
-
