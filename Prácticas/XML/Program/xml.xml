@@ -16,12 +16,12 @@
 		</datos>
 		<persona>
 			<datos>
-				<nombre>María</nombre>
-				<apellidos>Estrada Muñiz</apellidos>
+				<nombre>Maria</nombre>
+				<apellidos>Estrada Muniz</apellidos>
 				<fecha>15/06/2002</fecha>
-				<lugar_nacimiento>Avilés</lugar_nacimiento>
+				<lugar_nacimiento>Aviles</lugar_nacimiento>
 				<coordenadas_nacimiento>43.53648741128185, -5.919837069722076, 0</coordenadas_nacimiento>
-				<lugar_residencia>Avilés</lugar_residencia>
+				<lugar_residencia>Aviles</lugar_residencia>
 				<coordenadas_residencia>43.53648741128185, -5.919837069722076, 0</coordenadas_residencia>
 				<fotografia><![CDATA[https://www.bing.com/images/search?view=detailV2&ccid=nIMKAji9&id=628B570E6FD260448A603AD6549D6CCB353AFCB8&thid=OIP.nIMKAji9WrUWa7xhoQxWewHaFD&mediaurl=https%3a%2f%2farticle19.ma%2faccueil%2fwp-content%2fuploads%2f2021%2f07%2fd05f554101_50147330_hacker.jpeg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.9c830a0238bd5ab5166bbc61a10c567b%3frik%3duPw6NctsnVTWOg%26pid%3dImgRaw%26r%3d0&exph=1139&expw=1667&q=Hacker&simid=608033005867655203&FORM=IRPRST&ck=CAACE2E94966F551D45A6F32BE280746&selectedIndex=0&idpp=overlayview&ajaxhist=0&ajaxserp=0]]></fotografia>
 				<video><![CDATA[https://www.bing.com/videos/search?q=avil%c3%a9s&&view=detail&mid=3B5AB39884E40920588A3B5AB39884E40920588A&&FORM=VRDGAR&ru=%2Fvideos%2Fsearch%3Fq%3Davil%25c3%25a9s%26FORM%3DHDRSC4]]></video>
@@ -30,7 +30,7 @@
 			<persona>
 				<datos>
 					<nombre>Killian</nombre>
-					<apellidos>Pérez González</apellidos>
+					<apellidos>Perez Gonzalez</apellidos>
 					<fecha>17/06/1992</fecha>
 					<lugar_nacimiento>Grado</lugar_nacimiento>
 					<coordenadas_nacimiento>43.53648741128185, -5.919837069722076, 0</coordenadas_nacimiento>
@@ -44,7 +44,7 @@
 			<persona>
 				<datos>
 					<nombre>Paco</nombre>
-					<apellidos>Pérez González</apellidos>
+					<apellidos>Perez Gonzalez</apellidos>
 					<fecha>17/06/1992</fecha>
 					<lugar_nacimiento>Salinas</lugar_nacimiento>
 					<coordenadas_nacimiento>43.56322977597883, -5.97454710877856, 0</coordenadas_nacimiento>
@@ -58,7 +58,7 @@
 			<persona>
 				<datos>
 					<nombre>Carlos</nombre>
-					<apellidos>Pérez González</apellidos>
+					<apellidos>Perez Gonzalez</apellidos>
 						<fecha>17/06/1993</fecha>
 						<lugar_nacimiento>Arriondas</lugar_nacimiento>
 						<coordenadas_nacimiento>43.35821014744797, -5.198427950070287, 0</coordenadas_nacimiento>
@@ -86,7 +86,7 @@
 			<persona>
 				<datos>
 					<nombre>Luis</nombre>
-					<apellidos>Pérez González</apellidos>
+					<apellidos>Perez Gonzalez</apellidos>
 					<fecha>17/06/1998</fecha>
 					<lugar_nacimiento>Belmonte</lugar_nacimiento>
 					<coordenadas_nacimiento>43.28045387817449, -6.2366463656538125, 0</coordenadas_nacimiento>
@@ -100,7 +100,7 @@
 			<persona>
 				<datos>
 					<nombre>Marcos</nombre>
-					<apellidos>Pérez Pérez</apellidos>
+					<apellidos>Perez Perez</apellidos>
 					<fecha>17/06/1989</fecha>
 					<lugar_nacimiento>Proaza</lugar_nacimiento>
 					<coordenadas_nacimiento>43.249879548784264, -5.994904332613531, 0</coordenadas_nacimiento>
@@ -114,7 +114,7 @@
 			<persona>
 				<datos>
 					<nombre>Carla</nombre>
-					<apellidos>Pérez González</apellidos>
+					<apellidos>Perez Gonzalez</apellidos>
 					<fecha>17/06/2000</fecha>
 					<lugar_nacimiento>Pola de Siero</lugar_nacimiento>
 					<coordenadas_nacimiento>43.399824356920135, -5.684456669130222, 0</coordenadas_nacimiento>
@@ -129,7 +129,7 @@
 		<persona>
 			<datos>
 				<nombre>Alejandro</nombre>
-				<apellidos>Coalla Martínez</apellidos>
+				<apellidos>Coalla Martinez</apellidos>
 				<fecha>17/06/2003</fecha>
 				<lugar_nacimiento>Cadavedo</lugar_nacimiento>
 				<coordenadas_nacimiento>43.55032115030053, -6.381691585477982, 0</coordenadas_nacimiento>
@@ -142,7 +142,7 @@
 			<persona>
 				<datos>
 					<nombre>Luis</nombre>
-					<apellidos>Pérez González</apellidos>
+					<apellidos>Perez Gonzalez</apellidos>
 					<fecha>17/06/1998</fecha>
 					<lugar_nacimiento>Ribadesella</lugar_nacimiento>
 					<coordenadas_nacimiento>43.457112703914234, -5.062289015673917, 0</coordenadas_nacimiento>
@@ -156,7 +156,7 @@
 			<persona>
 				<datos>
 					<nombre>Marcos</nombre>
-					<apellidos>Pérez Pérez</apellidos>
+					<apellidos>Perez Gonzalez</apellidos>
 					<fecha>17/06/1989</fecha>
 					<lugar_nacimiento>Benia</lugar_nacimiento>
 					<coordenadas_nacimiento>43.332302447494754, -4.950324284581576, 0</coordenadas_nacimiento>
@@ -170,7 +170,7 @@
 			<persona>
 				<datos>
 					<nombre>Lorena</nombre>
-					<apellidos>Pérez Vidal</apellidos>
+					<apellidos>Perez Vidal</apellidos>
 					<fecha>17/06/2000</fecha>
 					<lugar_nacimiento>Laviana</lugar_nacimiento>
 					<coordenadas_nacimiento>43.237830899898434, -5.559768673141023, 0</coordenadas_nacimiento>
