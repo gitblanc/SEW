@@ -12,7 +12,7 @@ def leerXML(fileXML):
             if ("coordenadas" in linea):
                 longitud, latitud, altitud = ObtenerCoordenada(linea)
                 nombre = "coordenada" + i.__str__()
-                kml.newpoint(name=nombre, coords=[(longitud, latitud, altitud)])
+                kml.newpoint(name=nombre, coords=[(latitud, longitud)])
                 i += 1
         kml.save(ficheroKML)
     finally:
