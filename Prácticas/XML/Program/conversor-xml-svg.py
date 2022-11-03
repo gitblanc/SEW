@@ -9,40 +9,44 @@ def createRectangle(context, x, y, width, height):
 
 
 def pintarDatos(context, textX, textY, atributos, posy, posx, tamx, tamy):
-    print(
-        "Pintar Datos: textX " + textX.__str__() + ", textY:" + textY.__str__() + ", posy:" + posy.__str__() + ", posx:" + posx.__str__() + ", tamx:" + tamx.__str__() + ", tamy:" + tamy.__str__())
     for l in range(2, len(atributos)):
         if (l == 2):
             context.move_to(textX, textY)
             context.show_text("fecha: " + atributos[l])
+            context = createRectangle(context, posx, posy, tamx, tamy)
         elif (l == 3):
             context.move_to(textX, textY + 50)
             context.show_text("lugar_nacimiento: " + atributos[l])
+            context = createRectangle(context, posx, posy, tamx, tamy)
         elif (l == 4):
             context.move_to(textX, textY + 100)
             context.show_text("coord_nacimiento: " + atributos[l])
+            context = createRectangle(context, posx, posy, tamx+150, tamy)
         elif (l == 5):
             context.move_to(textX, textY + 150)
             context.show_text("lugar_residencia: " + atributos[l])
+            context = createRectangle(context, posx, posy, tamx, tamy)
         elif (l == 6):
             context.move_to(textX, textY + 200)
             context.show_text("coord_residencia: " + atributos[l])
+            context = createRectangle(context, posx, posy, tamx+150, tamy)
         elif (l == 7):
             context.move_to(textX, textY + 250)
-            context.show_text("fotografia: ")
+            context.show_text("fotografia")
+            context = createRectangle(context, posx, posy, tamx, tamy)
         elif (l == 8):
             context.move_to(textX, textY + 300)
-            context.show_text("video: ")
+            context.show_text("video")
+            context = createRectangle(context, posx, posy, tamx, tamy)
         elif (l == 9):
             context.move_to(textX, textY + 350)
             context.show_text("comentarios: " + atributos[l])
-        context = createRectangle(context, posx, posy, tamx, tamy)
+            context = createRectangle(context, posx, posy, tamx, tamy)
+
         posy += 50
-    print("Pintar Datos: textX " + textX.__str__()+ ", textY:" + textY.__str__() +", posy:" +  posy.__str__() +", posx:" +  posx.__str__()+ ", tamx:" + tamx.__str__() +", tamy:" +  tamy.__str__())
     return textX, textY+400, posy, posx
 
 def pintarPersona(textX, textY, inTextX, inTextY, tamx, tamy, posx, posy, context, atributos):
-    print("ENTRA Pintar Persona: textX " + textX.__str__() + ", textY:" + textY.__str__() + ", posy:" + posy.__str__() + ", posx:" + posx.__str__() + ", tamx:" + tamx.__str__() + ", tamy:" + tamy.__str__() + ", inTextX:" + inTextX.__str__() + ", inTextY:" + inTextY.__str__())
     context.move_to(textX, textY)
     context.show_text("persona")
     context.move_to(inTextX, inTextY)  # 20, 30
@@ -50,14 +54,13 @@ def pintarPersona(textX, textY, inTextX, inTextY, tamx, tamy, posx, posy, contex
     context.move_to(inTextX, inTextY + 10)  # 20,40
     context.show_text("apellidos: " + atributos[1])
     context = createRectangle(context, posx, posy, tamx, tamy)  # 10,10
-    print("SALE Pintar Persona: textX " + textX.__str__()+ ", textY:" + textY.__str__() +", posy:" +  posy.__str__() +", posx:" +  posx.__str__()+ ", tamx:" + tamx.__str__() +", tamy:" +  tamy.__str__() + ", inTextX:" + inTextX.__str__()+ ", inTextY:" + inTextY.__str__())
     return textX+190,posx+190, textY,posy, inTextX+190, inTextY+400
 
 
 def createContext(personas):
     # creating a SVG surface
     # here geek is file name & 700, 700 is dimension
-    with cairo.SVGSurface("redSocial.svg", 10000, 10000) as surface:
+    with cairo.SVGSurface("redSocial.svg", 6000, 6000) as surface:
         # creating a cairo context object
         context = cairo.Context(surface)
 
@@ -82,10 +85,8 @@ def createContext(personas):
             # Sacamos la persona
             persona = personas[k]
             atributos = persona.split("@z@")
-            print(k)
             #NIVEL 1
             if(k == 0):
-                print(posx.__str__() + posy.__str__())
                 #Caja de la persona
                 ##textX y posx se modifican
                 textX, posx, textY,posy,inTextX, inTextY= pintarPersona(textX, textY, inTextX, inTextY, tamx, tamy, posx, posy, context, atributos)
@@ -235,7 +236,6 @@ def leerXML():
         coordenadas_residencia = ""
         fotografia = ""
         video = ""
-        comentarios = ""
         for linea in lines:
             if ("nombre" in linea):
                 nombre = escribirLinea(linea)
@@ -266,7 +266,6 @@ def leerXML():
 
     finally:
         fileXMLOpened.close()
-        print("People SUCCESS")
         return personas
 
 #Sacamos las personas y las enviamos al creador del .svg

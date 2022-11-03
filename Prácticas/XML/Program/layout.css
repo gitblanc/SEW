@@ -8,15 +8,20 @@ NO USAR MEDIAS ABSOLUTAS, USAR em -> 16 px = 0.625 em
 **/
 
 /*Especificidad 001*/
-h3{
+p{
+    padding-left: 5.5em;
+    padding-right: 2.5em;
+}
+
+/*Especificidad 001*/
+h2{
     padding-top: 1em;
     padding-left: 2.5em;
     padding-right: 2.5em;
 }
 
 /*Especificidad 001*/
-h4{
+h1{
     padding-top: 1em;
-    padding-left: 6.5em;
-    padding-right: 2.5em;
+    padding-left: 0.5em;
 }
