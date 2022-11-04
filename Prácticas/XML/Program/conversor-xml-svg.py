@@ -34,7 +34,7 @@ def pintarDatos(context, textX, textY, atributos, posy, posx, tamx, tamy):
             context.move_to(textX, textY + 250)
             context.show_text("fotografia")
             context = createRectangle(context, posx, posy, tamx, tamy)
-        elif (l == 8):
+        elif (l == 8):#FALTA MODIFICAR AQUÍ PARA VER MÁS VÍDEOS
             context.move_to(textX, textY + 300)
             context.show_text("video")
             context = createRectangle(context, posx, posy, tamx, tamy)
@@ -235,7 +235,8 @@ def leerXML():
         lugar_residencia = ""
         coordenadas_residencia = ""
         fotografia = ""
-        video = ""
+        videos = ""
+        numVideos = 0
         for linea in lines:
             if ("nombre" in linea):
                 nombre = escribirLinea(linea)
@@ -254,15 +255,21 @@ def leerXML():
             elif ("fotografia" in linea):
                 fotografia = escribirLinea(linea)
             elif ("video" in linea):
-                video = escribirLinea(linea)
+                if(numVideos == 0):
+                    videos = escribirLinea(linea)
+                    numVideos += 1
+                else:
+                    videos += "@videovideo@" + escribirLinea(linea)
+                    numVideos += 1
             elif ("comentarios" in linea):
                 comentarios = escribirLinea(linea)
                 #Se crea una persona
                 persona = nombre + "@z@" + apellidos + "@z@" + fecha + "@z@" + lugar_nacimiento + "@z@" +\
                           coordenadas_nacimiento + "@z@" + lugar_residencia + "@z@" +\
-                          coordenadas_residencia + "@z@" + fotografia + "@z@" + video + "@z@" + comentarios
+                          coordenadas_residencia + "@z@" + fotografia + "@z@" + videos + "@z@" + comentarios
                 personas[i] = persona
                 i += 1
+                numVideos = 0
 
     finally:
         fileXMLOpened.close()
