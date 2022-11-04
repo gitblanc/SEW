@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD Simplified DocBook XML V1.0//EN"
+"http://www.oasis-open.org/docbook/xml/simple/1.0/sdocbook.dtd">
+<article class="techreport" lang="en" status="draft">
+  <title>DocBook Tutorial</title>
+  <articleinfo>
+    <author>
+      <firstname>Adrian</firstname>
+      <surname>Giurca</surname>
+    </author>
+    <date>April 5, 2005</date>
+  </articleinfo>
+  <section label="1" revisionflag="added" status="finnished">
+    <title>Why ?</title>
+    <para>The main selling point for <acronym>DocBook</acronym> is its
+    portability. A document written in <acronym>DocBook</acronym> markup can
+    be converted into <acronym>HTML</acronym>, <acronym>PostScript</acronym>,
+    <acronym>PDF</acronym>, <acronym>RTF</acronym>, <acronym>DVI</acronym>,
+    and plain <acronym>ASCII</acronym> .....</para>
+    <para>Another advantage of <acronym>DocBook </acronym>is that .... 
+    For instance, an author simply uses the
+    <acronym>DocBook</acronym> markup to indicate text that should be
+    <emphasis>emphasized</emphasis> with the
+    <literal>&lt;emphasis&gt;</literal> tag. This is one less thing for the
+    author to worry about while writing a document.</para>
+    <section>
+      <title>A subsection</title>
+      <para></para>
+    </section>
+  </section>
+  <section label="2" revisionflag="changed" status="unfinnished">
+    <title>What is DocBook ?</title>
+    <para><acronym>DocBook</acronym> is an ...</para>
+    <para>The first and ultimate key to time-resistant documents is using open
+    standards, such as XML/SGML, for document formats. These open standards
+    comprise two elements:</para>
+    <itemizedlist>
+      <listitem>
+        <para>Syntax, or what a document must look like l</para>
+      </listitem>
+      <listitem>
+        <para>Semantics, or what a document means l</para>
+      </listitem>
+    </itemizedlist>
+  </section>
+</article>
