@@ -1,46 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE article PUBLIC "-//OASIS//DTD Simplified DocBook XML V1.0//EN"
-"http://www.oasis-open.org/docbook/xml/simple/1.0/sdocbook.dtd">
-<article class="techreport" lang="en" status="draft">
-  <title>DocBook Tutorial</title>
-  <articleinfo>
-    <author>
-      <firstname>Adrian</firstname>
-      <surname>Giurca</surname>
-    </author>
-    <date>April 5, 2005</date>
-  </articleinfo>
-  <section label="1" revisionflag="added" status="finnished">
-    <title>Why ?</title>
-    <para>The main selling point for <acronym>DocBook</acronym> is its
-    portability. A document written in <acronym>DocBook</acronym> markup can
-    be converted into <acronym>HTML</acronym>, <acronym>PostScript</acronym>,
-    <acronym>PDF</acronym>, <acronym>RTF</acronym>, <acronym>DVI</acronym>,
-    and plain <acronym>ASCII</acronym> .....</para>
-    <para>Another advantage of <acronym>DocBook </acronym>is that .... 
-    For instance, an author simply uses the
-    <acronym>DocBook</acronym> markup to indicate text that should be
-    <emphasis>emphasized</emphasis> with the
-    <literal>&lt;emphasis&gt;</literal> tag. This is one less thing for the
-    author to worry about while writing a document.</para>
-    <section>
-      <title>A subsection</title>
-      <para></para>
-    </section>
-  </section>
-  <section label="2" revisionflag="changed" status="unfinnished">
-    <title>What is DocBook ?</title>
-    <para><acronym>DocBook</acronym> is an ...</para>
-    <para>The first and ultimate key to time-resistant documents is using open
-    standards, such as XML/SGML, for document formats. These open standards
-    comprise two elements:</para>
-    <itemizedlist>
-      <listitem>
-        <para>Syntax, or what a document must look like l</para>
-      </listitem>
-      <listitem>
-        <para>Semantics, or what a document means l</para>
-      </listitem>
-    </itemizedlist>
-  </section>
-</article>
+ <book xml:id="processors_book" xmlns="http://docbook.org/ns/docbook" version="5.0">
+   <title>Procesadores</title>
+   <chapter xml:id="intel_i5_10400">
+     <title>Intel Core i5-10400</title>
+     <para>2.9 GHz</para>
+     <para>182$</para>
+   </chapter>
+   <chapter xml:id="intel_i5_10600K">
+     <title>Intel Core i5-10600K</title>
+     <para>4.1 GHz</para>
+     <para>262$</para>
+   </chapter>
+   <chapter xml:id="intel_i5_10310U">
+     <title>Intel Core i5-10310U</title>
+     <para>1.7 GHz</para>
+     <para>297$</para>
+   </chapter>
+   <chapter xml:id="intel_i7_10700">
+     <title>Intel Core i7-10700</title>
+     <para>2.9 GHz</para>
+     <para>323$</para>
+   </chapter>
+   <chapter xml:id="intel_i7_10700F">
+     <title>Intel Core i7-10700F</title>
+     <para>2.9 GHz</para>
+     <para>298$</para>
+   </chapter>
+   <chapter xml:id="intel_i7_10700K">
+     <title>Intel Core i7-10700K</title>
+     <para>3.8 GHz</para>
+     <para>374$</para>
+   </chapter>
+   <chapter xml:id="intel_i9_10900">
+     <title>Intel Core i9-10900</title>
+     <para>2.8 GHz</para>
+     <para>439$</para>
+   </chapter>
+   <chapter xml:id="intel_i9_10900F">
+     <title>Intel Core i9-10900F</title>
+     <para>2.8 GHz</para>
+     <para>422$</para>
+   </chapter>
+   <chapter xml:id="intel_i9_10900K">
+     <title>Intel Core i9-10900K</title>
+     <para>3.7 GHz</para>
+     <para>488$</para>
+   </chapter>
+   <chapter xml:id="intel_i3_10100">
+     <title>Intel Core i3-10100</title>
+     <para>3.6 GHz</para>
+     <para>122$</para>
+   </chapter>
+   <chapter xml:id="intel_i3_10300">
+     <title>Intel Core i3-10300</title>
+     <para>3.7 GHz</para>
+     <para>143$</para>
+   </chapter>
+   <chapter xml:id="intel_i3_10320">
+     <title>Intel Core i3-10320</title>
+     <para>3.8 GHz</para>
+     <para>154$</para>
+   </chapter>
+   ///////
+   <chapter xml:id="amd_3700X">
+     <title>AMD ryzen 7 3700X</title>
+     <para>4.4 GHz</para>
+     <para>244$</para>
+   </chapter>
+   <chapter xml:id="amd_3600X">
+     <title>AMD ryzen 5 3600X</title>
+     <para>3.8 GHz</para>
+     <para>392$</para>
+   </chapter>
+   <chapter xml:id="amd_2600X">
+     <title>AMD ryzen 5 2600X</title>
+     <para>4.2 GHz</para>
+     <para>124$</para>
+   </chapter>
+   <chapter xml:id="amd_3900X">
+     <title>AMD ryzen 9 3900X</title>
+     <para>4.6 GHz</para>
+     <para>554$</para>
+   </chapter>
+ </book>
