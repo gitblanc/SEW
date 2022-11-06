@@ -1,0 +1,16 @@
+<!ELEMENT articles (article+)>
+<!ELEMENT article (title, authors, summary, keywords, journal, volume)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT authors (author+)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT summary (#PCDATA)>
+<!ELEMENT keywords (keyword+)>
+<!ELEMENT keyword (#PCDATA)>
+<!ELEMENT journal (#PCDATA)>
+<!ELEMENT volume (#PCDATA)>
+<!ATTLIST article 
+	year CDATA #REQUIRED
+	start-page CDATA #REQUIRED
+	end-page CDATA #REQUIRED>
+<!ATTLIST author 
+	email CDATA #REQUIRED>

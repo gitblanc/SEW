@@ -1,0 +1,7 @@
+<!ELEMENT poema (titulo,verso+)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT verso (#PCDATA)>
+<!ATTLIST poema
+    autor CDATA #REQUIRED
+	fecha CDATA #REQUIRED
+	lugar CDATA #IMPLIED>

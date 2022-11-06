@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE pizzas SYSTEM "pizzas.dtd">
+<pizzas>
+<pizza precio="8" nombre="Barbacoa">
+<ingrediente nombre="Salsa Barbacoa"/>
+<ingrediente nombre="Mozzarella"/>
+<ingrediente nombre="Tocineta"/>
+<ingrediente nombre="Ternera"/>
+</pizzas>

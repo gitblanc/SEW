@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<poesía
+xmlns="http://www.uniovi.es"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.uniovi.es poema.xsd"
+>
+
+<poema autor="Federico García Lorca" lugar="Granada" fecha="Abril de 1915">
+<titulo>Alba</titulo>
+<verso>Mi corazón oprimido</verso>
+<verso>siente junto a la alborada</verso>
+<verso>el dolor de sus amores</verso>
+<verso>y el sueño de las distancias.</verso>
+</poema>
+</poesía>

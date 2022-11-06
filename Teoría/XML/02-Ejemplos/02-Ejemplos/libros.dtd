@@ -1,0 +1,11 @@
+<!ELEMENT libros (libro+)>
+<!ELEMENT libro  (título, autor+, año?, precio, editorial, clasificación, idioma)>
+<!ELEMENT título (#PCDATA)>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT año (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT editorial (#PCDATA)>
+<!ELEMENT clasificación (#PCDATA)>
+<!ELEMENT idioma (#PCDATA)>
+<!ATTLIST libro isbn ID #REQUIRED>
+<!ATTLIST precio moneda CDATA #REQUIRED>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id='Universidad de Oviedo'>
+<Placemark>
+<name>Oviedo</name>
+<description>Escuela de Ingeniería Informática</description>
+<Point>
+<coordinates>
+-5.851256792487727,43.355098167157855
+</coordinates>
+<altitudeMode>relativeToGround</altitudeMode>
+</Point>
+</Placemark>
+</Document>
+</kml>

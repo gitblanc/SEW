@@ -10,48 +10,71 @@ def createRectangle(context, x, y, width, height):
 
 def pintarDatos(context, textX, textY, atributos, posy, posx, tamx, tamy):
     for l in range(2, len(atributos)):
-        if (l == 2):
+        if l == 2:
             context.move_to(textX, textY)
             context.show_text("fecha: " + atributos[l])
             context = createRectangle(context, posx, posy, tamx, tamy)
-        elif (l == 3):
-            context.move_to(textX, textY + 50)
+        elif l == 3:
+            context.move_to(textX, textY)
             context.show_text("lugar_nacimiento: " + atributos[l])
             context = createRectangle(context, posx, posy, tamx, tamy)
-        elif (l == 4):
-            context.move_to(textX, textY + 100)
+        elif l == 4:
+            context.move_to(textX, textY)
             context.show_text("coord_nacimiento: " + atributos[l])
             context = createRectangle(context, posx, posy, tamx+150, tamy)
-        elif (l == 5):
-            context.move_to(textX, textY + 150)
+        elif l == 5:
+            context.move_to(textX, textY)
             context.show_text("lugar_residencia: " + atributos[l])
             context = createRectangle(context, posx, posy, tamx, tamy)
-        elif (l == 6):
-            context.move_to(textX, textY + 200)
+        elif l == 6:
+            context.move_to(textX, textY)
             context.show_text("coord_residencia: " + atributos[l])
             context = createRectangle(context, posx, posy, tamx+150, tamy)
-        elif (l == 7):
-            context.move_to(textX, textY + 250)
-            context.show_text("fotografia")
-            context = createRectangle(context, posx, posy, tamx, tamy)
-        elif (l == 8):#FALTA MODIFICAR AQUÍ PARA VER MÁS VÍDEOS
-            context.move_to(textX, textY + 300)
-            context.show_text("video")
-            context = createRectangle(context, posx, posy, tamx, tamy)
-        elif (l == 9):
-            context.move_to(textX, textY + 350)
+        elif l == 7:#TENEMOS QUE PODER VER MÁS IMÁGENES
+            imagenes = atributos[l].split("@fotofoto@")
+            if len(imagenes) == 1:
+                context.move_to(textX, textY)
+                context.show_text("fotografia")
+                context = createRectangle(context, posx, posy, tamx, tamy)
+            else:
+                image = 0
+                for image in range(len(imagenes)):
+                    context.move_to(textX, textY)
+                    context.show_text("fotografia")
+                    context = createRectangle(context, posx, posy, tamx, tamy)
+                    if image < len(imagenes)-1:
+                        textY+=50
+                        posy += 50
+
+        elif l == 8:#FALTA MODIFICAR AQUÍ PARA VER MÁS VÍDEOS
+            videos = atributos[l].split("@videovideo@")
+            if len(videos) == 1:
+                context.move_to(textX, textY)
+                context.show_text("video")
+                context = createRectangle(context, posx, posy, tamx, tamy)
+            else:
+                v = 0
+                for v in range(len(videos)):
+                    context.move_to(textX, textY)
+                    context.show_text("video")
+                    context = createRectangle(context, posx, posy, tamx, tamy)
+                    if v < len(videos)-1:
+                        textY+=50
+                        posy += 50
+        elif l == 9:
+            context.move_to(textX, textY)
             context.show_text("comentarios: " + atributos[l])
             context = createRectangle(context, posx, posy, tamx, tamy)
-
+        textY+=50
         posy += 50
-    return textX, textY+400, posy, posx
+    return textX, textY, posy, posx
 
 def pintarPersona(textX, textY, inTextX, inTextY, tamx, tamy, posx, posy, context, atributos):
     context.move_to(textX, textY)
     context.show_text("persona")
-    context.move_to(inTextX, inTextY)  # 20, 30
+    context.move_to(inTextX, textY+10)  # 20, 30
     context.show_text("nombre: " + atributos[0])
-    context.move_to(inTextX, inTextY + 10)  # 20,40
+    context.move_to(inTextX, textY + 20)  # 20,40
     context.show_text("apellidos: " + atributos[1])
     context = createRectangle(context, posx, posy, tamx, tamy)  # 10,10
     return textX+190,posx+190, textY,posy, inTextX+190, inTextY+400
@@ -237,6 +260,7 @@ def leerXML():
         fotografia = ""
         videos = ""
         numVideos = 0
+        numfotos = 0
         for linea in lines:
             if ("nombre" in linea):
                 nombre = escribirLinea(linea)
@@ -253,7 +277,12 @@ def leerXML():
             elif ("coordenadas_residencia" in linea):
                 coordenadas_residencia = escribirLinea(linea)
             elif ("fotografia" in linea):
-                fotografia = escribirLinea(linea)
+                if(numfotos == 0):
+                    fotografia = escribirLinea(linea)
+                    numfotos+=1
+                else:
+                    fotografia += "@fotofoto@" + escribirLinea(linea)
+                    numfotos += 1
             elif ("video" in linea):
                 if(numVideos == 0):
                     videos = escribirLinea(linea)
@@ -270,6 +299,7 @@ def leerXML():
                 personas[i] = persona
                 i += 1
                 numVideos = 0
+                numfotos = 0
 
     finally:
         fileXMLOpened.close()

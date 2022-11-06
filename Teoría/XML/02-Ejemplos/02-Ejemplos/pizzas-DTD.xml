@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE pizzas [
+<!ELEMENT pizzas (pizza*)>
+<!ELEMENT pizza (ingrediente*)>
+<!ELEMENT ingrediente (#PCDATA)>
+<!ATTLIST pizza nombre CDATA #REQUIRED>
+<!ATTLIST pizza precio CDATA #REQUIRED>
+<!ATTLIST ingrediente nombre CDATA #REQUIRED>
+]>
+<pizzas>
+    
+<pizza nombre="Barbacoa" precio="8,0€">
+<ingrediente nombre="Salsa Barbacoa"/>
+<ingrediente nombre="Mozzarella"/>
+<ingrediente nombre="Tocineta"/>
+<ingrediente nombre="Ternera"/>
+</pizza>
+
+<pizza nombre="Margarita" precio="6,5€">
+<ingrediente nombre="Tomate"/>
+<ingrediente nombre="Jamón"/>
+<ingrediente nombre="Queso"/>
+</pizza>
+
+<pizza nombre="Tres Quesos con jamón y tocineta" precio="10,5€" >
+<ingrediente nombre="Cabrales"/>
+<ingrediente nombre="Mozzarella"/>
+<ingrediente nombre="Manchego"/>
+<ingrediente nombre="Jamón"/>
+<ingrediente nombre="Tocineta"/>
+</pizza>
+
+</pizzas>

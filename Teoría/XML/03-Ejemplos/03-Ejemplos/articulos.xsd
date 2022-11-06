@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.uniovi.es"
+	xmlns="http://www.uniovi.es"
+	elementFormDefault="qualified">
+	
+	<xs:element name="articles">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="article"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="article">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="title" minOccurs="1" maxOccurs="1" type="xs:string"/>
+				<xs:element minOccurs="1" maxOccurs="1" ref="authors"/>
+				<xs:element name="summary" minOccurs="1" maxOccurs="1" type="xs:string"/>
+				<xs:element minOccurs="1" maxOccurs="1" ref="keywords"/>
+				<xs:element name="journal" minOccurs="1" maxOccurs="1" type="xs:string"/>
+				<xs:element name="volume" minOccurs="1" maxOccurs="1" type="xs:integer"/>
+			</xs:sequence>
+			<xs:attribute name="year" use="required" type="xs:gYear"/>
+			<xs:attribute name="start-page" use="required" type="xs:integer"/>
+			<xs:attribute name="end-page" use="required" type="xs:integer"/>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="authors">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="1" maxOccurs="unbounded" ref="author"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="author">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="email" type="xs:string" use="required"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="keywords">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="keyword" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+</xs:schema>

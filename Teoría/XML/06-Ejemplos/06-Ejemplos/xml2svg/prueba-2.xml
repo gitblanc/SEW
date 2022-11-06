@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- prueba-2.xml -->
+<persona sexo="femenino" edad="19" dni="10571971A" nacionalidad="Española">
+   <nombre>Paloma</nombre>
+   <apellido1>Cueva</apellido1>
+   <apellido2>Fernández</apellido2>
+ </persona>

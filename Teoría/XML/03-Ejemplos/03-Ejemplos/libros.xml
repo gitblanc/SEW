@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libros 
+xmlns="http://www.uniovi.es"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.uniovi.es libros.xsd"
+>
+<libro isbn="ISBN-9788420633114">
+<titulo>El Aleph</titulo>
+<autor>Jorge Luis Borges</autor>
+<any>1946</any>
+<precio moneda="Euro">7.80</precio>
+<editorial>Alianza Editorial</editorial>
+<clasificacion>Literatura</clasificacion>
+<idioma>Español</idioma>
+</libro>
+</libros>

@@ -1,0 +1,93 @@
+body {
+	background: #667db6;
+	background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+	color: #FFF;
+	font-family: Calibri, Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+ a {
+     text-decoration: none;
+ }
+
+body header {
+	background: rgba(0, 0, 0, .4);
+	color: #FFF;
+	margin: 0;
+	padding: 1em;
+	text-align: center;
+}
+
+header h2 {
+	margin: 0;
+}
+
+footer {
+	background: rgba(0, 0, 0, .4); 
+	color: #FFF;
+	padding: 1em;
+    text-align: center;
+}
+
+footer>div p {
+	margin: 0;
+	padding: 0;
+}
+
+.cooking-recipe {
+	background-color: #FFF;
+	color: #000;
+	box-shadow: 5px 5px 5px #888;
+	padding: 1.5em;
+	margin: 1em 15em 1em 15em;
+}
+
+.cooking-recipe>h3 {
+	border-bottom: 1px solid #000;
+	font-size: 1.6em;
+	margin-top: 0;
+	text-align: center;
+}
+
+.section, .step {
+	font-weight: bold;
+}
+
+.ingredients, .elements {
+	margin-top: 0;
+	padding-left: 2em;
+}
+
+.elaboration-process {
+	list-style-type: none;
+	margin-top: 0;
+	padding-left: 1em;
+}
+
+.elaboration-process li {
+	margin-bottom: 0.5em;
+}
+
+.elaboration-process li:last-child {
+	margin-bottom: 0;
+}
+
+.ingredients-section, .elements-section, .elaboration-process-section, .elaboration-process {
+	margin-bottom: 0;
+}
+
+.calories {
+	font-style: italic;
+}
+
+ .validations {
+	display: inline-flex;
+    padding: 1em;
+    text-align: center;
+ }
+ 
+ .validations a {
+	color: #FFF;
+	background-color: rgba(0, 0, 0, 0);
+ }

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- prueba-1.xml -->
+ <note>
+ <to>Cris</to>
+ <from>Juan Manuel</from>
+ <heading>Recordatorio</heading>
+ <body>No te olvides de las llaves</body>
+ </note>

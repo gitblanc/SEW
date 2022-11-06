@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" version="2.0">
+
+<polyline points=
+            "10,160 
+             30,40 
+             40,120 
+             60,80 
+             80,10 
+             100,120 
+             120,130
+             140,40
+             160,140
+             180,80
+             200,120
+             220,130
+             240,90
+             260,20
+             280,50
+             300,100
+             320,75
+             340,125
+             360,160
+             10,160" 
+            style="fill:white;stroke:red;stroke-width:4" />
+<text x="10" y="165" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+    Inicio
+</text>
+<text x="30" y="165" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+    Monte Naranco
+</text>
+<text x="80" y="165" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+    Lagos de Covadonga
+</text>
+<text x="140" y="165" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+    Angliru
+</text>
+<text x="180" y="165" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+    Les Praeres
+</text>
+<text x="260" y="165" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+    Valgrande Pajares
+</text>
+<text x="320" y="165" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+    El mirador del Fitu
+</text>
+<text x="360" y="165" style="writing-mode: tb; glyph-orientation-vertical: 0;">
+    Final
+</text>
+</svg> 

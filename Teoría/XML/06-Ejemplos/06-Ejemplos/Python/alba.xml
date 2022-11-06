@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE poema SYSTEM "poema.dtd"> 
+<poema autor="Federico García Lorca" fecha="Abril 1915" lugar="Granada">
+<titulo>Alba</titulo> 
+<verso>Mi corazón oprimido</verso> 
+<verso>siente junto a la alborada</verso> 
+<verso>el dolor de sus amores</verso>
+<verso>Y el sueño de las distancias.</verso>
+<verso>La luz de la aurora lleva</verso>
+<verso>Semilleros de nostalgias</verso>
+<verso>Y la tristeza sin ojos</verso>
+<verso>De la médula del alma.</verso>
+<verso>La gran tumba de la noche</verso>
+<verso>Su negro velo levanta</verso>
+<verso>Para ocultar con el día</verso>
+<verso>La inmensa cumbre estrellada.</verso>
+</poema>

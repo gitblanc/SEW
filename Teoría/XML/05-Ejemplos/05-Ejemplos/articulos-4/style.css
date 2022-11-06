@@ -1,0 +1,82 @@
+body {
+	background: #E8CBC0;
+	background: linear-gradient(to right, #636FA4, #E8CBC0);
+	color: #FFF;
+	font-family: Calibri, Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+body header {
+	background: rgba(0, 0, 0, .4);
+	color: #FFF;
+	margin: 0;
+	padding: 1em;
+	text-align: center;
+}
+
+header h2 {
+	margin: 0;
+}
+
+footer {
+	background: rgba(0, 0, 0, .4); 
+	color: #FFF;
+	padding: 1em;
+    text-align: center;
+}
+
+footer>div p {
+	margin: 0;
+	padding: 0;
+}
+
+.article {
+	box-shadow: 5px 5px 5px #888;
+	padding: 1.5em;
+	margin: 1em 15em 1em 15em;
+	background-color: #FFF;
+	color: #000;
+}
+
+.article>h3 {
+	border-bottom: 1px solid #000;
+	text-align: center;
+}
+
+.section {
+	font-weight: bold;
+}
+
+.authors {
+	margin-top: 0;
+	padding-left: 2em;
+}
+
+.authors-section {
+	margin-bottom: 0;
+}
+
+.summary-section {
+	margin-bottom: 0;
+}
+
+.summary {
+	margin: 0;
+	padding: 0 0 0 1em;
+}
+
+.email {
+	font-style: italic;
+}
+
+ .validations {
+	display: inline-flex;
+    padding: 1em;
+    text-align: center;
+ }
+ 
+ .validations a {
+	color: #FFF;
+	background-color: rgba(0, 0, 0, 0);
+ }

@@ -1,0 +1,6 @@
+c:\users\juan manuel cueva\documents\visual studio 2012\Projects\xml2svg\xml2svg\bin\Debug\xml2svg.exe.config
+c:\users\juan manuel cueva\documents\visual studio 2012\Projects\xml2svg\xml2svg\bin\Debug\xml2svg.exe
+c:\users\juan manuel cueva\documents\visual studio 2012\Projects\xml2svg\xml2svg\bin\Debug\xml2svg.pdb
+c:\users\juan manuel cueva\documents\visual studio 2012\Projects\xml2svg\xml2svg\obj\Debug\xml2svg.csprojResolveAssemblyReference.cache
+c:\users\juan manuel cueva\documents\visual studio 2012\Projects\xml2svg\xml2svg\obj\Debug\xml2svg.exe
+c:\users\juan manuel cueva\documents\visual studio 2012\Projects\xml2svg\xml2svg\obj\Debug\xml2svg.pdb

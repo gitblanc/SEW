@@ -1,0 +1,14 @@
+c:\users\juan manuel cueva\documents\visual studio 2010\Projects\TraductorXML\TraductorXML\bin\Debug\TraductorXML.exe
+c:\users\juan manuel cueva\documents\visual studio 2010\Projects\TraductorXML\TraductorXML\bin\Debug\TraductorXML.pdb
+c:\users\juan manuel cueva\documents\visual studio 2010\Projects\TraductorXML\TraductorXML\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\juan manuel cueva\documents\visual studio 2010\Projects\TraductorXML\TraductorXML\obj\x86\Debug\TraductorXML.exe
+c:\users\juan manuel cueva\documents\visual studio 2010\Projects\TraductorXML\TraductorXML\obj\x86\Debug\TraductorXML.pdb
+C:\Users\Juan Manuel Cueva\Dropbox\Asignaturas\XML\TraductorXML\TraductorXML\TraductorXML\obj\x86\Debug\TraductorXML.exe
+C:\Users\Juan Manuel Cueva\Dropbox\Asignaturas\XML\TraductorXML\TraductorXML\TraductorXML\obj\x86\Debug\TraductorXML.pdb
+C:\Users\Juan Manuel Cueva\Dropbox\Asignaturas\XML\TraductorXML\TraductorXML\TraductorXML\bin\Debug\TraductorXML.exe
+C:\Users\Juan Manuel Cueva\Dropbox\Asignaturas\XML\TraductorXML\TraductorXML\TraductorXML\bin\Debug\TraductorXML.pdb
+C:\Users\Juan Manuel Cueva\Dropbox\Asignaturas\XML\TraductorXML\TraductorXML\TraductorXML\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Juan Manuel Cueva\Dropbox\Asignaturas\MIW\Lenguajes-y-estandares-Web\XML\05-Ejercicios\TraductorXML\TraductorXML\TraductorXML\obj\x86\Debug\TraductorXML.exe
+C:\Users\Juan Manuel Cueva\Dropbox\Asignaturas\MIW\Lenguajes-y-estandares-Web\XML\05-Ejercicios\TraductorXML\TraductorXML\TraductorXML\obj\x86\Debug\TraductorXML.pdb
+C:\Users\Juan Manuel Cueva\Dropbox\Asignaturas\MIW\Lenguajes-y-estandares-Web\XML\05-Ejercicios\TraductorXML\TraductorXML\TraductorXML\bin\Debug\TraductorXML.exe
+C:\Users\Juan Manuel Cueva\Dropbox\Asignaturas\MIW\Lenguajes-y-estandares-Web\XML\05-Ejercicios\TraductorXML\TraductorXML\TraductorXML\bin\Debug\TraductorXML.pdb

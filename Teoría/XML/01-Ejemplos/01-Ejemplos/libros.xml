@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE libros SYSTEM "libros.dtd">
+<libros>
+<libro isbn="9788420633114">
+<título>El Aleph</título>
+<autor>Jorge Luis Borges</autor>
+<año>1946</año>
+<precio moneda="Euro">7,80</precio>
+<editorial>Alianza Editorial</editorial>
+<clasificación>Literatura</clasificación>
+<idioma>Español</idioma>
+</libro>
+
+<libro isbn="9780470036662">
+<título>Domain-Specific Modeling. Enabling full code generation</título>
+<autor>Steven Kelly</autor>
+<autor>Juha-Pekka Tolvanen</autor>
+<año>2008</año>
+<precio moneda="Dolar USA">74,03</precio>
+<editorial>Wiley</editorial>
+<clasificación>Informática</clasificación>
+<idioma>Inglés</idioma>
+</libro>
+
+</libros>

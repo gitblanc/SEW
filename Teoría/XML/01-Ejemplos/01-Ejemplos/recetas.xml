@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cooking-recipes>
+	<cooking-recipe type="Primer plato" vegan="No">
+		<name>Arroz integral con pollo</name>
+		<ingredients>
+			<ingredient quantity="300" measure="g" calories="1032">Arroz Integral</ingredient>
+			<ingredient quantity="300" measure="g" calories="80">Pollo</ingredient>
+			<ingredient quantity="1" measure="unidad">Cebolleta</ingredient>
+			<ingredient quantity="2" measure="unidades">Talos de apio</ingredient>
+			<ingredient quantity="3" measure="unidades">Dientes de ajo</ingredient>
+			<ingredient quantity="2" measure="cucharadas">Tomate frito</ingredient>
+			<ingredient quantity="1/2" measure="cucharadita">Curry en pavo</ingredient>
+			<ingredient quantity="1/2" measure="cucharadita">Pimentón dulce</ingredient>
+			<ingredient quantity="1/4" measure="unidad">Pimiento verde</ingredient>
+			<ingredient quantity="1" measure="unidad">Huevo</ingredient>
+			<ingredient quantity="3" measure="cucharadas">Salsa de soja</ingredient>
+			<ingredient quantity="700" measure="ml" calories="20">Caldo de pollo</ingredient>
+		</ingredients>
+		<elaboration-process difficulty="Fácil" time-minutes="45">
+			<steps>
+				<step number="1">Comenzamos preparando un sofrito: cortar la cebolleta, ajos, pimiento verde, y los tallos de apio en trozos. Añadimos aceite de oliva a una sartén y sofreímos primero los ajos durante un  minuto y medio, luego los retiramos de la sartén y reservamos.</step>
+				<step number="2">En este mismo aceite dorar el pollo durante dos minutos, y retirar. Agregar la cebolleta, el pimiento verde y los tallos de apio cortados en trozos. Sofreir durante 5 minutos. Apagar el fuego y añadir el arroz integral junto al curry y el pimentón. Dejar que el arroz repose en la sartén caliente dos o tres minutos.</step>
+				<step number="3">A continuación añadir el caldo de pollo y cocinar el arroz 20 minutos. Cuando falten 10 minutos, añadiremos el pollo que habíamos retirado y los ajos. Continuar la cocción hasta los 20 minutos. Luego apagar el fuego.</step>
+				<step number="4">Tapar el arroz con un paño y dejar reposar 8 minutos. Mientras reposa batimos el huevo y hacemos una tortilla francesa en una sartén antiadherente. Una vez a nuestro gusto la cortamos en trocitos.</step>
+				<step number="5">Una vez reposado el arroz añadimos los trocitos de tortilla y sazonamos con la salsa de soja y un poco de pimienta.</step>
+			</steps>
+			<elements>
+				<element>Cuchillo</element>
+				<element>Horno</element>
+				<element>Sartén</element>
+			</elements>
+		</elaboration-process>
+		<origin>Recetas de mi abuela</origin>
+	</cooking-recipe>
+	
+	<cooking-recipe type="Entrante" vegan="Si">
+		<name>Aceituna fritas caseras</name>
+		<ingredients>
+			<ingredient quantity="200" measure="g">Aceitunas rellenas de pimiento</ingredient>
+			<ingredient quantity="2" measure="unidades">Huevos</ingredient>
+			<ingredient quantity="90" measure="g">Harina</ingredient>
+			<ingredient quantity="90" measure="g">Pan rallado</ingredient>
+			<ingredient quantity="250" measure="ml">Aceite de oliva</ingredient>
+		</ingredients>
+		<elaboration-process difficulty="Fácil" time-minutes="25">
+			<steps>
+				<step number="1">Comenzaremos batiendo los huevos en un plato hondo. Reservamos.</step>
+				<step number="2">Colocamos la harina en un plato llano y, a su lado el pan rallado en otro.</step>
+				<step number="3">A continuación, sacamos las aceitunas y dejamos que escurran hasta que estén bien secas, ya que si se conservan demasiado húmedas no retendrán bien el rebozado.</step>
+				<step number="4">Una vez estén listas las iremos pasando primero por la harina, después por el huevo y, finalmente por el pan rallado.</step>
+				<step number="5">Cuando tengamos todas listas, freímos en abundante aceite bien caliente hasta que se tornen algo doradas, sacamos y dejamos reposar sobre algo de papel absorbente de cocina para eliminar el exceso de aceite y servimos. ¡Y ya tendremos nuestras aceitunas fritas listas!</step>
+			</steps>
+			<elements>
+				<element>Batidora</element>
+				<element>Freidora</element>
+			</elements>
+		</elaboration-process>
+		<origin>La enciclopedia de los sabores</origin>
+	</cooking-recipe>
+	
+	<cooking-recipe type="Postre" vegan="Si">
+		<name>Brownies veganos</name>
+		<ingredients>
+			<ingredient quantity="100" measure="g">Puré de aguacate (para hacerlo necesitamos un aguacate maduro)</ingredient>
+			<ingredient quantity="100" measure="g">Aceite de oliva virgen</ingredient>
+			<ingredient quantity="1" measure="taza">Harina integral</ingredient>
+			<ingredient quantity="100" measure="g">Cacao en polvo sin azúcar</ingredient>
+			<ingredient quantity="100" measure="g">Azúcar moreno</ingredient>
+			<ingredient quantity="1" measure="cucharadita">Bicarbonato</ingredient>
+			<ingredient quantity="75" measure="g">Agua</ingredient>
+			<ingredient quantity="1/2" measure="cucharadita">Café</ingredient>
+			<ingredient quantity="1/2" measure="cucharadita">Sal</ingredient>
+			<ingredient quantity="375" measure="g">Chips de chocolate negro</ingredient>
+		</ingredients>
+		<elaboration-process difficulty="Difícil" time-minutes="90">
+			<steps>
+				<step number="1">Precalentamos el horno a 180 grados y engrasamos ligeramente un molde cuadrado o rectangular. El puré de aguacate lo haremos usando un aguacate maduro al que añadimos una cucharadita de agua y lo trituramos en la batidora.</step>
+				<step number="2">Luego en un recipiente ponemos el puré de aguacate y el aceite de oliva hasta ligarlo bien. A continuación añadimos harina integral, el azúcar moreno junto al bicarbonato de sodio y el cacao en polvo sin azúcar.</step>
+				<step number="3">Mezclar todo con la batidora hasta obtener una crema homogénea, y luego añadir la sal, el agua y la media cucharadita de café de nuevo batimos todos los ingredientes. Seguidamente añadiremos las chips de chocolate negro, reservando un puñado.</step>
+				<step number="4">Verter la mezcla en el molde y hornera unos 20 minutos a 180 grados a mitad de cocción a los 10 minutos espolvorear por encima los chips de chocolate que habíamos reservado.</step>
+				<step number="5"> Pasado el tiempo usar el truco del palillo, lo introducimos en el centro del brownie si sale limpio ya lo tenemos listo, si no sale limpio, dejamos unos minutos más dentro del horno con el calor residual.</step>
+			</steps>
+			<elements>
+				<element>Batidora</element>
+				<element>Horno</element>
+				<element>Molde cuadrado/rectangular</element>
+			</elements>
+		</elaboration-process>
+		<origin>La enciclopedia de los sabores</origin>
+	</cooking-recipe>
+	
+	<cooking-recipe type="Entrante" vegan="No">
+		<name>Ensalada de pepino y yogur</name>
+		<ingredients>
+			<ingredient quantity="1" measure="unidad">Pepino</ingredient>
+			<ingredient quantity="1" measure="unidad">Yogur</ingredient>
+			<ingredient quantity="2" measure="unidades">Huevo</ingredient>
+			<ingredient quantity="2" measure="unidades">Tomate</ingredient>
+			<ingredient quantity="1/2" measure="unidad">Lechuga</ingredient>
+		</ingredients>
+		<elaboration-process difficulty="Fácil" time-minutes="10">
+			<steps>
+				<step number="1">Hay que lavar bien el pepino, que a continuación lo pelaremos y cortaremos en rodajas finas. Las distintas rodajas las colocaremos como base en un plato llano para echarles por encima un poco de sal.</step>
+				<step number="2">Tanto el tomate para ensalada como los huevos duros los cortaremos en gajos y los pondremos en círculo para dejar libre la zona central del plato, que será el lugar escogido para verter la salsa de yogur.</step>
+				<step number="3">La salsa de yogur la haremos con un yogur natural, un par de cucharadas de zumo de limón, una pizca de sal, pimienta y aceite.</step>
+				<step number="4">A modo de decoración le colocaremos una hoja de albahaca</step>
+			</steps>
+			<elements>
+			</elements>
+		</elaboration-process>
+		<origin>La enciclopedia de los sabores</origin>
+	</cooking-recipe>
+	
+	<cooking-recipe type="Entrante" vegan="Si">
+		<name>Koftas de lentejas rojas y verduras</name>
+		<ingredients>
+			<ingredient quantity="500" measure="g">Lentejas rojas</ingredient>
+			<ingredient quantity="1/2" measure="unidad">Cebolla roja</ingredient>
+			<ingredient quantity="2" measure="unidades">Zanahorias ralladas</ingredient>
+			<ingredient quantity="1/2" measure="cucharada">Comino molido</ingredient>
+			<ingredient quantity="1" measure="cucharada">Cúrcuma</ingredient>
+			<ingredient quantity="1/2" measure="cucharada">Pimentón picante</ingredient>
+			<ingredient quantity="1" measure="unidad">Patata grande</ingredient>
+			<ingredient quantity="50" measure="ml">Aceite de oliva</ingredient>
+		</ingredients>
+		<elaboration-process difficulty="Difícil" time-minutes="120">
+			<steps>
+				<step number="1">Lavamos, pelamos y cortamos en dos la patata. Reservamos.</step>
+				<step number="2">Pelamos la zanahoria y la cortamos en trozos diminutos. Reservamos.</step>
+				<step number="3">En un cazo con abundante agua y un pellizquito de sal, ponemos a cocer la patata hasta que ésta se ablande sin que llegue a deshacerse.</step>
+				<step number="4">En una sartén con un chorrito de aceite de oliva pochamos la cebolla a fuego lento y, cuando esté casi transparente, le añadimos la cúrcuma, la pimienta negra molida, el comino y el pimentón. Subimos un poquito el fuego, removemos para que no se nos quemen y mantenemos alrededor de 1 minuto. Consejo: Si añadís un poquito de sal a la cebolla, ésta sudará y se hará antes, ahorrándoos algo de tiempo en caso de que éste os falte.</step>
+				<step number="5">Cuando la patata esté cocida, la sacamos, pasamos por el pasapuré y reservamos.</step>
+				<step number="6">En otro cazo, ponemos abundante agua y, cuando rompa a hervir, agregamos las lentejas y dejamos que cuezan durante unos 10 minutos. Recomendación: Después de haber estado en remojo se habrán ablandado lo suficiente como para no necesitar mucho más tiempo de cocción, pero si transcurridos estos minutos notáis que aún presentan cierta dureza, dejadlas un ratito más.</step>
+				<step number="7">Una vez listas, la escurrimos y las extendemos sobre un plato llano. Con un tenedor, las presionamos suavemente (sin llegar a espachurrarlas ni aplastarlas) y las añadimos a la sartén (que contiene la cebolla y las especias).</step>
+				<step number="8">Removemos bien y formaremos nuestras koftas cogiendo cierta cantidad del contenido de la sartén y parte del puré de patata.</step>
+				<step number="9">Les damos forma de bola y las pasaremos por la harina de garbanzo para que tomen consistencia y no se nos desmonten posteriormente al cocinarlas.</step>
+				<step number="10">Una vez listas todas las koftas ya sólo tendremos que freírlas en abundante aceite de oliva bien caliente. Las sacamos, dejamos que escurran sobre papel absorbente y servimos. ¡Y ya tendremos estas geniales koftas de lentejas rojas y verduras!</step>
+			</steps>
+			<elements>
+				<element>Horno</element>
+				<element>Sartén</element>
+			</elements>
+		</elaboration-process>
+		<origin>https://okdiario.com/</origin>
+	</cooking-recipe>
+	
+	<cooking-recipe type="Postre" vegan="No">
+		<name>Crema de fresa con proteínas</name>
+		<ingredients>
+			<ingredient quantity="600" measure="g" calories="58">Queso Quark</ingredient>
+			<ingredient quantity="2" measure="unidades">Claras de huevo</ingredient>
+			<ingredient quantity="200" measure="g" calories="32">Fresas</ingredient>
+			<ingredient quantity="3" measure="cucharaditas">Edulcorante Stevia</ingredient>
+		</ingredients>
+		<elaboration-process difficulty="Medio" time-minutes="30">
+			<steps>
+				<step number="1">Lavar las fresas en un recipiente con agua y una gotita de lejía o desinfectante de verduras. Luego escurrir y cortar en trocitos pequeños.</step>
+				<step number="2">Separar las claras de las yemas. En un recipiente verter las claras junto a unas gotas de zumo de limón, comenzar batiendo suave con unas varillas o un tenedor, luego incrementar la velocidad poco a poco ya sea con las varillas o con la batidora.</step>
+				<step number="3">Cuando la clara se vaya montando añadir las cucharaditas de Stevia. Te cuento trucos para montar claras muy fáciles.</step>
+				<step number="4">Una vez tenemos las claras montadas las reservamos unos minutos.</step>
+				<step number="5">En una batidora añadimos las fresas y el queso Quark y trituramos hasta lograr una crema fina. Luego pasar el resultado por un colador tipo chino (es para evitar pequeños restos de las fresas).</step>
+				<step number="6">A esta mezcla que pasamos por el chino, le añadiremos las claras de huevo montadas, mezclar con suavidad hasta lograr integrar los ingredientes. A la hora de servir decorar con fresas cortadas.</step>
+			</steps>
+			<elements>
+				<element>Recipiente para el agua</element>
+				<element>Batidora</element>
+				<element>Colador tipo chino</element>
+			</elements>
+		</elaboration-process>
+		<origin>https://okdiario.com/</origin>
+	</cooking-recipe>
+	
+	<cooking-recipe type="Primer plato" vegan="Si">
+		<name>Filetes empanados de tofu</name>
+		<ingredients>
+			<ingredient quantity="400" measure="g" calories="75">Tofu</ingredient>
+			<ingredient quantity="200" measure="g">Pan rallado</ingredient>
+			<ingredient quantity="30" measure="ml">Aceite de oliva virgen</ingredient>
+			<ingredient quantity="80" measure="ml">Tomate frito</ingredient>
+		</ingredients>
+		<elaboration-process difficulty="Fácil" time-minutes="30">
+			<steps>
+				<step number="1">Sumergir el tofu en la mezcla de aceite y tomate.</step>
+				<step number="2">Pasar el tofu por pan rallado. Mientras encendemos el fuego y esperamos que se caliente.</step>
+				<step number="3">Freír los filetes de tofu por ambos lados, dejar unos 6 o 7 minutos por lado hasta que estén dorados.</step>
+				<step number="4">Preparar un plato con papel de cocina para que absorba el aceite sobrante.</step>
+			</steps>
+			<elements>
+			</elements>
+		</elaboration-process>
+		<origin>La enciclopedia de los sabores</origin>
+	</cooking-recipe>
+	
+	<cooking-recipe type="Segundo plato" vegan="No">
+		<name>Costillar de cordero al horno</name>
+		<ingredients>
+			<ingredient quantity="1" measure="kg" calories="281">Costillar de cordero</ingredient>
+			<ingredient quantity="200" measure="ml">Vino tinto</ingredient>
+			<ingredient quantity="4" measure="unidades">Dientes de ajo</ingredient>
+			<ingredient quantity="2" measure="unidades">Cebollas</ingredient>
+			<ingredient quantity="1" measure="unidad">Pimiento verde</ingredient>
+			<ingredient quantity="1" measure="unidad">Tomate pelado</ingredient>
+			<ingredient quantity="1/2" measure="cucharadita">Tomillo seco</ingredient>
+			<ingredient quantity="1" measure="unidad">Ramas de romero</ingredient>
+			<ingredient quantity="2" measure="unidades">Hojas de laurel</ingredient>
+			<ingredient quantity="1" measure="cucharadita">Maicena</ingredient>
+			<ingredient quantity="1" measure="cucharadita">Mostaza de Dijon</ingredient>
+			<ingredient quantity="300" measure="ml">Caldo de verduras</ingredient>
+		</ingredients>
+		<elaboration-process difficulty="Difícil" time-minutes="120">
+			<steps>
+				<step number="1">Precalentar el horno a 200 grados, en un recipiente mezclamos aceite virgen, unas cucharadas de vino tinto, un poco de romero y sal gorda. Pintamos el costillar con esta mezcla.</step>
+				<step number="2">Cortar fino las cebollas, los dientes de ajo y el pimiento verde. Añadir al fondo de una fuente junto con un chorrito de aceite de oliva, dos hojas de laurel y ramas de romero. Colocar el costillar en la fuente, añadir por encima del costillar la mitad del vino tinto, aceite de oliva, y la cucharada de mostaza. Con la brocha de silicona pintar de nuevo el costillar para esparcir estos ingredientes.</step>
+				<step number="3">En la mitad del caldo 150 ml disolvemos la maicena y lo añadimos a la fuente de horno. Programar el horno a 180 grados durante 1 hora y 45 minutos (aproximadamente). Cuando lleve 45 minutos de cocción, le damos la vuelta a la carne y añadimos los otros 75 ml de caldo. Continuamos la cocción la hora que falta y cuando quede media hora para finalizar añadir los otros 75 ml de caldo y pintamos con lo que queda en el fondo de la fuente.</step>
+				<step number="4">Si deseas añadir patatas introduce en la fuente del horno cuando falten 45 minutos de cocción, sabiendo son 1.45 minutos de tiempo total es fácil calcular.</step>
+				<step number="5">Transcurrido el tiempo de horno, sacar la carne, verter el caldo y verduras en un recipiente para batidora, triturar para dejar la salsa más fina, si hace falta añadir un poco más de caldo de verduras.</step>
+				<step number="6">Para emplatar colocar la carne en una fuente o en los platos y regar con la salsa. Para acompañar combina con verduras, patatas  o arroz basmati.</step>
+			</steps>
+			<elements>
+				<element>Horno</element>
+				<element>Batidora</element>
+			</elements>
+		</elaboration-process>
+		<origin>La enciclopedia de los sabores</origin>
+	</cooking-recipe>
+	
+	<cooking-recipe type="Primer plato" vegan="Si">
+		<name>Curry vegetariano</name>
+		<ingredients>
+			<ingredient quantity="350" measure="g">Garbanzos cocidos</ingredient>
+			<ingredient quantity="150" measure="g">Brócoli</ingredient>
+			<ingredient quantity="150" measure="g">Quinoa</ingredient>
+			<ingredient quantity="1" measure="unidad">Cebolla</ingredient>
+			<ingredient quantity="2" measure="unidades">Dientes de ajo</ingredient>
+			<ingredient quantity="1" measure="unidad">Puerro</ingredient>
+			<ingredient quantity="1" measure="unidad">Pimientos rojos dulces</ingredient>
+			<ingredient quantity="150" measure="ml">Tomate natural tamizado</ingredient>
+			<ingredient quantity="1" measure="cucharada" calories="300">Curry en polvo</ingredient>
+			<ingredient quantity="1" measure="cucharada">Jengibre rallado</ingredient>
+			<ingredient quantity="1400" measure="ml">Caldo de verduras</ingredient>
+			<ingredient quantity="1" measure="unidad">Puerro</ingredient>
+		</ingredients>
+		<elaboration-process difficulty="Medio" time-minutes="90">
+			<steps>
+				<step number="1">Si la quinoa la tienes sin cocer te cuento como prepararla, es muy fácil se parece a la cocción de arroz. Si prefieres ahorrar tiempo puedes comprar vasitos de quinoa cocida, los encuentras en cualquier supermercado. Una vez cocida la quinoa la reservamos.</step>
+				<step number="2">Corta fino la cebolla y los ajos, trocea el puerro. Lava los pimientos y corta en trocitos.</step>
+				<step number="3">Lavamos el brócoli escurrimos y lo separamos en floretes.</step>
+				<step number="4">En una sartén o cazuela antiadherente agrega aceite de oliva y sofríe primero la cebolla  y el puerro cuatro minutos, luego añade el ajo y los pimientos. Cocina dos minutos.</step>
+				<step number="5">Agregar el jengibre, el curry, la canela, el zumo de limón y el tomate natural. Mezcla y deja que se cocine a fuego lento 5 minutos.</step>
+				<step number="6">Saca los garbanzos del frasco verter sobre un colador y escurrir con agua debajo del grifo.</step>
+				<step number="7">Añade los garbanzos cocidos y  el caldo de verduras.Cocina a fuego lento durante 15 minutos. Apaga el fuego y deja reposar 5 minutos, en estos cinco minutos añade la quinoa que preparamos al principio y mezcla con el resto de ingredientes.</step>
+				<step number="8">A la hora de servir prueba y sazona con sal y pimienta y riega el curry vegetariano con zumo de limón.</step>
+			</steps>
+			<elements>
+				<element>Sartén</element>
+			</elements>
+		</elaboration-process>
+		<origin>https://okdiario.com/</origin>
+	</cooking-recipe>
+	
+	<cooking-recipe type="Primer plato" vegan="No">
+		<name>Pechugas de pollo con bechanel</name>
+		<ingredients>
+			<ingredient quantity="4" measure="unidades" calories="653">Pechugas de pollo</ingredient>
+			<ingredient quantity="60" measure="g">Harina fina de maíz</ingredient>
+			<ingredient quantity="60" measure="g">Mantequilla</ingredient>
+			<ingredient quantity="1" measure="cucharada">Cebolla picada</ingredient>
+			<ingredient quantity="350" measure="ml">Leche</ingredient>
+			<ingredient quantity="1" measure="cucharadita">Zumo de limón</ingredient>
+		</ingredients>
+		<elaboration-process difficulty="Medio" time-minutes="60">
+			<steps>
+				<step number="1">Para hacer la bechamel con el punto justo ni muy espesa ni muy líquida.</step>
+				<step number="2">Partimos un poco de cebolla como una cucharada, esto lo hacemos porque la cebolla anula el sabor de la harina y la bechamel queda más sabrosa. La picamos bien fina con el cuchillo, como es poca cantidad no cuesta apenas.</step>
+				<step number="3">Añade en la sartén antiadherente la mantequilla y sofríe la cebolla ligeramente, sobre 1 minuto a fuego lento. A continuación añade la mitad de la harina, 30 gramos y remueve, luego añade el resto y sigue removiendo hasta lograr mezclar al no añadir ‘de golpe’ la maicena más fácil evitar que salgan grumos.</step>
+				<step number="4">Agrega la mitad de la leche y no dejes de remover y poco a poco verás que espesa. Puedes usar una cuchara de madera o unas varillas. Añade el resto de la leche. Cuando la mezcla se separe de las paredes de la sartén al remover y sin dejar restos de la misma, ya puedes retirar la sartén del fuego.</step>
+				<step number="5">Verás que te queda una textura muy fina y sedosa justo lo que buscamos para añadir a la pechuga.</step>
+				<step number="6">Prepara una plancha y pinta la sartén con una brocha y un poco de aceite de oliva. Dora las pechugas de pollo unos tres minutos por lado o en el tiempo necesario para que estén a tu gusto.</step>
+				<step number="7">Coloca en un plato la pechuga y añade la bechamel por encima, gratina al horno (en la parte alta) durante 8 minutos a 180 grados.</step>
+				<step number="8">Deja reposar un poco antes de servir.</step>
+			</steps>
+			<elements>
+				<element>Sartén</element>
+				<element>Cuchara de madera</element>
+				<element>Plancha</element>
+				<element>Horno</element>
+			</elements>
+		</elaboration-process>
+		<origin>https://okdiario.com/</origin>
+	</cooking-recipe>
+	
+	<cooking-recipe type="Segundo plato" vegan="Si">
+		<name>Salchichas veganas</name>
+		<ingredients>
+			<ingredient quantity="150" measure="g">Champiñones picados</ingredient>
+			<ingredient quantity="400" measure="g">Alubias cocidas</ingredient>
+			<ingredient quantity="1" measure="unidad">Cebolla</ingredient>
+			<ingredient quantity="1" measure="unidad">Diente de ajo laminado</ingredient>
+			<ingredient quantity="2" measure="cucharadas">Salsa de tomate</ingredient>
+			<ingredient quantity="1/2" measure="unidad">Pimiento verde</ingredient>
+			<ingredient quantity="150" measure="g">Harina de maíz</ingredient>
+		</ingredients>
+		<elaboration-process difficulty="Medio" time-minutes="40">
+			<steps>
+				<step number="1">En primer lugar si usas champiñones frescos hay que lavarlos con delicadeza para que no pierdan su aroma. Sumergirlos en un recipiente con agua durante unos segundos, luego con ayuda de un cepillo de dientes los vamos limpiando uno a uno, para quitar si tiene algo de tierra. Finalmente de nuevo los volvemos a sumergir en agua pero pocos segundos. Luego escurrimos, secamos y los cortamos en trocitos. A continuación preparamos una sartén con aceite de oliva virgen, cortamos las cebollas, los ajos y el pimiento verde.</step>
+				<step number="2">Sofreímos la cebolla y los ajos durante unos minutos y añadimos el pimiento verde, salteamos y añadimos los champiñones. Tapar el recipiente y dejar que los champiñones evaporen el agua que contienen, unos 8-10 minutos.</step>
+				<step number="3">Mientras en la picadora triturar las alubias cocidas, nos quedará una pasta densa. Colocar en un recipiente y añadirle la maizena, la mezcla de especias y la salsa de tomate. Trabajar estos ingredientes hasta mezclarlos. Una vez mezclado, añadimos los champiñones y el resto de la verdura que hemos sofrito.</step>
+				<step number="4">Con una cuchara y las manos hacemos la forma de las salchichas con la masa, de un grosor medio, para que no se rompan. Se colocan en film de plástico y apretamos las salchichas para que se compacten un poco. Las dejamos reposar durante 20 minutos. Transcurrido el tiempo prepara una plancha o parrilla con un poco de aceite de oliva y asar las salchichas.</step>
+			</steps>
+			<elements>
+				<element>Cepillo de dientes</element>
+				<element>Sartén</element>
+			</elements>
+		</elaboration-process>
+		<origin>https://okdiario.com/</origin>
+	</cooking-recipe>
+	
+	<cooking-recipe type="Segundo plato" vegan="Si">
+		<name>Macarrones con verduras</name>
+		<ingredients>
+			<ingredient quantity="500" measure="g">Macarrones</ingredient>
+			<ingredient quantity="1" measure="unidad">Calabacín pequeño</ingredient>
+			<ingredient quantity="1" measure="unidad">Pimiento rojo</ingredient>
+			<ingredient quantity="10" measure="unidades">Tomates cherry</ingredient>
+			<ingredient quantity="2" measure="unidades">Ajo</ingredient>
+			<ingredient quantity="1/2" measure="cucharadita">Orégano seco</ingredient>
+			<ingredient quantity="2" measure="unidades">Cebolletas pequeñas en vinagre</ingredient>
+			<ingredient quantity="100" measure="ml">Aceite de oliva virgen extra</ingredient>
+			<ingredient quantity="1" measure="unidad">Yogur de sin azúcar</ingredient>
+			<ingredient quantity="2" measure="cucharadas">Vinagre balsámico</ingredient>
+		</ingredients>
+		<elaboration-process difficulty="Medio" time-minutes="60">
+			<steps>
+				<step number="1">Comenzamos haciendo la pasta, para ello antes miramos en el paquete el tiempo de cocción recomendado, ya que depende del grosor de los macarrones el tiempo puede cambiar. Llena una olla o cazuela con agua y añade un poco de sal y una cucharada de aceite. Cuando el agua hierva añade la pasta y usa un reloj de cocina para marcar el tiempo de cocción. De esta forma no se te pasará (suelen tardar entre 12-16 minutos).</step>
+				<step number="2">Mientras tanto pelamos los ajos y los cortamos en trozos grandes, para evitar que se quemen al sofreír. Corta también en trocitos el calabacín y el pimiento rojo y reserva. Lava y corta por la mitad los tomates cherry y reserva.</step>
+				<step number="3">Prepara una sartén con aceite de oliva, sofríe primer los ajos cuando estén dorados los retiras, a continuación el calabacín y los tomates cherry.</step>
+				<step number="4">Saltea estas verduras durante 4 minutos aproximadamente o hasta que las notes tiernas. Añade las cebolletas pequeñas en vinagre cortadas en trozos. Apaga el fuego y deja reposar unos minutos.</step>
+				<step number="5">Una vez tengamos lista la pasta, escurrimos. En una ensaladera o fuente añade la pasta escurrida y caliente, a continuación el sofrito, mezcla bien.</step>
+				<step number="6">Combina un yogur de soja natural sin azúcar (si no eres vegano puedes usar un yogur griego sin azúcar) con el vinagre. Ajusta el punto de sal y pimienta y sazona la pasta con esta salsa.</step>
+			</steps>
+			<elements>
+				<element>Olla</element>
+				<element>Sartén</element>
+			</elements>
+		</elaboration-process>
+		<origin>https://okdiario.com/</origin>
+	</cooking-recipe>
+	
+	<cooking-recipe type="Postre" vegan="No">
+		<name>Magdalenas integrales sin azúcar</name>
+		<ingredients>
+			<ingredient quantity="350" measure="g">Harina integral</ingredient>
+			<ingredient quantity="1" measure="unidad">Sobre de levadura</ingredient>
+			<ingredient quantity="4" measure="unidades">Huevos</ingredient>
+			<ingredient quantity="120" measure="ml">Leche</ingredient>
+			<ingredient quantity="250" measure="ml">Aceite de girasol</ingredient>
+			<ingredient quantity="125" measure="g">Edulcorante vegetal Stevia</ingredient>
+			<ingredient quantity="1" measure="cucharadita">Aroma de vainilla</ingredient>
+		</ingredients>
+		<elaboration-process difficulty="Difícil" time-minutes="90">
+			<steps>
+				<step number="1">Comenzamos tamizando la harina con ayuda de un colador al igual que la levadura, las reservamos en un recipiente.</step>
+				<step number="2">Rallamos la naranja y hacemos el zumo, también lo reservamos.</step>
+				<step number="3">Separamos las claras de las yemas, y batimos las claras a punto de  nieve, te cuento trucos para hacer muy fácil.</step>
+				<step number="4">Las yemas las batimos aparte y añadimos el zumo de naranja, la ralladura, la pizca de canela y el aroma de vainilla. Lo mezclamos todo.</step>
+				<step number="5">Añadimos la mezcla anterior la leche, el aceite y  el edulcorante vegetal Stevia. ¿Por qué es mejor usar stevia?, pues porque otros edulcorantes no soportan bien las altas temperaturas y pierden su poder endulzante, la Stevia lo conserva, batimos durante unos segundos.</step>
+				<step number="6">Ahora combinamos los ingredientes secos del punto 1 (la harina y levadura) con el resto de ingredientes húmedos, añadimos un poco de sal y batimos hasta lograr una masa homogénea.</step>
+				<step number="7">Tapar con un paño y dejar reposar a temperatura ambiente durante 30 minutos en un lugar libre de corrientes de aire. Por ejemplo en el interior del microondas. Durante este reposo la levadura comenzará su actividad para lograr que la masa crezca.</step>
+				<step number="8">Unos diez minutos antes de finalizar el reposo, precalentamos el horno a 180 grados. Preparar un molde de magdalenas con sus papelitos o tulipas en el interior de cada hueco del molde. De esta forma no se nos pegarán al hornear.</step>
+				<step number="9">Rellenar los moldes de magdalenas con la masa, y hornear de  12 a 15 minutos a 180 grados o hasta que las veas, doradas. Hay hornos más potentes y con 10 minutos basta. Una vez estén a tu gusto verifica que estén bien cocidas introduciendo un palillo en el centro, nos tiene que salir limpio. Si no es así, volver a darle 5 minutos de horno a menos temperatura 160 grados.</step>
+				<step number="10">Dejar que se enfríen y luego ya se pueden servir guardar, (se congelan muy bien, así que puedes hacer más cantidad y luego ir sacándolas durante varias semanas). Son perfectas para el desayuno o la merienda.</step>
+			</steps>
+			<elements>
+				<element>Colador</element>
+				<element>Rallador</element>
+				<element>Microondas</element>
+				<element>Horno</element>
+				<element>Moldes de magdalenas</element>
+			</elements>
+		</elaboration-process>
+		<origin>https://okdiario.com/</origin>
+	</cooking-recipe>
+</cooking-recipes>

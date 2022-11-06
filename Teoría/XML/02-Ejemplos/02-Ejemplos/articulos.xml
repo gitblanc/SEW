@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE articles SYSTEM "articulos.dtd">
+<articles>
+	<article year="2017" start-page="301" end-page="313">
+		<title>Midgar: Detection of people through computer vision in the Internet of Things scenarios to improve the security in Smart Cities, Smart Towns, and Smart Homes.</title>
+		<authors>
+			<author email="cristian@email.es">Cristian González García</author>
+			<author email="daniel@email.es">Daniel Meana-Llorián</author>
+			<author email="cristina@email.es">B. Cristina Pelayo García-Bustelo</author>
+			<author email="juanmanuel@email.es">Juan Manuel Cueva Lovelle</author>
+			<author email="nestor@email.es">Néstor García-Fernández</author>
+		</authors>
+		<summary>
+			Resumen del artículo "Midgar: Detection of people through computer vision in the Internet of Things scenarios to improve the security in Smart Cities, Smart Towns, and Smart Homes.".
+		</summary>
+		<keywords>
+			<keyword>People</keyword>
+			<keyword>Internet</keyword>
+			<keyword>Things</keyword>
+		</keywords>
+		<journal>Future Generation Comp. Syst.</journal>
+		<volume>76</volume>
+	</article>
+	
+	<article year="2016" start-page="299" end-page="337">
+		<title>Combining the Continuous Integration Practice and the Model-Driven Engineering Approach.</title>
+		<authors>
+			<author email="vicente@email.es">Vicente García-Díaz</author>
+			<author email="jordan@email.es">Jordán Pascual Espada</author>
+			<author email="edward@email.es">Edward Rolando Núñez-Valdéz</author>
+			<author email="cristina@email.es">B. Cristina Pelayo García-Bustelo</author>
+			<author email="juanmanuel@email.es">Juan Manuel Cueva Lovelle</author>
+		</authors>
+		<summary>
+			Resumen del artículo "Combining the Continuous Integration Practice and the Model-Driven Engineering Approach.".
+		</summary>
+		<keywords>
+			<keyword>Integration</keyword>
+			<keyword>Practice</keyword>
+			<keyword>Model-Driven</keyword>
+		</keywords>
+		<journal>Computing and Informatics</journal>
+		<volume>35</volume>
+	</article>
+	
+	<article year="2013" start-page="51" end-page="55">
+		<title>Open Data as a key factor for developing expert systems: a perspective from Spain.</title>
+		<authors>
+			<author email="carlos@email.es">Carlos Enrique Montenegro Marín</author>
+			<author email="mauricio@email.es">Giovanny Mauricio Tarazona Bermúdez</author>
+			<author email="luz@email.es">Luz Andrea Rodríguez Rojas</author>
+			<author email="juanmanuel@email.es">Juan Manuel Cueva Lovelle</author>
+		</authors>
+		<summary>
+			Resumen del artículo "Open Data as a key factor for developing expert systems: a perspective from Spain.".
+		</summary>
+		<keywords>
+			<keyword>Open</keyword>
+			<keyword>Data</keyword>
+			<keyword>Spain</keyword>
+		</keywords>
+		<journal>IJIMAI</journal>
+		<volume>2</volume>
+	</article>
+	
+	<article year="2017" start-page="275" end-page="284">
+		<title>IoFClime: The fuzzy logic and the Internet of Things to control indoor temperature regarding the outdoor ambient conditions.</title>
+		<authors>
+			<author email="daniel@email.es">Daniel Meana-Llorián</author>
+			<author email="cristian@email.es">Cristian González García</author>
+			<author email="cristina@email.es">B. Cristina Pelayo García-Bustelo</author>
+			<author email="juanmanuel@email.es">Juan Manuel Cueva Lovelle</author>
+			<author email="nestor@email.es">Néstor García-Fernández</author>
+		</authors>
+		<summary>
+			Resumen del artículo "IoFClime: The fuzzy logic and the Internet of Things to control indoor temperature regarding the outdoor ambient conditions.".
+		</summary>
+		<keywords>
+			<keyword>Internet</keyword>
+			<keyword>Smart</keyword>
+			<keyword>Cities</keyword>
+			<keyword>Towns</keyword>
+			<keyword>Homes</keyword>
+		</keywords>
+		<journal>Future Generation Comp. Syst.</journal>
+		<volume>76</volume>
+	</article>
+	
+	<article year="2011" start-page="789" end-page="815">
+		<title>Towards the systematic measurement of ATL transformation models.</title>
+		<authors>
+			<author email="jose@email.es">José Barranquero Tolosa</author>
+			<author email="oscar@email.es">Oscar Sanjuán Martínez</author>
+			<author email="vicente@email.es">Vicente García-Díaz</author>
+			<author email="cristina@email.es">B. Cristina Pelayo García-Bustelo</author>
+			<author email="juanmanuel@email.es">Juan Manuel Cueva Lovelle</author>
+		</authors>
+		<summary>
+			Resumen del artículo "Towards the systematic measurement of ATL transformation models.".
+		</summary>
+		<keywords>
+			<keyword>ATL</keyword>
+			<keyword>Transformation</keyword>
+			<keyword>Models</keyword>
+		</keywords>
+		<journal>Softw., Pract. Exper.</journal>
+		<volume>41</volume>
+	</article>
+	
+	<article year="2001" start-page="110" end-page="131">
+		<title>LPS: A Language Prototyping System Using Modular Monadic Semantics.</title>
+		<authors>
+			<author email="labra@email.es">José Emilio Labra Gayo</author>
+			<author email="luengo@email.es">María Cándida Luengo Díez</author>
+			<author email="juanmanuel@email.es">Juan Manuel Cueva Lovelle</author>
+			<author email="augustin@email.es">Agustín Cernuda del Río</author>
+		</authors>
+		<summary>
+			Resumen del artículo "LPS: A Language Prototyping System Using Modular Monadic Semantics.".
+		</summary>
+		<keywords>
+			<keyword>LPS</keyword>
+			<keyword>Language</keyword>
+			<keyword>Prototyping</keyword>
+			<keyword>System</keyword>
+		</keywords>
+		<journal>Electr. Notes Theor. Comput. Sci.</journal>
+		<volume>44</volume>
+	</article>
+	
+	<article year="2009" start-page="26" end-page="32">
+		<title>Developing a Business Application with BPM and MDE.</title>
+		<authors>
+			<author email="hector@email.es">Héctor Fernández-Fernández</author>
+			<author email="elias@email.es">Elías Palacios-González</author>
+			<author email="vicente@email.es">Vicente García-Díaz</author>
+			<author email="cristina@email.es">B. Cristina Pelayo García-Bustelo</author>
+			<author email="oscar@email.es">Oscar Sanjuán Martínez</author>
+			<author email="juanmanuel@email.es">Juan Manuel Cueva Lovelle</author>
+		</authors>
+		<summary>
+			Resumen del artículo "Developing a Business Application with BPM and MDE.".
+		</summary>
+		<keywords>
+			<keyword>Business</keyword>
+			<keyword>Application</keyword>
+			<keyword>BPM</keyword>
+			<keyword>MDE</keyword>
+		</keywords>
+		<journal>IJIMAI</journal>
+		<volume>1</volume>
+	</article>
+	
+	<article year="2007" start-page="864" end-page="870">
+		<title>Automatic Device Driver Development through an Intelligent MDE Approach.</title>
+		<authors>
+			<author email="gloria@email.es">Gloria García Fernández</author>
+			<author email="daniel@email.es">Daniel Zapico Palacio</author>
+			<author email="ruben@email.es">Rubén González Crespo</author>
+			<author email="jose@email.es">José Barranquero Tolosa</author>
+			<author email="juanmanuel@email.es">Juan Manuel Cueva Lovelle</author>
+		</authors>
+		<summary>
+			Resumen del artículo "Automatic Device Driver Development through an Intelligent MDE Approach.".
+		</summary>
+		<keywords>
+			<keyword>Automatic</keyword>
+			<keyword>Device</keyword>
+			<keyword>Driver</keyword>
+			<keyword>Development</keyword>
+			<keyword>MDE</keyword>
+		</keywords>
+		<journal>IC-AI</journal>
+		<volume>213</volume>
+	</article>
+	
+	<article year="2008" start-page="149" end-page="157">
+		<title>Proposal of a Tool of Support to the Evaluation of User in Educative Web Sites.</title>
+		<authors>
+			<author email="maria@email.es">Maria Elena Alva</author>
+			<author email="anabelen@email.es">Ana Belén Martínez Prieto</author>
+			<author email="labra@email.es">José Emilio Labra Gayo</author>
+			<author email="carmen@email.es">María del Carmen Suárez Torrente</author>
+			<author email="juanmanuel@email.es">Juan Manuel Cueva Lovelle</author>
+			<author email="sagastegui@email.es">T. Hernán Sagástegui Ch.</author>
+		</authors>
+		<summary>
+			Resumen del artículo "Proposal of a Tool of Support to the Evaluation of User in Educative Web Sites.".
+		</summary>
+		<keywords>
+			<keyword>Tool</keyword>
+			<keyword>Support</keyword>
+			<keyword>Evaluation</keyword>
+			<keyword>User</keyword>
+			<keyword>Educative</keyword>
+			<keyword>Web</keyword>
+			<keyword>Sites</keyword>
+		</keywords>
+		<journal>WSKS</journal>
+		<volume>38</volume>
+	</article>
+	
+	<article year="2015" start-page="1" end-page="69">
+		<title>Towards a Standard-Based Domain-Specific Platform to Describe Points of Interest.</title>
+		<authors>
+			<author email="vicente@email.es">Vicente García-Díaz</author>
+			<author email="jordan@email.es">Jordán Pascual Espada</author>
+			<author email="janis@email.es">Janis Osis</author>
+			<author email="cristina@email.es">B. Cristina Pelayo García-Bustelo</author>
+			<author email="juanmanuel@email.es">Juan Manuel Cueva Lovelle</author>
+		</authors>
+		<summary>
+			Resumen del artículo "Towards a Standard-Based Domain-Specific Platform to Describe Points of Interest.".
+		</summary>
+		<keywords>
+			<keyword>Domain-Specific</keyword>
+			<keyword>Points</keyword>
+			<keyword>Interest</keyword>
+		</keywords>
+		<journal>Appl. Comput. Syst.</journal>
+		<volume>17</volume>
+	</article>
+</articles>

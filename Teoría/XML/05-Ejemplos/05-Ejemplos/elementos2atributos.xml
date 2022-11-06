@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="elementos2atributos.xsl"?>
+<poema>
+   <verso>verso1</verso>
+   <verso>verso2</verso>
+   <verso>verso3</verso>
+   <verso>verso4</verso>
+   <verso>verso5</verso>
+</poema>

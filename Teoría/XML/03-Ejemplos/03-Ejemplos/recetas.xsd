@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.uniovi.es"
+	xmlns="http://www.uniovi.es"
+	elementFormDefault="qualified">
+	
+	<xs:element name="cooking-recipes">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="cooking-recipe"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="cooking-recipe">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="name" minOccurs="1" maxOccurs="1" type="xs:string"/>
+				<xs:element minOccurs="1" maxOccurs="1" ref="ingredients"/>
+				<xs:element minOccurs="1" maxOccurs="1" ref="elaboration-process"/>
+				<xs:element name="origin" minOccurs="1" maxOccurs="1" type="xs:string"/>
+			</xs:sequence>
+			<xs:attribute name="type" type="dish-type" use="required"/>
+			<xs:attribute name="vegan" type="vegan-type" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:simpleType name="dish-type">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Entrante"/>
+			<xs:enumeration value="Primer plato"/>
+			<xs:enumeration value="Segundo plato"/>
+			<xs:enumeration value="Postre"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="vegan-type">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Si"/>
+			<xs:enumeration value="No"/>
+		</xs:restriction>
+	</xs:simpleType>		
+	
+	<xs:element name="ingredients">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="ingredient"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="ingredient">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="quantity" type="quantity-type" use="required"/>
+					<xs:attribute name="measure" type="xs:string" use="required"/>
+					<xs:attribute name="calories" type="xs:integer" use="optional"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:simpleType name="quantity-type">
+		<xs:union memberTypes="xs:integer fraction-type" />
+	</xs:simpleType>
+	
+	<xs:simpleType name="fraction-type">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="-?\d+/-?\d+"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:element name="elaboration-process">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="1" maxOccurs="unbounded" ref="steps"/>
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="elements"/>
+			</xs:sequence>
+			<xs:attribute name="difficulty" type="difficulty-process" use="required"/>
+			<xs:attribute name="time-minutes" type="xs:integer" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:simpleType name="difficulty-process">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Fácil"/>
+			<xs:enumeration value="Medio"/>
+			<xs:enumeration value="Difícil"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:element name="steps">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="1" maxOccurs="unbounded" ref="step"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="step">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="number" type="xs:integer" use="required"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="elements">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="element" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+</xs:schema>

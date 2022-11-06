@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.uniovi.es"
+xmlns="http://www.uniovi.es"
+elementFormDefault="qualified">
+
+<xs:element name="pizzas">
+<xs:complexType>
+<xs:sequence>
+<xs:element maxOccurs="unbounded" minOccurs="0" ref="pizza"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="pizza">
+<xs:complexType>
+<xs:sequence>
+<xs:element maxOccurs="5" minOccurs="0" ref="ingrediente"/>
+</xs:sequence>
+<xs:attribute name="nombre" use="required" type="xs:ID"/>
+<xs:attribute name="precio" use="required" type="xs:integer"/>
+</xs:complexType>
+</xs:element>
+<xs:element name="ingrediente">
+<xs:complexType>
+<xs:simpleContent>
+<xs:extension base="xs:string">
+<xs:attribute name="nombre" use="required" type="xs:string"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+</xs:schema>

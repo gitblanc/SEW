@@ -1,0 +1,23 @@
+<!ELEMENT cooking-recipes (cooking-recipe+)>
+<!ELEMENT cooking-recipe (name, ingredients, elaboration-process, origin)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT ingredients (ingredient+)>
+<!ELEMENT ingredient (#PCDATA)>
+<!ELEMENT elaboration-process (steps, elements)>
+<!ELEMENT steps (step+)>
+<!ELEMENT step (#PCDATA)>
+<!ELEMENT elements (element*)>
+<!ELEMENT element (#PCDATA)>
+<!ELEMENT origin (#PCDATA)>
+<!ATTLIST cooking-recipe 
+	type CDATA #REQUIRED
+	vegan CDATA #REQUIRED>
+<!ATTLIST ingredient 
+	quantity CDATA #REQUIRED
+	measure CDATA #REQUIRED
+	calories CDATA #IMPLIED>
+<!ATTLIST elaboration-process
+	difficulty CDATA #REQUIRED
+	time-minutes CDATA #REQUIRED>
+<!ATTLIST step
+	number CDATA #REQUIRED>

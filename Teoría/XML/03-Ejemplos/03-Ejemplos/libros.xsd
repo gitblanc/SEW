@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.uniovi.es"
+xmlns="http://www.uniovi.es"
+elementFormDefault="qualified">
+<xs:element name="libros">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="libro" maxOccurs="unbounded" minOccurs="1">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="titulo" type="xs:string"/>
+<xs:element name="autor" maxOccurs="unbounded" minOccurs="1" type="xs:string"/>
+<xs:element name="any" type="xs:gYear"/>
+<xs:element name="precio">
+<xs:complexType>
+<xs:simpleContent>
+<xs:extension base="xs:decimal">
+<xs:attribute name="moneda" type="xs:string" use="required"/>
+</xs:extension>
+</xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<xs:element name="editorial" type="xs:string"/>
+<xs:element name="clasificacion" type="xs:string"/>
+<xs:element name="idioma" type="xs:string"/>
+</xs:sequence>
+<xs:attribute name="isbn" type="xs:ID" use="required"/>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:schema>

@@ -1,4 +1,3 @@
-<!ELEMENT redSocial (persona+)>
 <!ELEMENT persona (datos,(persona,persona,persona)?)>
 <!ELEMENT datos (nombre, apellidos,fecha,lugar_nacimiento,coordenadas_nacimiento,lugar_residencia,coordenadas_residencia,fotografia+,video*, comentarios)>
 <!ELEMENT nombre (#PCDATA)>
