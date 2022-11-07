@@ -1,14 +1,4 @@
-/**
-  Eduardo Blanco - UO285176
-  Tipo de letra
-  Colores
-  Estilos
-  Tablas
-
-  NADA DE POSICIONAMIENTO
-
-  poner el tipo de letra en body, para que así lo hereden todos los elementos
-**/
+/**Eduardo Blanco Bielsa - UO285176**/
 
 /*Especificidad 001*/
 body{
@@ -18,9 +8,9 @@ body{
 }
 
 /*Especificidad 001*/
-h1,h2,h3{
+h1{
   background-color: black;
-  color: greenyellow;
+  color: white;
 }
 
 /*Especificidad 001*/
@@ -28,24 +18,3 @@ a {
   background-color: black;
   color: greenyellow;
 }
-
-/**Tabla aportaciones**/
-/*Especificidad 001*/
-caption {
-  color: white;
-  background-color: black;
-}
-
-/*Especificidad 001*/
-tr,td, th{
-  border: 0.1em outset greenyellow;
-  padding: 0.05em;
-}
-
-/*Especificidad 001*/
-fieldset{
-  border-color: greenyellow;
-}
-
-
-

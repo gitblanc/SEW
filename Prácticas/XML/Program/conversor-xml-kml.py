@@ -1,6 +1,7 @@
 import re
 import simplekml
 
+
 def leerXML(fileXML):
     fileXMLOpened = open(fileXML)
     lines = fileXMLOpened.readlines()
@@ -9,8 +10,8 @@ def leerXML(fileXML):
     try:
         i = 0
         for linea in lines:
-            if ("coordenadas" in linea):
-                longitud, latitud, altitud = ObtenerCoordenada(linea)
+            if "coordenadas" in linea:
+                longitud, latitud, altitud = obtenerCoordenada(linea)
                 nombre = "coordenada" + i.__str__()
                 kml.newpoint(name=nombre, coords=[(latitud, longitud)])
                 i += 1
@@ -19,8 +20,9 @@ def leerXML(fileXML):
         fileXMLOpened.close()
         print("SUCCESS")
 
-def ObtenerCoordenada(linea):
-    if ("coordenadas_nacimiento" in linea):
+
+def obtenerCoordenada(linea):
+    if "coordenadas_nacimiento" in linea:
         linea = re.sub("\t", "", linea)
         linea = re.sub("<coordenadas_nacimiento>", "", linea)
         linea = re.sub("</coordenadas_nacimiento>", "", linea)

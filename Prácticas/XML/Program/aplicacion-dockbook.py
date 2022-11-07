@@ -49,7 +49,7 @@ def listAllProcessors(proc):
             name = proc[i].split("@")[0]
             freq = proc[i].split("@")[1]
             price = proc[i].split("@")[2]
-            print(Fore.LIGHTGREEN_EX + (i+1).__str__() + " -> " + name + " - " + freq + " - " + price)
+            print(Fore.LIGHTGREEN_EX + (i + 1).__str__() + " -> " + name + " - " + freq + " - " + price)
         print()
 
 
@@ -80,22 +80,23 @@ def listByModel():
             result.append(processors[i])
     listAllProcessors(result)
 
+
 def banner():
-    print(Fore.LIGHTMAGENTA_EX+
-        " .S_SSSs      sSSs_sSSs      sSSs_sSSs     .S    S.\n"
-        ".SS~SSSSS    d%%SP~YS%%b    d%%SP~YS%%b   .SS    SS.\n"
-        "S%S   SSSS  d%S'     `S%b  d%S'     `S%b  S%S    S&S\n"
-        "S%S    S%S  S%S       S%S  S%S       S%S  S%S    d*S\n"
-        "S%S SSSS%P  S&S       S&S  S&S       S&S  S&S   .S*S\n"
-        "S&S  SSSY   S&S       S&S  S&S       S&S  S&S_sdSSS\n"
-        "S&S    S&S  S&S       S&S  S&S       S&S  S&S~YSSY%b\n"
-        "S&S    S&S  S&S       S&S  S&S       S&S  S&S    `S%\n"
-        "S*S    S&S  S*b       d*S  S*b       d*S  S*S     S%\n"
-        "S*S    S*S  S*S.     .S*S  S*S.     .S*S  S*S     S&\n"
-        "S*S SSSSP    SSSbs_sdSSS    SSSbs_sdSSS   S*S     S&\n"
-        "S*S  SSY      YSSP~YSSY      YSSP~YSSY    S*S     SS\n"
-        "SP                                        SP\n"
-        "l                                         Y\n")
+    print(Fore.LIGHTMAGENTA_EX +
+          " .S_SSSs      sSSs_sSSs      sSSs_sSSs     .S    S.\n"
+          ".SS~SSSSS    d%%SP~YS%%b    d%%SP~YS%%b   .SS    SS.\n"
+          "S%S   SSSS  d%S'     `S%b  d%S'     `S%b  S%S    S&S\n"
+          "S%S    S%S  S%S       S%S  S%S       S%S  S%S    d*S\n"
+          "S%S SSSS%P  S&S       S&S  S&S       S&S  S&S   .S*S\n"
+          "S&S  SSSY   S&S       S&S  S&S       S&S  S&S_sdSSS\n"
+          "S&S    S&S  S&S       S&S  S&S       S&S  S&S~YSSY%b\n"
+          "S&S    S&S  S&S       S&S  S&S       S&S  S&S    `S%\n"
+          "S*S    S&S  S*b       d*S  S*b       d*S  S*S     S%\n"
+          "S*S    S*S  S*S.     .S*S  S*S.     .S*S  S*S     S&\n"
+          "S*S SSSSP    SSSbs_sdSSS    SSSbs_sdSSS   S*S     S&\n"
+          "S*S  SSY      YSSP~YSSY      YSSP~YSSY    S*S     SS\n"
+          "SP                                        SP\n"
+          "l                                         Y\n")
     print(Fore.LIGHTMAGENTA_EX + "Coded by Eduardo Blanco Bielsa - @gitblanc\n")
 
 
@@ -106,7 +107,7 @@ def menu():
     print(Fore.LIGHTBLUE_EX + " 2. List processors from low-high price")
     print(Fore.LIGHTBLUE_EX + " 3. List processors from high-low price")
     print(Fore.LIGHTBLUE_EX + " 4. List processors by model\n")
-    print(Fore.LIGHTRED_EX+ " 0. Exit")
+    print(Fore.LIGHTRED_EX + " 0. Exit")
     print(Fore.LIGHTMAGENTA_EX + "---------------------------------------\n")
 
 

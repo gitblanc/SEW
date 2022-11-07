@@ -6,7 +6,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<datos>
 		<nombre>Eduardo</nombre>
 		<apellidos>Blanco Bielsa</apellidos>
-		<fecha>09/03/2002</fecha>
+		<fecha>2002-03-09</fecha>
 		<lugar_nacimiento>Barcelona</lugar_nacimiento>
 		<coordenadas_nacimiento>41.52988683790763, 2.0653854852963143,0</coordenadas_nacimiento>
 		<lugar_residencia>Barcelona</lugar_residencia>
@@ -21,7 +21,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<datos>
 			<nombre>Maria</nombre>
 			<apellidos>Estrada Muniz</apellidos>
-			<fecha>15/06/2002</fecha>
+			<fecha>2002-06-15</fecha>
 			<lugar_nacimiento>Aviles</lugar_nacimiento>
 			<coordenadas_nacimiento>43.53648741128185, -5.919837069722076, 0</coordenadas_nacimiento>
 			<lugar_residencia>Aviles</lugar_residencia>
@@ -35,7 +35,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 			<datos>
 				<nombre>Killian</nombre>
 				<apellidos>Perez Gonzalez</apellidos>
-				<fecha>17/06/1992</fecha>
+				<fecha>1992-06-17</fecha>
 				<lugar_nacimiento>Grado</lugar_nacimiento>
 				<coordenadas_nacimiento>43.53648741128185, -5.919837069722076, 0</coordenadas_nacimiento>
 				<lugar_residencia>Grado</lugar_residencia>
@@ -49,7 +49,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 			<datos>
 				<nombre>Paco</nombre>
 				<apellidos>Perez Gonzalez</apellidos>
-				<fecha>17/06/1992</fecha>
+				<fecha>1992-06-17</fecha>
 				<lugar_nacimiento>Salinas</lugar_nacimiento>
 				<coordenadas_nacimiento>43.56322977597883, -5.97454710877856, 0</coordenadas_nacimiento>
 				<lugar_residencia>Salinas</lugar_residencia>
@@ -64,7 +64,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 			<datos>
 				<nombre>Carlos</nombre>
 				<apellidos>Perez Gonzalez</apellidos>
-				<fecha>17/06/1993</fecha>
+				<fecha>1993-06-17</fecha>
 				<lugar_nacimiento>Arriondas</lugar_nacimiento>
 				<coordenadas_nacimiento>43.35821014744797, -5.198427950070287, 0</coordenadas_nacimiento>
 				<lugar_residencia>Arriondas</lugar_residencia>
@@ -79,7 +79,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<datos>
 			<nombre>Chen Xin</nombre>
 			<apellidos>Pan Wang</apellidos>
-			<fecha>15/06/2001</fecha>
+			<fecha>2001-06-15</fecha>
 			<lugar_nacimiento>Mieres</lugar_nacimiento>
 			<coordenadas_nacimiento>43.24246527762923, -5.7684302174494775, 0</coordenadas_nacimiento>
 			<lugar_residencia>Mieres</lugar_residencia>
@@ -92,7 +92,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 			<datos>
 				<nombre>Luis</nombre>
 				<apellidos>Perez Gonzalez</apellidos>
-				<fecha>17/06/1998</fecha>
+				<fecha>1998-06-17</fecha>
 				<lugar_nacimiento>Belmonte</lugar_nacimiento>
 				<coordenadas_nacimiento>43.28045387817449, -6.2366463656538125, 0</coordenadas_nacimiento>
 				<lugar_residencia>Belmonte</lugar_residencia>
@@ -106,7 +106,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 			<datos>
 				<nombre>Marcos</nombre>
 				<apellidos>Perez Perez</apellidos>
-				<fecha>17/06/1989</fecha>
+				<fecha>1989-06-17</fecha>
 				<lugar_nacimiento>Proaza</lugar_nacimiento>
 				<coordenadas_nacimiento>43.249879548784264, -5.994904332613531, 0</coordenadas_nacimiento>
 				<lugar_residencia>Proaza</lugar_residencia>
@@ -120,7 +120,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 			<datos>
 				<nombre>Carla</nombre>
 				<apellidos>Perez Gonzalez</apellidos>
-				<fecha>17/06/2000</fecha>
+				<fecha>2000-06-17</fecha>
 				<lugar_nacimiento>Pola de Siero</lugar_nacimiento>
 				<coordenadas_nacimiento>43.399824356920135, -5.684456669130222, 0</coordenadas_nacimiento>
 				<lugar_residencia>Pola de Siero</lugar_residencia>
@@ -135,7 +135,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<datos>
 			<nombre>Alejandro</nombre>
 			<apellidos>Coalla Martinez</apellidos>
-			<fecha>17/06/2003</fecha>
+			<fecha>2003-06-17</fecha>
 			<lugar_nacimiento>Cadavedo</lugar_nacimiento>
 			<coordenadas_nacimiento>43.55032115030053, -6.381691585477982, 0</coordenadas_nacimiento>
 			<lugar_residencia>Cadavedo</lugar_residencia>
@@ -148,7 +148,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 			<datos>
 				<nombre>Luis</nombre>
 				<apellidos>Perez Gonzalez</apellidos>
-				<fecha>17/06/1998</fecha>
+				<fecha>1998-08-19</fecha>
 				<lugar_nacimiento>Ribadesella</lugar_nacimiento>
 				<coordenadas_nacimiento>43.457112703914234, -5.062289015673917, 0</coordenadas_nacimiento>
 				<lugar_residencia>Ribadesella</lugar_residencia>
@@ -162,7 +162,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 			<datos>
 				<nombre>Marcos</nombre>
 				<apellidos>Perez Gonzalez</apellidos>					
-				<fecha>17/06/1989</fecha>
+				<fecha>1992-10-17</fecha>
 				<lugar_nacimiento>Benia</lugar_nacimiento>
 				<coordenadas_nacimiento>43.332302447494754, -4.950324284581576, 0</coordenadas_nacimiento>
 				<lugar_residencia>Benia</lugar_residencia>
@@ -176,7 +176,7 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 			<datos>
 				<nombre>Lorena</nombre>
 				<apellidos>Perez Vidal</apellidos>
-				<fecha>17/06/2000</fecha>
+				<fecha>1991-06-03</fecha>
 				<lugar_nacimiento>Laviana</lugar_nacimiento>
 				<coordenadas_nacimiento>43.237830899898434, -5.559768673141023, 0</coordenadas_nacimiento>
 				<lugar_residencia>Laviana</lugar_residencia>

@@ -47,7 +47,7 @@ def escribirLinea(linea, cont):
         linea = re.sub("<nombre>", "", linea)
         linea = re.sub("</nombre>", "", linea)
         enlace = linea.split("\n")
-        escribirLineaAHTML("\t\t<h2>Persona" + cont.__str__() + "</h2>\n\t\t\t\n\t\t\t\t<p>Nombre: " + enlace[0] + " </p>\n")
+        escribirLineaAHTML("\t\t<h2>Persona " + cont.__str__() + "</h2>\n\t\t\t\n\t\t\t\t<p>Nombre: " + enlace[0] + " </p>\n")
     elif("apellidos" in linea):
         linea = re.sub("\t", "", linea)
         linea = re.sub("<apellidos>", "", linea)
