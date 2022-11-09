@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Ejercicio 3</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Eduardo Blanco Bielsa">
+    <meta name="DESCRIPTION" content="Calculadora básica">
+    <link rel="stylesheet" type="text/css" href="CalculadoraBasica.css"/>
+    <script src="CalculadoraBasica.js"></script>
+</head>
+    <body>
+        <header>
+            <h1>Calculadora básica</h1>
+        </header>
+        <form>
+            <textarea id="pantalla" title= "res" disabled></textarea>
+            <button type="button" onClick="calculadora.mrc()">MRC</button>
+            <button type="button" onClick="calculadora.mMenos()">M-</button>
+            <button type="button" onClick="calculadora.mMas()">M+</button>
+            <button type="button" onClick="calculadora.multiplicacion()">*</button>
+            <button type="button" onClick="calculadora.digitos('7')">7</button>
+            <button type="button" onClick="calculadora.digitos('8')">8</button>
+            <button type="button" onClick="calculadora.digitos('9')">9</button>
+            <button type="button" onClick="calculadora.division()">/</button>
+            <button type="button" onClick="calculadora.digitos('4')">4</button>
+            <button type="button" onClick="calculadora.digitos('5')">5</button>
+            <button type="button" onClick="calculadora.digitos('6')">6</button>
+            <button type="button" onClick="calculadora.resta()">-</button>
+            <button type="button" onClick="calculadora.digitos('1')">1</button>
+            <button type="button" onClick="calculadora.digitos('2')">2</button>
+            <button type="button" onClick="calculadora.digitos('3')">3</button>
+            <button type="button" onClick="calculadora.suma()">+</button>
+            <button type="button" onClick="calculadora.digitos('0')">0</button>
+            <button type="button" onClick="calculadora.punto()">.</button>
+            <button type="submit" onClick="calculadora.borrar()">C</button>
+            <button type="button" onClick="calculadora.igual()">=</button>
+        </form>
+    </body>
+</html>

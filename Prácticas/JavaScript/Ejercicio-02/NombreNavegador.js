@@ -1,0 +1,1 @@
+document.write("<h2>Nombre: ", info.nombre, "</h2>")

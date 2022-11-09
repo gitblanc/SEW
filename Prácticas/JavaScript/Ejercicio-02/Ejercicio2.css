@@ -17,18 +17,6 @@ h2{
 }
 
 /*Especificidad 001*/
-h3{
-    padding-left: 1.1em;
-    padding-right: 1.1em;
-}
-
-/*Especificidad 001*/
-h4{
-    padding-left: 1.3em;
-    padding-right: 1.3em;
-}
-
-/*Especificidad 001*/
 p{
     padding-left: 1.5em;
     padding-right: 1.5em;

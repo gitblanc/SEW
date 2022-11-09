@@ -1,0 +1,6 @@
+document.write("<h2>Más datos del navegador</h2>")
+document.write("<p>Versión: ",info.version, "</p>")
+document.write("<p>Plataforma: ",info.plataforma, "</p>")
+document.write("<p>Vendedor: ",info.vendedor, "</p>")
+document.write("<p>Agente: ",info.agente, "</p>")
+document.write("<p>Java activo: ",info.java, "</p>")
