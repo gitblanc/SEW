@@ -1,0 +1,21 @@
+- hay un pdf en el campus dividido en secciones (del 1 al 7 y del 8 al 14)
+- dos entregas (23 noviembre) (7 de diciembre)
+- usaremos un servidor xampp para las practicas (mirar la carpeta C://xampp/htdocs)
+- para cada fichero que queramos probar -> http://localhost/ejerx/ejerx.html
+- ACORDARSE DE VALIDAR "TODO"
+
+- NO USAR TABLAS EN LA CALCULADORA (usar un grid(con tantas columnas como botones haya,
+ y luego hacer que una fila ocupe todas las columnas))
+- darle un tamaño a la calculadora con medidas relativas
+
+- INPUT de tipo texto readonly
+- Los botones de tipo INPUT BUTTON ONCLICK(llama a la accion de la calculadora) values,title,...
+	no usar id ni selectores css
+
+- vamos a usar el método eval para las operaciones (en el teclado ha de responder solo a las teclas que nos interesa)
+	pq sino podríamos meterle de todo
+- hay que usar el objeto Number de JavaScript
+
+- en la calculadora científica usaremos el objeto Math
+
+- NO PUEDE HABER JAVASCRIPT EN LOS HTML
