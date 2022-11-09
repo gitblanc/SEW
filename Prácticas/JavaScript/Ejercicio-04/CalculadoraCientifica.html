@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Ejercicio 3</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Eduardo Blanco Bielsa">
+    <meta name="DESCRIPTION" content="Calculadora básica">
+    <link rel="stylesheet" type="text/css" href="CalculadoraCientifica.css"/>
+    <script src="CalculadoraBasica.js"></script>
+    <script src="CalculadoraCientifica.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Calculadora cientifica</h1>
+    </header>
+    <form>
+        <textarea id="pantalla" title= "res" disabled></textarea>
+        <button type="button" onClick="calculadora.deg()">DEG</button>
+        <button type="button" onClick="calculadora.hyp()">HYP</button>
+        <button type="button" onClick="calculadora.fe()">F-E</button>
+        <button type="button" onClick="calculadora.mc()">MC</button>
+        <button type="button" onClick="calculadora.mr()">MR</button>
+        <button type="button" onClick="calculadora.mMas()">M+</button>
+        <button type="button" onClick="calculadora.mMenos()">M-</button>
+        <button type="button" onClick="calculadora.ms()">MS</button>
+        <button type="button" onClick="calculadora.cuadrado()">X^2</button>
+        <button type="button" onClick="calculadora.potencia()">X^Y</button>
+        <button type="button" onClick="calculadora.sin()">sin</button>
+        <button type="button" onClick="calculadora.cos()">cos</button>
+        <button type="button" onClick="calculadora.tan()">tan</button>
+        <button type="button" onClick="calculadora.raiz()">√</button>
+        <button type="button" onClick="calculadora.base10()">10^x</button>
+        <button type="button" onClick="calculadora.log()">log</button>
+        <button type="button" onClick="calculadora.exp()">Exp</button>
+        <button type="button" onClick="calculadora.mod()">Mod</button>
+        <button type="button" onClick="calculadora.flecha()">↑</button>
+        <button type="submit" onClick="calculadora.ce()">CE</button>
+        <button type="button" onClick="calculadora.borrar()">C</button>
+        <button type="button" onClick="calculadora.flechaDer()">←x</button>
+        <button type="button" onClick="calculadora.division()">/</button>
+        <button type="button" onClick="calculadora.pi()">π</button>
+        <button type="button" onClick="calculadora.digitos('7')">7</button>
+        <button type="button" onClick="calculadora.digitos('8')">8</button>
+        <button type="button" onClick="calculadora.digitos('9')">9</button>
+        <button type="button" onClick="calculadora.multiplicacion()">*</button>
+        <button type="button" onClick="calculadora.factorial()">n!</button>
+        <button type="button" onClick="calculadora.digitos('4')">4</button>
+        <button type="button" onClick="calculadora.digitos('5')">5</button>
+        <button type="button" onClick="calculadora.digitos('6')">6</button>
+        <button type="button" onClick="calculadora.resta()">-</button>
+        <button type="button" onClick="calculadora.masmenos()">±</button>
+        <button type="button" onClick="calculadora.digitos('1')">1</button>
+        <button type="button" onClick="calculadora.digitos('2')">2</button>
+        <button type="button" onClick="calculadora.digitos('3')">3</button>
+        <button type="button" onClick="calculadora.suma()">+</button>
+        <button type="button" onClick="calculadora.parentesisIzq()">(</button>
+        <button type="button" onClick="calculadora.parentesisDer()">)</button>
+        <button type="button" onClick="calculadora.digitos('0')">0</button>
+        <button type="button" onClick="calculadora.decimal()">.</button>
+        <button type="button" onClick="calculadora.igual()">=</button>
+    </form>
+    <!-- <footer>Eduardo Blanco Bielsa - UO285176</footer> -->
+</body>
+</html>
