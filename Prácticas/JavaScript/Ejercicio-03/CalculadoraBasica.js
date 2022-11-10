@@ -35,37 +35,37 @@ class Calculadora{
     //para mostrar los números por pantalla
     digitos(numero){
         this.pantalla += numero;
-                document.getElementById("pantalla").value = this.pantalla;
+        document.getElementById("pantalla").value = this.pantalla;
     }
 
     //decimales
     punto(){
         this.pantalla += ".";
-                document.getElementById("pantalla").value = this.pantalla;
+        document.getElementById("pantalla").value = this.pantalla;
     }
 
     //suma
     suma(){
         this.pantalla += "+";
-                document.getElementById("pantalla").value = this.pantalla;
+        document.getElementById("pantalla").value = this.pantalla;
     }
 
     //resta
     resta(){
         this.pantalla += "-";
-                document.getElementById("pantalla").value = this.pantalla;
+        document.getElementById("pantalla").value = this.pantalla;
     }
 
     //multiplicacion
     multiplicacion(){
         this.pantalla += "*";
-                document.getElementById("pantalla").value = this.pantalla;
+        document.getElementById("pantalla").value = this.pantalla;
     }
 
     //division
     division(){
         this.pantalla += "/";
-                document.getElementById("pantalla").value = this.pantalla;
+        document.getElementById("pantalla").value = this.pantalla;
     }
 
     //mrc
