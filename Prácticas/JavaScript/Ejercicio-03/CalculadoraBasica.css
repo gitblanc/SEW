@@ -1,46 +1,56 @@
+/*UO285176 - Eduardo Blanco Bielsa*/
+
 /*especifidad: 001*/
 body {
-    font: 400 1em Tahoma,sans-serif; 
-    line-height: 1.8;
     color: #000000 ;
     background-color: #ffffff;
     text-align: center;
 }
+
 /*especifidad: 001*/
 h1 {
     font-size: 2em;
-    text-transform: uppercase;
     padding: 1.6em 1.6em;
     text-align: center;     
 }
+
 /*especifidad 001*/
 button {
     font-size: 1.2em;
-    background-color: rgb(68, 68, 68);
-    border-radius:1em;
+    background-color: rgb(75,75,75);
+    border-radius: 0.8em;
     color: white;
 }
+
 /*especifidad:002*/
 form > textarea {
     resize: none;
+    border-radius: 0.3em;
     font-size: 3em;
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 1;
-    background-color: rgb(119, 189, 179);
+    background-color: rgb(189, 252, 243);
     color: #000000;
 }
+
 /*especifidad:002*/
 body > form {
-    position: absolute;
-    left: 42%;
+    position: fixed;
+    left: 27%;
     display:grid;
     background-color: rgb(0, 0, 0);
-    border-radius:1em;
-    grid-template-columns: [columna1] 4em [columna2] 4em [columna3] 4em [columna4] 4em [end];
-    grid-template-rows: [fila1] 4em [fila2] 4em [fila3] 4em [fila4] 4em [fila5] 4em [fila6] 4em [end];
-    row-gap: 0.5em;
-    column-gap: 0.5em;
-    padding: 1em;
+    border-radius: 1em;
+    grid-template-columns: [columna1] 4em [columna2] 4em [columna3] 4em [columna4] 4em[end];
+    grid-template-rows: [fila1] 4em [fila2] 4em [fila3] 4em [fila4] 4em [fila5] 4em [fila6] 4em [fila7] 4em [end];
+    row-gap: 0.7em;
+    column-gap: 0.7em;
+    padding: 2em;
+}
+
+/*especifidad:002*/
+body > footer {
+    padding-top: 38em;
+    text-align: center;
 }

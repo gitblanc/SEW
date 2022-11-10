@@ -5,7 +5,7 @@ class Calculadora{
         this.pantalla = "";
         {
             document.addEventListener("keydown", (event) => {
-                if (["*", "/", "-", "+", "."].some(ev => event.key.includes(ev))) {
+                if (["*", "/", "-", "+", ".", "%", "√"].some(ev => event.key.includes(ev))) {
                     switch (event.key) {
                         case "*":
                             this.multiplicacion();
@@ -21,6 +21,15 @@ class Calculadora{
                             break;
                         case ".":
                             this.decimal();
+                            break;
+                        case "%":
+                            this.mod();
+                            break;
+                        case "√":
+                            this.sqrt();
+                            break;
+                        case "+/-":
+                            this.masmenos();
                             break;
                     }
                 }else if (!isNaN(event.key)) {
@@ -66,6 +75,26 @@ class Calculadora{
     division(){
         this.pantalla += "/";
         document.getElementById("pantalla").value = this.pantalla;
+    }
+
+    //raiz cuadrada
+    sqrt(){
+        var res = Math.sqrt(new Number(document.getElementById("pantalla").value));
+        this.pantalla = res;
+        document.getElementById("pantalla").value = this.pantalla;
+    }
+
+    //función +/-
+    masmenos() {
+        var result = - new Number(document.getElementById("pantalla").value);
+        this.pantalla = result;
+        document.getElementById("pantalla").value = this.pantalla;
+    }
+
+    //modulo
+    mod(){
+        this.pantalla += "%"
+        this.pantalla = document.getElementById("pantalla").value = this.pantalla;
     }
 
     //mrc
