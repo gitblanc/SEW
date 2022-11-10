@@ -249,13 +249,6 @@ class CalculadoraCientifica extends Calculadora{
         document.getElementById("pantalla").value = this.pantalla;
     }
 
-    //función raiz cuadrada
-    raiz() {
-        var res = Math.sqrt(new Number(document.getElementById("pantalla").value));
-        this.pantalla = res;
-        document.getElementById("pantalla").value = this.pantalla;
-    }
-
     //función base 10
     base10() {
         var res = Math.pow(10,new Number(document.getElementById("pantalla").value));
@@ -287,20 +280,6 @@ class CalculadoraCientifica extends Calculadora{
 	    document.getElementById("pantalla").value = this.pantalla;
     }
 
-    //función +/-
-    masmenos() {
-        var result = - new Number(document.getElementById("pantalla").value);
-        this.pantalla = result;
-        document.getElementById("pantalla").value = this.pantalla;
-    }
-
-    //función módulo
-    mod() {
-        var res = Math.mod(new Number(document.getElementById("pantalla").value));
-        this.pantalla = res;
-        document.getElementById("pantalla").value = this.pantalla;
-    }
-
     //función borrado
     ce() {
         this.pantalla = "";
@@ -309,7 +288,7 @@ class CalculadoraCientifica extends Calculadora{
     }
 
     //función eliminar 1 valor
-    flechaDer() {
+    deleteOne() {
         var res = document.getElementById("pantalla").value;
         this.pantalla = res.substring(0, res.length - 1);
         document.getElementById("pantalla").value = this.pantalla;

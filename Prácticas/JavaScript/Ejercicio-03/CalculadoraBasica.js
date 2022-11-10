@@ -3,6 +3,8 @@ class Calculadora{
     constructor() {
         this.memoria = "";
         this.pantalla = "";
+        this.max = 12;
+        this.caracteres = 0;
         {
             document.addEventListener("keydown", (event) => {
                 if (["*", "/", "-", "+", ".", "%", "√", "+/-"].some(ev => event.key.includes(ev))) {
@@ -43,45 +45,64 @@ class Calculadora{
 
     //para mostrar los números por pantalla
     digitos(numero){
-        this.pantalla += numero;
-        document.getElementById("pantalla").value = this.pantalla;
+        if(this.caracteres < 12){
+            this.pantalla += numero;
+            document.getElementById("pantalla").value = this.pantalla;
+            this.caracteres+=1;
+        }
     }
 
     //decimales
     punto(){
-        this.pantalla += ".";
-        document.getElementById("pantalla").value = this.pantalla;
+        if(this.caracteres < 12){
+            this.pantalla += ".";
+            document.getElementById("pantalla").value = this.pantalla;
+            this.caracteres+=1;
+        }
     }
 
     //suma
     suma(){
-        this.pantalla += "+";
-        document.getElementById("pantalla").value = this.pantalla;
+        if(this.caracteres < 12){
+            this.pantalla += "+";
+            document.getElementById("pantalla").value = this.pantalla;
+            this.caracteres+=1;
+        }
     }
 
     //resta
     resta(){
-        this.pantalla += "-";
-        document.getElementById("pantalla").value = this.pantalla;
+        if(this.caracteres < 12){
+            this.pantalla += "-";
+            document.getElementById("pantalla").value = this.pantalla;
+            this.caracteres+=1;
+        }
     }
 
     //multiplicacion
     multiplicacion(){
-        this.pantalla += "*";
-        document.getElementById("pantalla").value = this.pantalla;
+        if(this.caracteres < 12){
+            this.pantalla += "*";
+            document.getElementById("pantalla").value = this.pantalla;
+            this.caracteres+=1;
+        }
     }
 
     //division
     division(){
-        this.pantalla += "/";
-        document.getElementById("pantalla").value = this.pantalla;
+        if(this.caracteres < 12){
+            this.pantalla += "/";
+            document.getElementById("pantalla").value = this.pantalla;
+            this.caracteres+=1;
+        }
     }
 
     //raiz cuadrada
     sqrt(){
-        var res = Math.sqrt(new Number(document.getElementById("pantalla").value));
+        var res = Math.sqrt(new Number(document.getElementById("pantalla").value).toFixed(5));
         this.pantalla = res;
         document.getElementById("pantalla").value = this.pantalla;
+            
     }
 
     //función +/-
@@ -89,12 +110,16 @@ class Calculadora{
         var result = - new Number(document.getElementById("pantalla").value);
         this.pantalla = result;
         document.getElementById("pantalla").value = this.pantalla;
+        this.caracteres+=1;
     }
 
     //modulo
     mod(){
-        this.pantalla += "%"
-        this.pantalla = document.getElementById("pantalla").value = this.pantalla;
+        if(this.caracteres < 12){
+            this.pantalla += "%"
+            this.pantalla = document.getElementById("pantalla").value = this.pantalla;
+            this.caracteres+=1;
+        }
     }
 
     //mrc
@@ -126,6 +151,7 @@ class Calculadora{
     borrar(){
         this.pantalla = "";
                 document.getElementById("pantalla").value = this.pantalla;
+        this.caracteres = 0;        
     }
 
     //igual

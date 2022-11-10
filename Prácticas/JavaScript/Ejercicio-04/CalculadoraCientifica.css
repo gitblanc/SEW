@@ -24,6 +24,7 @@ button {
 form > textarea {
     resize: none;
     font-size: 3em;
+    border-radius:0.3em;
     grid-column-start: 1;
     grid-column-end: 6;
     grid-row-start: 1;
@@ -33,7 +34,7 @@ form > textarea {
 }
 /*especifidad:002*/
 body > form {
-    position: absolute;
+    position: fixed;
     left: 40%;
     display:grid;
     background-color: rgb(0, 0, 0);

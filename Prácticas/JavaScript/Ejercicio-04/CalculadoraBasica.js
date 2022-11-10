@@ -5,7 +5,7 @@ class Calculadora{
         this.pantalla = "";
         {
             document.addEventListener("keydown", (event) => {
-                if (["*", "/", "-", "+", "."].some(ev => event.key.includes(ev))) {
+                if (["*", "/", "-", "+", ".", "%", "√", "+/-"].some(ev => event.key.includes(ev))) {
                     switch (event.key) {
                         case "*":
                             this.multiplicacion();
@@ -22,6 +22,15 @@ class Calculadora{
                         case ".":
                             this.decimal();
                             break;
+                        case "%":
+                            this.mod();
+                            break;
+                        case "√":
+                            this.sqrt();
+                            break;
+                        case "+/-":
+                            this.masmenos();
+                            break;
                     }
                 }else if (!isNaN(event.key)) {
                     this.digitos(event.key);
@@ -34,38 +43,72 @@ class Calculadora{
 
     //para mostrar los números por pantalla
     digitos(numero){
-        this.pantalla += numero;
-                document.getElementById("pantalla").value = this.pantalla;
+            this.pantalla += numero;
+            document.getElementById("pantalla").value = this.pantalla;
     }
 
     //decimales
     punto(){
-        this.pantalla += ".";
-                document.getElementById("pantalla").value = this.pantalla;
+        
+            this.pantalla += ".";
+            document.getElementById("pantalla").value = this.pantalla;
+            
     }
 
     //suma
     suma(){
-        this.pantalla += "+";
-                document.getElementById("pantalla").value = this.pantalla;
+        
+            this.pantalla += "+";
+            document.getElementById("pantalla").value = this.pantalla;
+            
     }
 
     //resta
     resta(){
-        this.pantalla += "-";
-                document.getElementById("pantalla").value = this.pantalla;
+        
+            this.pantalla += "-";
+            document.getElementById("pantalla").value = this.pantalla;
+            
     }
 
     //multiplicacion
     multiplicacion(){
-        this.pantalla += "*";
-                document.getElementById("pantalla").value = this.pantalla;
+        
+            this.pantalla += "*";
+            document.getElementById("pantalla").value = this.pantalla;
+            
     }
 
     //division
     division(){
-        this.pantalla += "/";
-                document.getElementById("pantalla").value = this.pantalla;
+        
+            this.pantalla += "/";
+            document.getElementById("pantalla").value = this.pantalla;
+            
+    }
+
+    //raiz cuadrada
+    sqrt(){
+        var res = Math.sqrt(new Number(document.getElementById("pantalla").value).toFixed(5));
+        this.pantalla = res;
+        document.getElementById("pantalla").value = this.pantalla;
+            
+    }
+
+    //función +/-
+    masmenos() {
+        var result = - new Number(document.getElementById("pantalla").value);
+        this.pantalla = result;
+        document.getElementById("pantalla").value = this.pantalla;
+        this.caracteres+=1;
+    }
+
+    //modulo
+    mod(){
+        
+            this.pantalla += "%"
+            this.pantalla = document.getElementById("pantalla").value = this.pantalla;
+            
     }
 
     //mrc
@@ -97,6 +140,7 @@ class Calculadora{
     borrar(){
         this.pantalla = "";
                 document.getElementById("pantalla").value = this.pantalla;
+        this.caracteres = 0;        
     }
 
     //igual
@@ -107,4 +151,4 @@ class Calculadora{
     }
 }
 
-var calculadora = new Calculadora();
+var calculadora = new Calculadora()
