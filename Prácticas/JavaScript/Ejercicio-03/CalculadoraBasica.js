@@ -5,7 +5,7 @@ class Calculadora{
         this.pantalla = "";
         {
             document.addEventListener("keydown", (event) => {
-                if (["*", "/", "-", "+", ".", "%", "√"].some(ev => event.key.includes(ev))) {
+                if (["*", "/", "-", "+", ".", "%", "√", "+/-"].some(ev => event.key.includes(ev))) {
                     switch (event.key) {
                         case "*":
                             this.multiplicacion();

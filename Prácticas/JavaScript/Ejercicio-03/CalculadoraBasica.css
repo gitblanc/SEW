@@ -31,7 +31,7 @@ form > textarea {
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 1;
-    background-color: rgb(189, 252, 243);
+    background-color: #64f0b1;
     color: #000000;
 }
 
