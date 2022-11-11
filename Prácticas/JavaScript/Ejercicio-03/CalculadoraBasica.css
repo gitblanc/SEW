@@ -22,8 +22,8 @@ button {
     color: white;
 }
 
-/*especifidad:002*/
-form > input {
+/*especifidad:001*/
+input {
     resize: none;
     border-radius: 0.3em;
     font-size: 3em;
@@ -35,8 +35,8 @@ form > input {
     color: #000000;
 }
 
-/*especifidad:002*/
-body > form {
+/*especifidad:001*/
+form {
     position: fixed;
     left: 27%;
     display:grid;
@@ -49,8 +49,8 @@ body > form {
     padding: 2em;
 }
 
-/*especifidad:002*/
-body > footer {
+/*especifidad:001*/
+footer {
     padding-top: 38em;
     text-align: center;
 }
