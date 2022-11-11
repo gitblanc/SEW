@@ -23,7 +23,7 @@ button {
 }
 
 /*especifidad:002*/
-form > textarea {
+form > input {
     resize: none;
     border-radius: 0.3em;
     font-size: 3em;

@@ -47,7 +47,7 @@ class Calculadora{
     digitos(numero){
         if(this.caracteres < 12){
             this.pantalla += numero;
-            document.getElementById("pantalla").value = this.pantalla;
+            document.getElementsByName("pantalla")[0].value = this.pantalla;
             this.caracteres+=1;
         }
     }
@@ -56,7 +56,7 @@ class Calculadora{
     punto(){
         if(this.caracteres < 12){
             this.pantalla += ".";
-            document.getElementById("pantalla").value = this.pantalla;
+            document.getElementsByName("pantalla")[0].value = this.pantalla;
             this.caracteres+=1;
         }
     }
@@ -65,7 +65,7 @@ class Calculadora{
     suma(){
         if(this.caracteres < 12){
             this.pantalla += "+";
-            document.getElementById("pantalla").value = this.pantalla;
+            document.getElementsByName("pantalla")[0].value = this.pantalla;
             this.caracteres+=1;
         }
     }
@@ -74,7 +74,7 @@ class Calculadora{
     resta(){
         if(this.caracteres < 12){
             this.pantalla += "-";
-            document.getElementById("pantalla").value = this.pantalla;
+            document.getElementsByName("pantalla")[0].value = this.pantalla;
             this.caracteres+=1;
         }
     }
@@ -83,7 +83,7 @@ class Calculadora{
     multiplicacion(){
         if(this.caracteres < 12){
             this.pantalla += "*";
-            document.getElementById("pantalla").value = this.pantalla;
+            document.getElementsByName("pantalla")[0].value = this.pantalla;
             this.caracteres+=1;
         }
     }
@@ -92,24 +92,24 @@ class Calculadora{
     division(){
         if(this.caracteres < 12){
             this.pantalla += "/";
-            document.getElementById("pantalla").value = this.pantalla;
+            document.getElementsByName("pantalla")[0].value = this.pantalla;
             this.caracteres+=1;
         }
     }
 
     //raiz cuadrada
     sqrt(){
-        var res = Math.sqrt(new Number(document.getElementById("pantalla").value).toFixed(5));
+        var res = Math.sqrt(new Number(document.getElementsByName("pantalla")[0].value).toFixed(5));
         this.pantalla = res;
-        document.getElementById("pantalla").value = this.pantalla;
+        document.getElementsByName("pantalla")[0].value = this.pantalla;
             
     }
 
     //función +/-
     masmenos() {
-        var result = - new Number(document.getElementById("pantalla").value);
+        var result = - new Number(document.getElementsByName("pantalla")[0].value);
         this.pantalla = result;
-        document.getElementById("pantalla").value = this.pantalla;
+        document.getElementsByName("pantalla")[0].value = this.pantalla;
         this.caracteres+=1;
     }
 
@@ -117,7 +117,7 @@ class Calculadora{
     mod(){
         if(this.caracteres < 12){
             this.pantalla += "%"
-            this.pantalla = document.getElementById("pantalla").value = this.pantalla;
+            this.pantalla = document.getElementsByName("pantalla")[0].value = this.pantalla;
             this.caracteres+=1;
         }
     }
@@ -125,40 +125,40 @@ class Calculadora{
     //mrc
     mrc(){
         this.pantalla = this.memoria;
-        document.getElementById("pantalla").value = this.pantalla;
+        document.getElementsByName("pantalla")[0].value = this.pantalla;
         this.memoria = "";
     }
 
     //mMenos
     mMenos(){
-        var p = document.getElementById("pantalla").value;
+        var p = document.getElementsByName("pantalla")[0].value;
         var operacion = this.memoria += "-" + p;
         this.memoria = eval(operacion).toString();
         this.pantalla = "";
-        document.getElementById("pantalla").value = this.pantalla;
+        document.getElementsByName("pantalla")[0].value = this.pantalla;
     }
 
     //mMas
     mMas(){
-        var p = document.getElementById("pantalla").value;
+        var p = document.getElementsByName("pantalla")[0].value;
         var operacion = this.memoria += "+" + p;
         this.memoria = eval(operacion).toString();
         this.pantalla = "";
-        document.getElementById("pantalla").value = this.pantalla;
+        document.getElementsByName("pantalla")[0].value = this.pantalla;
     }
 
     //borrar
     borrar(){
         this.pantalla = "";
-                document.getElementById("pantalla").value = this.pantalla;
+                document.getElementsByName("pantalla")[0].value = this.pantalla;
         this.caracteres = 0;        
     }
 
     //igual
     igual(){
-        this.pantalla = document.getElementById("pantalla").value;
-        this.pantalla = eval(this.pantalla);
-        document.getElementById("pantalla").value = this.pantalla;
+        this.pantalla = document.getElementsByName("pantalla")[0].value;
+        this.pantalla = eval(this.pantalla).toString().substring(0,11);
+        document.getElementsByName("pantalla")[0].value = this.pantalla;
     }
 }
 
