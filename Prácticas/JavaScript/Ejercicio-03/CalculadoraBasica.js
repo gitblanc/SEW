@@ -1,4 +1,4 @@
-class CalculadoraBasica{
+class Calculadora{
     //constructor
     constructor() {
         this.memory = "";
@@ -8,7 +8,7 @@ class CalculadoraBasica{
         document.querySelector('input[type=text][name=\"pantalla\"]').value += Number(x);
     }
     //función que imprime el punto de los decimales
-    punto() {
+    decimal() {
         document.querySelector('input[type=text][name=\"pantalla\"]').value += ".";
 
     }
@@ -67,7 +67,7 @@ class CalculadoraBasica{
     }
 }
 //creamos la calculadora
-calculadora = new CalculadoraBasica();
+calculadora = new Calculadora();
 //Añadimos los eventos por teclado
 document.addEventListener('keydown', function (event) {
     if (event.key === '+') {//tecla +
@@ -84,6 +84,9 @@ document.addEventListener('keydown', function (event) {
     }
     if (event.key === '*') {//tecla *
         calculadora.multiplicacion();
+    }
+    if (event.key === '.') {//tecla .
+        calculadora.decimal();
     }
     if(event.key >= '0' && event.key <= '9'){//teclas de números
 
