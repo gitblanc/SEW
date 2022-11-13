@@ -1,67 +1,56 @@
+/*UO285176 - Eduardo Blanco Bielsa*/
+
 /*especifidad: 001*/
 body {
-    font: 400 1em Tahoma,sans-serif; 
-    line-height: 1.8;
     color: #000000 ;
     background-color: #ffffff;
     text-align: center;
 }
+
 /*especifidad: 001*/
 h1 {
     font-size: 2em;
-    text-transform: uppercase;
     padding: 1.6em 1.6em;
     text-align: center;     
 }
+
 /*especifidad 001*/
 button {
     font-size: 1.2em;
-    background-color: rgb(68, 68, 68);
-    border-radius:1em;
+    background-color: rgb(75,75,75);
+    border-radius: 0.8em;
     color: white;
 }
-/*especifidad:002*/
-form > textarea {
+
+/*especifidad:001*/
+input {
     resize: none;
+    border-radius: 0.3em;
     font-size: 3em;
-    border-radius:0.3em;
     grid-column-start: 1;
-    grid-column-end: 6;
+    grid-column-end: 7;
     grid-row-start: 1;
     grid-row-end: 1;
-    background-color: rgb(119, 189, 179);
+    background-color: #64f0b1;
     color: #000000;
 }
-/*especifidad:002*/
-body > form {
+
+/*especifidad:001*/
+form {
     position: fixed;
-    left: 40%;
+    left: 27%;
     display:grid;
     background-color: rgb(0, 0, 0);
-    border-radius:1em;
-    grid-template-columns: [column1] 4em [column2] 4em [column3] 4em [column4] 4em [column5] 4em [end];
-    grid-template-rows: [row1] 4em [row2] 4em [row3] 4em [row4] 4em [row5] 4em [row6] 4em [row7] 4em [row8] 4em [row9] 4em [row10] 4em [end];
-    row-gap: 0.5em;
-    column-gap: 0.5em;
-    padding: 1em;
+    border-radius: 1em;
+    grid-template-columns: [columna1] 4em [columna2] 4em [columna3] 4em [columna4] 4em [columna5] 4em [columna6] 4em[end];
+    grid-template-rows:  [row1] 4em [row2] 4em [row3] 4em [row4] 4em [row5] 4em [row6] 4em [row7] 4em [row8] 4em [row9] 4em [row10] 4em [end];
+    row-gap: 0.7em;
+    column-gap: 0.7em;
+    padding: 2em;
 }
 
-/*especifidad: 0,1,2*/
-form > button:nth-child(2){
-    grid-column: 1;
-}
-
-/*especifidad: 0,1,2*/
-form > button:nth-child(3){
-    grid-column: 2;
-}
-
-/*especifidad: 0,1,2*/
-form > button:nth-child(4) {
-    grid-column: 3;
-}
-
-/*especifidad: 0,1,2*/
-form > button:nth-child(5){
-    grid-column: 1;
+/*especifidad:001*/
+footer {
+    padding-top: 38em;
+    text-align: center;
 }
