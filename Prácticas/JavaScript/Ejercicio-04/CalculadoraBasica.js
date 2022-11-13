@@ -1,165 +1,103 @@
-"use strict";
 class Calculadora{
+    //constructor
     constructor() {
-        this.memoria = "";
-        this.pantalla = "";
-        this.max = 12;
-        this.caracteres = 0;
-        {
-            document.addEventListener("keydown", (event) => {
-                if (["*", "/", "-", "+", ".", "%", "√", "+/-"].some(ev => event.key.includes(ev))) {
-                    switch (event.key) {
-                        case "*":
-                            this.multiplicacion();
-                            break;
-                        case "/":
-                            this.division();
-                            break;
-                        case "-":
-                            this.resta();
-                            break;
-                        case "+":
-                            this.suma();
-                            break;
-                        case ".":
-                            this.decimal();
-                            break;
-                        case "%":
-                            this.mod();
-                            break;
-                        case "√":
-                            this.sqrt();
-                            break;
-                        case "+/-":
-                            this.masmenos();
-                            break;
-                    }
-                }else if (!isNaN(event.key)) {
-                    this.digitos(event.key);
-                }else if (event.key == "Enter") {
-                    this.igual();
-                }
-            })
-        };
+        this.memory = "";
     }
+    //función que imprime los dígitos
+    digitos(x) {
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += Number(x);
+    }
+    //función que imprime el punto de los decimales
+    decimal() {
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += ".";
 
-    //para mostrar los números por pantalla
-    digitos(numero){
-        if(this.caracteres < 12){
-            this.pantalla += numero;
-            document.getElementsByName("pantalla")[0].value = this.pantalla;
-            this.caracteres+=1;
+    }
+    //función suma
+    suma() {
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += "+";
+    }
+    //función resta
+    resta() {
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += "-";
+    }
+    //función multiplicación
+    multiplicacion() {
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += "*";
+    }
+    //función división
+    division() {
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += "/";
+    }
+    //función mrc
+    mrc() {
+        this.memory = document.querySelector('input[type=text][name=\"pantalla\"]').value;
+    }
+    //función mMenos
+    mMenos() {
+        document.querySelector('input[type=text][name=\"pantalla\"]').value = document.querySelector('input[type=text][name=\"pantalla\"]').value +  "-" + this.memory;
+    }
+    //función mMas
+    mMas() {
+        document.querySelector('input[type=text][name=\"pantalla\"]').value = document.querySelector('input[type=text][name=\"pantalla\"]').value +  "+" + this.memory;
+    }
+    //función de borrado
+    borrar() {
+        document.querySelector('input[type=text][name=\"pantalla\"]').value = "";
+    }
+    //función igual que evalúa un resultado
+    igual() {
+        try {
+            var res = document.querySelector('input[type=text][name=\"pantalla\"]').value;
+            document.querySelector('input[type=text][name=\"pantalla\"]').value = eval(res);
+        } catch (err) {
+            document.querySelector('input[type=text][name=\"pantalla\"]').value = "Not valid";
         }
     }
-
-    //decimales
-    punto(){
-        if(this.caracteres < 12){
-            this.pantalla += ".";
-            document.getElementsByName("pantalla")[0].value = this.pantalla;
-            this.caracteres+=1;
-        }
-    }
-
-    //suma
-    suma(){
-        if(this.caracteres < 12){
-            this.pantalla += "+";
-            document.getElementsByName("pantalla")[0].value = this.pantalla;
-            this.caracteres+=1;
-        }
-    }
-
-    //resta
-    resta(){
-        if(this.caracteres < 12){
-            this.pantalla += "-";
-            document.getElementsByName("pantalla")[0].value = this.pantalla;
-            this.caracteres+=1;
-        }
-    }
-
-    //multiplicacion
-    multiplicacion(){
-        if(this.caracteres < 12){
-            this.pantalla += "*";
-            document.getElementsByName("pantalla")[0].value = this.pantalla;
-            this.caracteres+=1;
-        }
-    }
-
-    //division
-    division(){
-        if(this.caracteres < 12){
-            this.pantalla += "/";
-            document.getElementsByName("pantalla")[0].value = this.pantalla;
-            this.caracteres+=1;
-        }
-    }
-
-    //raiz cuadrada
-    sqrt(){
-        var res = Math.sqrt(new Number(document.getElementsByName("pantalla")[0].value).toFixed(5));
-        this.pantalla = res;
-        document.getElementsByName("pantalla")[0].value = this.pantalla;
-            
-    }
-
-    //función +/-
-    masmenos() {
-        var result = - new Number(document.getElementsByName("pantalla")[0].value);
-        this.pantalla = result;
-        document.getElementsByName("pantalla")[0].value = this.pantalla;
-        this.caracteres+=1;
-    }
-
-    //modulo
+    //función mod
     mod(){
-        if(this.caracteres < 12){
-            this.pantalla += "%"
-            this.pantalla = document.getElementsByName("pantalla")[0].value = this.pantalla;
-            this.caracteres+=1;
-        }
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += "%";
     }
-
-    //mrc
-    mrc(){
-        this.pantalla = this.memoria;
-        document.getElementsByName("pantalla")[0].value = this.pantalla;
-        this.memoria = "";
+    //función raíz cuadrada
+    sqrt(){
+        document.querySelector('input[type=text][name=\"pantalla\"]').value = Math.sqrt(new Number(document.querySelector('input[type=text][name=\"pantalla\"]').value));
     }
-
-    //mMenos
-    mMenos(){
-        var p = document.getElementsByName("pantalla")[0].value;
-        var operacion = this.memoria += "-" + p;
-        this.memoria = eval(operacion).toString();
-        this.pantalla = "";
-        document.getElementsByName("pantalla")[0].value = this.pantalla;
-    }
-
-    //mMas
-    mMas(){
-        var p = document.getElementsByName("pantalla")[0].value;
-        var operacion = this.memoria += "+" + p;
-        this.memoria = eval(operacion).toString();
-        this.pantalla = "";
-        document.getElementsByName("pantalla")[0].value = this.pantalla;
-    }
-
-    //borrar
-    borrar(){
-        this.pantalla = "";
-                document.getElementsByName("pantalla")[0].value = this.pantalla;
-        this.caracteres = 0;        
-    }
-
-    //igual
-    igual(){
-        this.pantalla = document.getElementsByName("pantalla")[0].value;
-        this.pantalla = eval(this.pantalla).toString().substring(0,11);
-        document.getElementsByName("pantalla")[0].value = this.pantalla;
+    //función +/-
+    masmenos(){
+        document.querySelector('input[type=text][name=\"pantalla\"]').value = - document.querySelector('input[type=text][name=\"pantalla\"]').value;
     }
 }
+//creamos la calculadora
+calculadora = new Calculadora();
+//Añadimos los eventos por teclado
+document.addEventListener('keydown', function (event) {
+    if (event.key === '+') {//tecla +
+      calculadora.suma();
+    }
+    if (event.key === '-') {//tecla -
+      calculadora.resta();
+    }
+    if (event.key === '/') {//tecla /
+        calculadora.division();
+    }
+    if(event.key === '%'){//tecla %
+        calculadora.mod();
+    }
+    if (event.key === '*') {//tecla *
+        calculadora.multiplicacion();
+    }
+    if (event.key === '.') {//tecla .
+        calculadora.decimal();
+    }
+    if(event.key >= '0' && event.key <= '9'){//teclas de números
 
-var calculadora = new Calculadora()
+        calculadora.digitos(Number(event.key));
+    }
+    if(event.key === 'Enter'){//tecla enter
+        event.preventDefault();
+        calculadora.igual();
+    }
+    if(event.key === 'Delete'){//tecla delete
+        event.preventDefault();
+        calculadora.borrar();
+    }
+  });

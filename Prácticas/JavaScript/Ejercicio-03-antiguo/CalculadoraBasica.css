@@ -17,30 +17,33 @@ h1 {
 /*especifidad 001*/
 button {
     font-size: 1.2em;
-    background-color: rgb(175, 175, 175);
-    color: black;
+    background-color: rgb(75,75,75);
+    border-radius: 0.8em;
+    color: white;
 }
 
 /*especifidad:001*/
 input {
     resize: none;
+    border-radius: 0.3em;
     font-size: 3em;
     grid-column-start: 1;
-    grid-column-end: 6;
+    grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 1;
-    background-color: #99dcdf;
+    background-color: #64f0b1;
     color: #000000;
 }
 
 /*especifidad:001*/
 form {
-    background-color: rgb(212, 212, 212);
-    position: absolute;
+    position: fixed;
     left: 27%;
     display:grid;
-    grid-template-columns: [columna1] 4em [columna2] 4em [columna3] 4em [columna4] 4em [columna5] 4em[end];
-    grid-template-rows:  [row1] 4em [row2] 4em [row3] 4em [row4] 4em [row5] 4em [row6] 4em [row7] 4em [row8] 4em [row9] 4em [row10] 4em [end];
+    background-color: rgb(0, 0, 0);
+    border-radius: 1em;
+    grid-template-columns: [columna1] 4em [columna2] 4em [columna3] 4em [columna4] 4em[end];
+    grid-template-rows: [fila1] 4em [fila2] 4em [fila3] 4em [fila4] 4em [fila5] 4em [fila6] 4em [fila7] 4em [end];
     row-gap: 0.7em;
     column-gap: 0.7em;
     padding: 2em;
@@ -48,6 +51,6 @@ form {
 
 /*especifidad:001*/
 footer {
-    padding-top: 52em;
+    padding-top: 38em;
     text-align: center;
 }

@@ -1,46 +1,40 @@
-"use strict";
-class CalculadoraCientifica extends Calculadora{
-    //constructor
-    constructor(){
+class calculadoraCientifica extends Calculadora{
+    //constructor para la calculadora que llama al constructor base
+    constructor() {
         super();
-        this.radianes = true;
-        this.change = true;
-        this.notacion = true;
-        this.hyper = true;
+        this.isDeg = true;//ponemos a degrees
+        this.hyper = false;
+        this.flechaCambio = false;
     }
-
-    //función DEG
+    //función que determina si la calculadora está en grados o radianes
     deg(){
-        if(this.radianes){
-            this.radianes = false;
-            var num = new Number(document.getElementsByName("pantalla")[0].value) * (100/Math.PI);
-            document.getElementsByName("pantalla")[0].value = num;
-        }
-        else{
-            this.radianes = true;
-            var num = new Number(document.getElementsByName("pantalla")[0].value) * (Math.PI/100);
-            document.getElementsByName("pantalla")[0].value = num;
+        let num = eval(document.querySelector('input[type=text][name=\"pantalla\"]').value);
+        if(this.isDeg == true){//si está puesta en grados
+            document.querySelector('input[type=text][name=\"pantalla\"]').value = num * (Math.PI/180);
+            this.isDeg = false;
+        }else{//si está en radianes
+            document.querySelector('input[type=text][name=\"pantalla\"]').value = num * (180/Math.PI);
+            this.isDeg = true;
         }
     }
-
-    //función HYP
-    hyp(){
+    //función hyp
+    hyp() {
         if(!this.hyper) {
             let sinhb = document.createElement("button");
             sinhb.setAttribute("type", "button");
             sinhb.setAttribute("onclick", "calculadora.sinh()");
             sinhb.innerHTML = "sinh";
-            document.querySelector("body > form > button:nth-child(12)").replaceWith(sinhb);
+            document.querySelector("body > form > button:nth-child(14)").replaceWith(sinhb);
             let coshb = document.createElement("button");
             coshb.setAttribute("type", "button");
             coshb.setAttribute("onclick", "calculadora.cosh()");
             coshb.innerHTML = "cosh";
-            document.querySelector("body > form > button:nth-child(13)").replaceWith(coshb);
+            document.querySelector("body > form > button:nth-child(15)").replaceWith(coshb);
             let tanhb = document.createElement("button");
             tanhb.setAttribute("type", "button");
             tanhb.setAttribute("onclick", "calculadora.tanh()");
             tanhb.innerHTML = "tanh";
-            document.querySelector("body > form > button:nth-child(14)").replaceWith(tanhb);
+            document.querySelector("body > form > button:nth-child(16)").replaceWith(tanhb);
             this.hyper = true;
         } else {
             this.hyper = false;
@@ -48,262 +42,194 @@ class CalculadoraCientifica extends Calculadora{
             sinb.setAttribute("type", "button");
             sinb.setAttribute("onclick", "calculadora.sin()");
             sinb.innerHTML = "sin";
-            document.querySelector("body > form > button:nth-child(12)").replaceWith(sinb);
+            document.querySelector("body > form > button:nth-child(14)").replaceWith(sinb);
             let cosb = document.createElement("button");
             cosb.setAttribute("type", "button");
             cosb.setAttribute("onclick", "calculadora.cos()");
             cosb.innerHTML = "cos";
-            document.querySelector("body > form > button:nth-child(13)").replaceWith(cosb);
+            document.querySelector("body > form > button:nth-child(15)").replaceWith(cosb);
             let tanb = document.createElement("button");
             tanb.setAttribute("type", "button");
             tanb.setAttribute("onclick", "calculadora.tan()");
             tanb.innerHTML = "tan";
-            document.querySelector("body > form > button:nth-child(14)").replaceWith(tanb);
+            document.querySelector("body > form > button:nth-child(16)").replaceWith(tanb);
         }
     }
-
-    //funcion f-e
-    fe(){
-        if(!this.notacion) {
-            this.notacion = false;
-            var res = document.getElementsByName("pantalla")[0].value;
-            this.pantalla = new Number(res).toExponential();
-            document.getElementsByName("pantalla")[0].value = this.pantalla;
-        } else {
-            this.notacion = true;
-            var res = document.getElementsByName("pantalla")[0].value;
-            this.pantalla = new Number(res);
-            document.getElementsByName("pantalla")[0].value = this.pantalla;
-        }
-    }
-
-    //función 
-    flecha(){
-        if(!this.change) {
-            this.change = true;
-            let x3b = document.createElement("button");
-            x3b.setAttribute("type", "button");
-            x3b.setAttribute("onclick", "calculadora.x3()");
-            x3b.innerHTML = "x<sup>3</sup>";
-            document.querySelector("body > form > button:nth-child(10)").replaceWith(x3b);
+    //función flecha
+    flecha() {
+        if(!this.flechaCambio) {
+            let cubo = document.createElement("button");
+            cubo.setAttribute("type", "button");
+            cubo.setAttribute("onclick", "calculadora.cubo()");
+            cubo.innerHTML = "x<sup>3</sup>";
+            document.querySelector("body > form > button:nth-child(12)").replaceWith(cubo);
             let asinb = document.createElement("button");
             asinb.setAttribute("type", "button");
             asinb.setAttribute("onclick", "calculadora.asin()");
             asinb.innerHTML = "sin<sup>-1</<sup>";
-            document.querySelector("body > form > button:nth-child(12)").replaceWith(asinb);
+            document.querySelector("body > form > button:nth-child(14)").replaceWith(asinb);
             let acosb = document.createElement("button");
             acosb.setAttribute("type", "button");
             acosb.setAttribute("onclick", "calculadora.acos()");
             acosb.innerHTML = "cos<sup>-1</<sup>";
-            document.querySelector("body > form > button:nth-child(13)").replaceWith(acosb);
+            document.querySelector("body > form > button:nth-child(15)").replaceWith(acosb);
             let atanb = document.createElement("button");
             atanb.setAttribute("type", "button");
             atanb.setAttribute("onclick", "calculadora.atan()");
             atanb.innerHTML = "tan<sup>-1</<sup>";
-            document.querySelector("body > form > button:nth-child(14)").replaceWith(atanb);
+            document.querySelector("body > form > button:nth-child(16)").replaceWith(atanb);
             let lnb = document.createElement("button");
             lnb.setAttribute("type", "button");
             lnb.setAttribute("onclick", "calculadora.ln()");
             lnb.innerHTML = "ln";
-            document.querySelector("body > form > button:nth-child(17)").replaceWith(lnb);
+            document.querySelector("body > form > button:nth-child(19)").replaceWith(lnb);
+            this.flechaCambio = true;
         } else {
-            this.change = false;
-            let x2b = document.createElement("button");
-            x2b.setAttribute("type", "button");
-            x2b.setAttribute("onclick", "calculadora.x2()");
-            x2b.innerHTML = "x<sup>2</sup>";
-            document.querySelector("body > form > button:nth-child(10)").replaceWith(x2b);
+            this.flechaCambio = false;
+            let cuadrado = document.createElement("button");
+            cuadrado.setAttribute("type", "button");
+            cuadrado.setAttribute("onclick", "calculadora.cuadrado()");
+            cuadrado.innerHTML = "x<sup>2</sup>";
+            document.querySelector("body > form > button:nth-child(12)").replaceWith(cuadrado);
             let sinb = document.createElement("button");
             sinb.setAttribute("type", "button");
             sinb.setAttribute("onclick", "calculadora.sin()");
             sinb.innerHTML = "sin";
-            document.querySelector("body > form > button:nth-child(12)").replaceWith(sinb);
+            document.querySelector("body > form > button:nth-child(14)").replaceWith(sinb);
             let cosb = document.createElement("button");
             cosb.setAttribute("type", "button");
             cosb.setAttribute("onclick", "calculadora.cos()");
             cosb.innerHTML = "cos";
-            document.querySelector("body > form > button:nth-child(13)").replaceWith(cosb);
+            document.querySelector("body > form > button:nth-child(15)").replaceWith(cosb);
             let tanb = document.createElement("button");
             tanb.setAttribute("type", "button");
             tanb.setAttribute("onclick", "calculadora.tan()");
             tanb.innerHTML = "tan";
-            document.querySelector("body > form > button:nth-child(14)").replaceWith(tanb);
+            document.querySelector("body > form > button:nth-child(16)").replaceWith(tanb);
             let logb = document.createElement("button");
             logb.setAttribute("type", "button");
             logb.setAttribute("onclick", "calculadora.log10()");
             logb.innerHTML = "log";
-            document.querySelector("body > form > button:nth-child(17)").replaceWith(logb);
-        }   
+            document.querySelector("body > form > button:nth-child(19)").replaceWith(logb);
+        }
     }
-
+    //función que expresa en notacion científica
+    fe(){
+        let num = eval(document.querySelector('input[type=text][name=\"pantalla\"]').value);
+        document.querySelector('input[type=text][name=\"pantalla\"]').value = new Number(num).toExponential()
+    }
+    //función mr
+    mr(){
+        document.querySelector('input[type=text][name=\"pantalla\"]').value = this.memoria;
+    }
     //función mc
-    mc() {
+    mc(){
         this.memoria = "";
     }
-
-    //función mr
-    mr() {
-        this.pantalla = this.memoria;
-        document.getElementsByName("pantalla")[0].value = this.pantalla;
+    //función paréntesis izquierda
+    parentesisIzq() {
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += "(";
     }
-
-    //función ms
-    ms() {
-        this.memoria = document.getElementsByName("pantalla")[0].value;
+    //función paréntesis derecha
+    parentesisDer() {
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += ")";
     }
-
-    //función cuadrado
-    cuadrado() {
-        var result = Math.pow(new Number(document.getElementsByName("pantalla")[0].value), 2);
-        this.pantalla = result;
-        document.getElementsByName("pantalla")[0].value = this.pantalla;
-    }
-
-    //función de elevar al cubo
-    cubo() {
-        var result = Math.pow(new Number(document.getElementsByName("pantalla")[0].value), 3);
-        this.pantalla = result;
-        document.getElementsByName("pantalla")[0].value = this.pantalla;
-    }
-
-    //función potencia
-    potencia() {
-        this.pantalla += "**";
-		document.getElementsByName("pantalla")[0].value = this.pantalla;
-    }
-
-    //función logaritmo neperiano
-    ln() {
-        var res = Math.log(new Number(this.pantalla));
-        this.pantalla = res;
-        document.getElementsByName("pantalla")[0].value = this.pantalla;
-    }
-
-    //función exponente
-    exp() {
-        var res = Math.exp(new Number(document.getElementsByName("pantalla")[0].value));
-        this.pantalla = res;
-        document.getElementsByName("pantalla")[0].value = this.pantalla;
-    }
-    
-    //función seno
-    sin() {
-        var res = Math.sin(new Number(document.getElementsByName("pantalla")[0].value));
-        this.pantalla = res;
-        document.getElementsByName("pantalla")[0].value = this.pantalla;
-    }
-
-    //función coseno
-    cos() {
-        var res = Math.cos(new Number(document.getElementsByName("pantalla")[0].value));
-        this.pantalla = res;
-        document.getElementsByName("pantalla")[0].value = this.pantalla;
-    }
-
-    //función tangente
-    tan() {
-        var res = Math.tan(new Number(document.getElementsByName("pantalla")[0].value));
-        this.pantalla = res;
-        document.getElementsByName("pantalla")[0].value = this.pantalla;
-    }
-
-    //función sinh
-    sinh() {
-        var res = Math.sinh(new Number(document.getElementsByName("pantalla")[0].value));
-        this.pantalla = res;
-        document.getElementsByName("pantalla")[0].value = this.pantalla;
-    }
-
-    //función cosh
-    cosh() {
-        var res = Math.cosh(new Number(document.getElementsByName("pantalla")[0].value));
-        this.pantalla = res;
-        document.getElementsByName("pantalla")[0].value = this.pantalla;
-    }
-
-    //función tanh
-    tanh() {
-        var res = Math.tanh(new Number(document.getElementsByName("pantalla")[0].value));
-        this.pantalla = res;
-        document.getElementsByName("pantalla")[0].value = this.pantalla;
-    }
-
-    //función asinh
-    asin() {
-        var res = Math.asin(new Number(document.getElementsByName("pantalla")[0].value));
-        this.pantalla = res;
-        document.getElementsByName("pantalla")[0].value = this.pantalla;
-    }
-
-    //función acos
-    acos() {
-        var res = Math.acos(new Number(document.getElementsByName("pantalla")[0].value));
-        this.pantalla = res;
-        document.getElementsByName("pantalla")[0].value = this.pantalla;
-    }
-
-    //función atan
-    atan() {
-        var res = Math.atan(new Number(document.getElementsByName("pantalla")[0].value));
-        this.pantalla = res;
-        document.getElementsByName("pantalla")[0].value = this.pantalla;
-    }
-
-    //función base 10
-    base10() {
-        var res = Math.pow(10,new Number(document.getElementsByName("pantalla")[0].value));
-        this.pantalla = res;
-        document.getElementsByName("pantalla")[0].value = this.pantalla;
-    }
-
-    //función logaritmo
-    log() {
-        var res = Math.log10(new Number(document.getElementsByName("pantalla")[0].value));
-        this.pantalla = res;
-        document.getElementsByName("pantalla")[0].value = this.pantalla;
-    }
-
     //función pi
     pi() {
-        this.pantalla += Math.PI;
-		document.getElementsByName("pantalla")[0].value = this.pantalla
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += "Math.PI";
     }
-
+    //función potencia
+    pow() {
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += "**";
+    }
+    //función elevado al cuadrado
+    cuadrado() {
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += "**2";
+    }
+    //función elevado al cubo
+    cubo(){
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += "**3";
+    }
+    //función base 10
+    base10() {
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += "Math.pow(10, ";
+    }
+    //función logaritmo
+    log10() {
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += "Math.log10(";
+    }
+    //función exponencial
+    exp() {
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += "Math.exp(";
+    }
+    //función que borra el último elemento
+    deleteOne() {
+        var aux = document.querySelector('input[type=text][name=\"pantalla\"]').value;
+        document.querySelector('input[type=text][name=\"pantalla\"]').value = aux.slice(0, -1);
+    }
+    //función logaritmo neperiano
+    ln() {
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += "Math.log(";
+    }
     //función factorial
     factorial() {
-        var n = new Number(document.getElementsByName("pantalla")[0].value);
-        var result = 1; 
-	    for (var i=1; i<=n; i++) {
-		    result = result * i; 
-	    }
-        this.pantalla = result;
-	    document.getElementsByName("pantalla")[0].value = this.pantalla;
+        var aux;
+        try {
+            aux = eval(document.querySelector('input[type=text][name=\"pantalla\"]').value);
+            var total = 1; 
+            for (var i = 1; i <= aux; i++) {
+                total = total * i; 
+            } 
+            this.ans = total;
+            document.querySelector('input[type=text][name=\"pantalla\"]').value = total;
+        }
+        catch (err) {
+            document.querySelector('input[type=text][name=\"pantalla\"]').value =  "SyntaxError";
+        }    
     }
-
-    //función borrado
-    ce() {
-        this.pantalla = "";
-        document.getElementsByName("pantalla")[0].value = this.pantalla;
-        this.memoria = 0;
+    //función seno
+    sin() {
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += "Math.sin(";
     }
-
-    //función eliminar 1 valor
-    deleteOne() {
-        var res = document.getElementsByName("pantalla")[0].value;
-        this.pantalla = res.substring(0, res.length - 1);
-        document.getElementsByName("pantalla")[0].value = this.pantalla;
+    //función coseno
+    cos() {
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += "Math.cos(";
     }
-
-    //parentesis izquierda
-    parentesisIzq(){
-        this.pantalla += "(";
-		document.getElementsByName("pantalla")[0].value = this.pantalla
+    //función tangente
+    tan() {
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += "Math.tan(";
     }
-
-    //parentesis derecha
-    parentesisDer(){
-        this.pantalla += ")";
-		document.getElementsByName("pantalla")[0].value = this.pantalla
+    //función senoh
+    sinh() {
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += "Math.sinh(";
+    }
+    //función cosenoh
+    cosh() {
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += "Math.cosh(";
+    }
+    //función tangenteh
+    tanh() {
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += "Math.tanh(";
+    }
+    //función arc seno
+    asin() {
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += "Math.asin(";
+    }
+    //función arc coseno
+    acos() {
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += "Math.acos(";
+    }
+    //función arc tangente
+    atan() {
+        document.querySelector('input[type=text][name=\"pantalla\"]').value += "Math.atan(";
     }
 }
-var calculadora = new CalculadoraCientifica();
+//creamos la calculadora
+calculadora = new calculadoraCientifica();
+//añadimios los nuevos eventos de teclado
+document.addEventListener('keydown', function (event) {
+    if(event.key === 'Backspace'){//tecla backspace
+        event.preventDefault();
+        calculadora.deleteOne();
+    }
+  });
