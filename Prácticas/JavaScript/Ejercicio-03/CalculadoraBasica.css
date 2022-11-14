@@ -48,9 +48,3 @@ form {
     column-gap: 0.7em;
     padding: 2em;
 }
-
-/*especifidad:001*/
-footer {
-    padding-top: 38em;
-    text-align: center;
-}
