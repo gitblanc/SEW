@@ -1,22 +1,23 @@
 <!DOCTYPE HTML>
 <html lang="es">
     <head>
-        <meta charset="UTF-8" ></button>
+        <meta charset="UTF-8">
         <title>Ejercicio 5</title>
-        <meta name ="viewport" content ="width=device-width, initial scale=1.0" ></button>
-        <meta name="author" content="Eduardo Blanco Bielsa" ></button>
-        <meta name="description" content="Calculadora RPN" ></button>
-        <link rel="stylesheet" type="text/css" href="/Tarea 1/CalculadoraRPN.css" ></button>
-        <script src="/Tarea 1/Pila.js"></script>
-        <script src="/Tarea 1/CalculadoraRPN.js"></script>
+        <meta name ="viewport" content ="width=device-width, initial scale=1.0">
+        <meta name="author" content="Eduardo Blanco Bielsa">
+        <meta name="description" content="Calculadora RPN">
+        <link rel="stylesheet" type="text/css" href="../Tarea-1/CalculadoraRPN.css"/>
+        <script src="../Tarea-1/Pila.js"></script>
+        <script src="../Tarea-1/CalculadoraRPN.js"></script>
            
     </head>
     <body>
         <form>
             <label for="pantalla">Eduardo Blanco Bielsa - UO285176</label>
-            <textarea rows="10"  name="pantalla" lang="es" disabled></textarea>
-               
-            <input type="text" name="currentnum" value="" lang="es" readonly></input>
+            <textarea rows="10" id="pantalla" name="pantalla" lang="es" disabled></textarea>
+            
+            <label for="currentnum">Número:</label>
+            <input type="text" id="currentnum" name="currentnum" value="" lang="es" readonly/>
                 
             <button type="button" onClick="calculadora.sin()">sin</button>
             <button type="button" onClick="calculadora.cos()">cos</button>
