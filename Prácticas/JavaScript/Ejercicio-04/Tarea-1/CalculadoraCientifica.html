@@ -2,23 +2,21 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8" />
-    <title>Ejercicio 3</title>
+    <title>Ejercicio 4</title>
     <meta name="viewport" content="width=device-width">
     <meta name="author" content="Eduardo Blanco Bielsa">
     <meta name="description" content="Calculadora básica">
-    <link rel="stylesheet" type="text/css" href="/Tarea 2/CalculadoraCientifica.css"/>
-    <script src="/Tarea 3/CalculadoraBasica.js"></script>
-    <script src="/Tarea 3/CalculadoraCientifica.js"></script>
+    <link rel="stylesheet" type="text/css" href="../Tarea-2/CalculadoraCientifica.css"/>
+    <script src="../Tarea-3/CalculadoraBasica.js"></script>
+    <script src="../Tarea-3/CalculadoraCientifica.js"></script>
 </head>
 <body>
     <form>
-        <label type="text" name="uo" for="pantalla">Eduardo Blanco Bielsa - UO285176</label>
-        <input type="text" name="pantalla" title= "res" readonly></input>
-        <button type="button" onClick="calculadora.deg()">DEG</button>
-        <button type="button" onClick="calculadora.hyp()">HYP</button>
+        <label for="pantalla">Eduardo Blanco Bielsa - UO285176</label>
+        <input type="text" id="pantalla" name="pantalla" title= "res" readonly/>
+        <button type="button" value="deg" onClick="calculadora.deg()">DEG</button>
+        <button type="button" value="hyp" onClick="calculadora.hyp()">HYP</button>
         <button type="button" onClick="calculadora.fe()">F-E</button>
-        <label></label>
-        <label></label>
 
         <button type="button" onClick="calculadora.mc()">MC</button>
         <button type="button" onClick="calculadora.mr()">MR</button>

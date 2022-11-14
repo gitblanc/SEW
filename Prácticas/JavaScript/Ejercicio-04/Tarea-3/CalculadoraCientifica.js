@@ -62,7 +62,7 @@ class calculadoraCientifica extends Calculadora{
             cubo.setAttribute("type", "button");
             cubo.setAttribute("onclick", "calculadora.cubo()");
             cubo.innerHTML = "x<sup>3</sup>";
-            document.querySelector("body > form > button:nth-child(12)").replaceWith(cubo);
+            document.querySelector("body > form > button:nth-child(13)").replaceWith(cubo);
             let asinb = document.createElement("button");
             asinb.setAttribute("type", "button");
             asinb.setAttribute("onclick", "calculadora.asin()");
@@ -90,7 +90,7 @@ class calculadoraCientifica extends Calculadora{
             cuadrado.setAttribute("type", "button");
             cuadrado.setAttribute("onclick", "calculadora.cuadrado()");
             cuadrado.innerHTML = "x<sup>2</sup>";
-            document.querySelector("body > form > button:nth-child(12)").replaceWith(cuadrado);
+            document.querySelector("body > form > button:nth-child(13)").replaceWith(cuadrado);
             let sinb = document.createElement("button");
             sinb.setAttribute("type", "button");
             sinb.setAttribute("onclick", "calculadora.sin()");

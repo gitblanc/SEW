@@ -7,47 +7,47 @@
         <meta name="author" content="Eduardo Blanco Bielsa" ></button>
         <meta name="description" content="Calculadora RPN" ></button>
         <link rel="stylesheet" type="text/css" href="/Tarea 1/CalculadoraRPN.css" ></button>
-        <script src="/Tarea 1/Stack.js"></script>
+        <script src="/Tarea 1/Pila.js"></script>
         <script src="/Tarea 1/CalculadoraRPN.js"></script>
            
     </head>
     <body>
         <form>
-            <label for="pantalla">Pila</label>
+            <label for="pantalla">Eduardo Blanco Bielsa - UO285176</label>
             <textarea rows="10"  name="pantalla" lang="es" disabled></textarea>
                
-            <input type="text" name="currentnum" value="" lang="es" readonly>
+            <input type="text" name="currentnum" value="" lang="es" readonly></input>
                 
-            <button value="sin" onclick="calculadora.sin()">sin</button>
-            <button value="cos" onclick="calculadora.cos()">cos</button>
-            <button value="tan" onclick="calculadora.tan()">tan</button>
-            <button value="+" onclick="calculadora.suma()">+</button>
+            <button type="button" onClick="calculadora.sin()">sin</button>
+            <button type="button" onClick="calculadora.cos()">cos</button>
+            <button type="button" onClick="calculadora.tan()">tan</button>
+            <button type="button" onClick="calculadora.suma()">+</button>
             
     
-            <button value="arcsin" onclick="calculadora.arcsin()">arcsin</button>
-            <button value="arccos" onclick="calculadora.arccos()">arccos</button>
-            <button value="arctan" onclick="calculadora.arctan()">arctan</button>
-            <button value="-" onclick="calculadora.resta()">-</button>
+            <button type="button" onClick="calculadora.arcsin()">arcsin</button>
+            <button type="button" onClick="calculadora.arccos()">arccos</button>
+            <button type="button" onClick="calculadora.arctan()">arctan</button>
+            <button type="button" onClick="calculadora.resta()">-</button>
             
-            <button value="1" onclick="calculadora.digito(1)">1</button>
-            <button value="2" onclick="calculadora.digito(2)">2</button>
-            <button value="3" onclick="calculadora.digito(3)">3</button>
-            <button value="/" onclick="calculadora.division()">÷</button>   
+            <button type="button" onClick="calculadora.digito(1)">1</button>
+            <button type="button" onClick="calculadora.digito(2)">2</button>
+            <button type="button" onClick="calculadora.digito(3)">3</button>
+            <button type="button" onClick="calculadora.division()">÷</button>   
             
-            <button value="4" onclick="calculadora.digito(4)">4</button>
-            <button value="5" onclick="calculadora.digito(5)">5</button>
-            <button value="6" onclick="calculadora.digito(6)">6</button>
-            <button value="*" onclick="calculadora.multiplicacion()">x</button>
+            <button type="button" onClick="calculadora.digito(4)">4</button>
+            <button type="button" onClick="calculadora.digito(5)">5</button>
+            <button type="button" onClick="calculadora.digito(6)">6</button>
+            <button type="button" onClick="calculadora.multiplicacion()">x</button>
     
-            <button value="7" onclick="calculadora.digito(7)">7</button>
-            <button value="8" onclick="calculadora.digito(8)">8</button>
-            <button value="9" onclick="calculadora.digito(9)">9</button>
-            <button value="C" onclick="calculadora.empty()">C</button>
+            <button type="button" onClick="calculadora.digito(7)">7</button>
+            <button type="button" onClick="calculadora.digito(8)">8</button>
+            <button type="button" onClick="calculadora.digito(9)">9</button>
+            <button type="button" onClick="calculadora.empty()">C</button>
                
-            <button value="+-" onclick="calculadora.changeSign()">+/-</button>
-            <button value="0" onclick="calculadora.digito(0)">0</button>
+            <button type="button" onClick="calculadora.changeSign()">+/-</button>
+            <button type="button" onClick="calculadora.digito(0)">0</button>
             
-            <button value="ENTER" onclick="calculadora.enter()">ENTER</button>
+            <button type="button" value="ENTER" onClick="calculadora.enter()">ENTER</button>
         </form>
     </body>
 </html>

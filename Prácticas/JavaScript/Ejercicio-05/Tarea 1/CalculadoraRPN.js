@@ -1,12 +1,12 @@
 class CalculadoraRPN{
     //constructor
-    constructor(stack){
-        this.stack = stack;
+    constructor(pila){
+        this.pila = pila;
     }
     //función que muestra la pila
-    mostrar(){
-        if(!this.stack.vacio()){
-            document.querySelector('textarea[name=\"pantalla\"]').innerHTML = this.stack.printStack(this.stack);
+    show(){
+        if(!this.pila.isEmpty()){
+            document.querySelector('textarea[name=\"pantalla\"]').innerHTML = this.pila.show(this.pila);
         }
     }
     //función digito
@@ -15,99 +15,105 @@ class CalculadoraRPN{
     }
     //función suma
     suma(){
-        if(this.stack.size() >= 2){
-            this.stack.push(this.stack.pop()+this.stack.pop());
-            this.mostrar();
+        if(this.pila.size() >= 2){
+            this.pila.pushMyPila(this.pila.popMyPila()+this.pila.popMyPila());
+            this.show();
         }
     }
     //función resta
     resta(){
-        if(this.stack.size() >= 2){
-            this.stack.push(this.stack.pop()-this.stack.pop());
-            this.mostrar();
+        if(this.pila.size() >= 2){
+            var v1 = this.pila.popMyPila();
+            var v2 = this.pila.popMyPila();
+            this.pila.pushMyPila(v2-v1);
+            this.show();
         }
 
     }
     //función multiplicación
     multiplicacion(){
-        if(this.stack.size() >= 2){
-            this.stack.push(this.stack.pop()*this.stack.pop());
-            this.mostrar();
+        if(this.pila.size() >= 2){
+            var v1 = this.pila.popMyPila();
+            var v2 = this.pila.popMyPila();
+            this.pila.pushMyPila(v2*v1);
+            this.show();
         }
     }
     //función división
     division(){
-        if(this.stack.size() >= 2){
-            this.stack.push(this.stack.pop()/this.stack.pop());
-             this.mostrar();
+        if(this.pila.size() >= 2){
+            var v1 = this.pila.popMyPila();
+            var v2 = this.pila.popMyPila();
+            this.pila.pushMyPila(v2/v1);
+             this.show();
         }
     }
     //función seno
     sin(){
-        if(this.stack.size() >= 1){
-            this.stack.push(Math.sin(this.stack.pop()));
-            this.mostrar();
+        if(this.pila.size() >= 1){
+            this.pila.pushMyPila(Math.sin(this.pila.popMyPila()));
+            this.show();
         }
     }
     //función coseno
     cos(){
-        if(this.stack.size() >= 1){
-            this.stack.push(Math.cos(this.stack.pop()));
-            this.mostrar();
+        if(this.pila.size() >= 1){
+            this.pila.pushMyPila(Math.cos(this.pila.popMyPila()));
+            this.show();
         }
 
     }
     //función tangente
     tan(){
-        if(this.stack.size() >= 1){
-            this.stack.push(Math.tan(this.stack.pop()));
-            this.mostrar();
+        if(this.pila.size() >= 1){
+            this.pila.pushMyPila(Math.tan(this.pila.popMyPila()));
+            this.show();
         }
     }
     //función arc seno
     arcsin(){
-        if(this.stack.size() >= 1){
-            this.stack.push(Math.asin(this.stack.pop()));
-            this.mostrar();
+        if(this.pila.size() >= 1){
+            this.pila.pushMyPila(Math.asin(this.pila.popMyPila()));
+            this.show();
         }
     }
     //función arc tangente
     arctan(){
-        if(this.stack.size() >= 1){
-            this.stack.push(Math.atan(this.stack.pop()));
-            this.mostrar();
+        if(this.pila.size() >= 1){
+            this.pila.pushMyPila(Math.atan(this.pila.popMyPila()));
+            this.show();
         }
     }
     //función arc coseno
     arccos(){
-        if(this.stack.size() >= 1){
-            this.stack.push(Math.acos(this.stack.pop()));
-            this.mostrar();
+        if(this.pila.size() >= 1){
+            this.pila.pushMyPila(Math.acos(this.pila.popMyPila()));
+            this.show();
         }
 
     }
     //función que cambia de signo
     changeSign(){
-        if(this.stack.size() >= 1){
-            this.stack.push(this.stack.pop() * (-1));
-            this.mostrar();
+        if(this.pila.size() >= 1){
+            this.pila.pushMyPila(this.pila.popMyPila() * (-1));
+            this.show();
         }
     }
     //función enter
     enter(){
-        this.stack.push(Number(document.querySelector('input[type=text][name=\"currentnum\"]').value));
-       document.querySelector('input[type=text][name=\"currentnum\"]').value = "";
-        this.mostrar();
+        this.pila.pushMyPila(Number(document.querySelector('input[type=text][name=\"currentnum\"]').value));
+        document.querySelector('input[type=text][name=\"currentnum\"]').value = "";
+        this.show();
     }
     //función que vacía la pila
     empty(){
-        this.stack.empty();
-       document.querySelector('input[type=text][name=\"currentnum\"]').value = "";
+        this.pila.empty();
+        document.querySelector('input[type=text][name=\"currentnum\"]').value = "";
         document.querySelector('textarea[name=\"pantalla\"]').innerHTML = "";
     }
 }
-var stack = new Pila();//creamos la pila
-calculadora = new CalculadoraRPN(stack);//creamos la calculadora
+var pila = new Pila();//creamos la pila
+calculadora = new CalculadoraRPN(pila);//creamos la calculadora
 
 document.addEventListener('keydown', function (event) {
     if (event.key === '+') {//suma

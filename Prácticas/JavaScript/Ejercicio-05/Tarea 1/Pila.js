@@ -5,12 +5,12 @@ class Pila {
         this.last = -1;
     }
     //función push
-    push(element) {
+    pushMyPila(element) {
         this.data.push(element);
         this.last += 1;
     }
     //función pop
-    pop(){
+    popMyPila(){
         if(!this.isEmpty()){
             this.last -= 1;
             return this.data.pop();
@@ -29,7 +29,7 @@ class Pila {
         return this.last < 0;
     }
     //función que imprime la pila
-    printStack(s)
+    show(s)
     {
         var aux = [];
         let str = "";
@@ -39,7 +39,7 @@ class Pila {
         
         let i = 0;
         var elem;
-        for(i = 0; i<this.size();i++){
+        for(i = this.size(); i > 0;i--){
             elem = this.data.pop();
             str += "("+ i +": \t\t" + elem +")\n";
             aux.push(elem);
