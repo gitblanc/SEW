@@ -45,11 +45,10 @@ class CalculadoraBases extends CalculadoraRPN{
     //función que convierte a base 2 (ha de haber sólo un número en la pila)
     base2(){
         if(this.pila.size() >= 1){
+            this.pilaBases.empty();
             for(let i = 0; i<this.pila.size();i++){
                 var elem = this.pila.get(i);
-                console.log(elem);
                 this.pilaBases.pushMyPila(this.toBinary(elem));
-                console.log(this.pilaBases);
             }
             
             this.binary = true;
@@ -64,18 +63,19 @@ class CalculadoraBases extends CalculadoraRPN{
 
     //función que convierte a base 8 (ha de haber sólo un número en la pila)
     base8(){
-        if(this.pila.size() == 1){
-            var v1 = this.pila.popMyPila();
-
-            v1 = this.toOctal(this.modificarBase(v1));
-
-            this.binary = false;
-            this.decimal = false;
-            this.octal = true;
-            this.hexadecimal = false;
+        if(this.pila.size() >= 1){
+            this.pilaBases.empty();
+            for(let i = 0; i<this.pila.size();i++){
+                var elem = this.toOctal(this.pila.get(i));
+                this.pilaBases.pushMyPila(elem);
+            }
             
-            this.pila.pushMyPila(v1);
-            this.show();
+            this.binary = true;
+            this.decimal = false;
+            this.octal = false;
+            this.hexadecimal = false;
+    
+            this.show(pilaBases);
             this.deshabilitarBotones();
         }
     }
