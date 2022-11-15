@@ -1,7 +1,7 @@
 class Pila {
     //constructor
     constructor(){
-        this.data = [];
+        this.data = new Element()[];
         this.last = -1;
     }
     //función push

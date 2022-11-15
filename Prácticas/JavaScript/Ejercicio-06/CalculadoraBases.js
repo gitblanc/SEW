@@ -2,10 +2,6 @@ class CalculadoraBases extends CalculadoraRPN{
     //constructor
     constructor(pila){
         super(pila);
-        this.binary = false;
-        this.decimal = true;
-        this.octal = false;
-        this.hexadecimal = false;
     }
 
     //método auxiliar que convierte a decimal
@@ -30,13 +26,13 @@ class CalculadoraBases extends CalculadoraRPN{
 
     modificarBase(v1){
         console.log("sin-modificar: " + v1);
-        if(this.octal){
+        if(this.pila.octal){
             v1 = parseInt(v1,8);
-        }else if(this.hexadecimal){
+        }else if(this.pila.hexadecimal){
             v1 = parseInt(v1,16);
         }else if(this.binary){
             v1 = parseInt(v1,2);
-        }else if(this.decimal){
+        }else if(this.pila.decimal){
             return v1;
         }
         console.log("modificado: " + v1);
@@ -45,73 +41,69 @@ class CalculadoraBases extends CalculadoraRPN{
 
     //función que convierte a base 2 (ha de haber sólo un número en la pila)
     base2(){
-        if(this.pila.size() == 1){
+        if(this.pila.size() >= 1){
             let v1 = this.pila.popMyPila();//elemento
             
             v1 = this.toBinary(this.modificarBase(v1));
 
-            this.binary = true;
-            this.decimal = false;
-            this.octal = false;
-            this.hexadecimal = false;
+            this.pila.binary= true;
+            this.pila.decimal = false;
+            this.pila.octal = false;
+            this.pila.hexadecimal = false;
     
             this.pila.pushMyPila(v1);
             this.show();
-            this.deshabilitarBotones();
         }
     }
 
     //función que convierte a base 8 (ha de haber sólo un número en la pila)
     base8(){
-        if(this.pila.size() == 1){
+        if(this.pila.size() >= 1){
             var v1 = this.pila.popMyPila();
 
             v1 = this.toOctal(this.modificarBase(v1));
 
-            this.binary = false;
-            this.decimal = false;
-            this.octal = true;
-            this.hexadecimal = false;
+            this.pila.binary= false;
+            this.pila.decimal = false;
+            this.pila.octal = true;
+            this.pila.hexadecimal = false;
             
             this.pila.pushMyPila(v1);
             this.show();
-            this.deshabilitarBotones();
         }
     }
 
     //función que convierte a base 16 (ha de haber sólo un número en la pila)
     base16(){
-        if(this.pila.size() == 1){
+        if(this.pila.size() >= 1){
             var v1 = this.pila.popMyPila();
 
             v1 = this.toHex(this.modificarBase(v1));
 
-            this.binary = false;
-            this.decimal = false;
-            this.octal = false;
-            this.hexadecimal = true;
+            this.pila.binary= false;
+            this.pila.decimal = false;
+            this.pila.octal = false;
+            this.pila.hexadecimal = true;
 
             this.pila.pushMyPila(v1);
             this.show();
-            this.deshabilitarBotones();
         }
     }
 
     //función que convierte a base 10 (ha de haber sólo un número en la pila)
     baseDecimal(){
-        if(this.pila.size() == 1){
+        if(this.pila.size() >= 1){
             var v1 = this.pila.popMyPila();
             
             v1 = this.modificarBase(v1);
 
-            this.binary = false;
-            this.decimal = true;
-            this.octal = false;
-            this.hexadecimal = false;
+            this.pila.binary= false;
+            this.pila.decimal = true;
+            this.pila.octal = false;
+            this.pila.hexadecimal = false;
             
             this.pila.pushMyPila(v1);
             this.show();
-            this.habilitarBotones();
         }
     }
 
@@ -165,16 +157,50 @@ class CalculadoraBases extends CalculadoraRPN{
 
     //función que vacía la pila y habilita los botones
     empty(){
-        this.binary = false;
-        this.decimal = true;
-        this.octal = false;
-        this.hexadecimal = false;
+        this.pila.binary= false;
+        this.pila.decimal = true;
+        this.pila.octal = false;
+        this.pila.hexadecimal = false;
         this.habilitarBotones();
         this.pila.empty();
         document.querySelector('input[type=text][name=\"currentnum\"]').value = "";
         document.querySelector('textarea[name=\"pantalla\"]').innerHTML = "";
     }
+
+    //función enter
+    enter(){
+        this.pila.binary= false;
+        this.pila.decimal = true;
+        this.pila.octal = false;
+        this.pila.hexadecimal = false;
+        this.pila.pushMyPila(Number(document.querySelector('input[type=text][name=\"currentnum\"]').value));
+        document.querySelector('input[type=text][name=\"currentnum\"]').value = "";
+        this.show();
+    }
+
+    //función suma
+    suma(){
+        if(this.pila.size() >= 2){
+            var v1 = this.pila.popMyPila();
+            var v2 = this.pila.popMyPila();
+            v1 = this.modificarBase(v1);
+            v2 = this.modificarBase(v2);
+            this.pila.pushMyPila(v1+v2);
+            this.show();
+        }
+    }
 }
+
+class Element {
+    constructor(val, bin, dec, oct, hex){
+        this.value = val;
+        this.binary = bin;
+        this.decimal = dec;
+        this.octal = oct;
+        this.hexadecimal = hex;
+    }
+}
+
 var pila = new Pila();//creamos la pila
 calculadora = new CalculadoraBases(pila);//creamos la calculadora
 
@@ -182,5 +208,12 @@ document.addEventListener('keydown', function (event) {
     if(event.key === 'Delete'){//Borrar todo
         event.preventDefault();
         calculadora.empty();
+    }
+    if(event.key === 'Enter'){//Enter
+        event.preventDefault();
+        calculadora.enter();
+    }
+    if (event.key === '+') {//suma
+        calculadora.suma();
     }
 });
