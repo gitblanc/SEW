@@ -1,7 +1,8 @@
 class CalculadoraBases extends CalculadoraRPN{
     //constructor
-    constructor(pila){
+    constructor(pila, pilaB){
         super(pila);
+        this.pilaBases = pilaB;
         this.binary = false;
         this.decimal = true;
         this.octal = false;
@@ -43,18 +44,20 @@ class CalculadoraBases extends CalculadoraRPN{
 
     //función que convierte a base 2 (ha de haber sólo un número en la pila)
     base2(){
-        if(this.pila.size() == 1){
-            let v1 = this.pila.popMyPila();//elemento
+        if(this.pila.size() >= 1){
+            for(let i = 0; i<this.pila.size();i++){
+                var elem = this.pila.get(i);
+                console.log(elem);
+                this.pilaBases.pushMyPila(this.toBinary(elem));
+                console.log(this.pilaBases);
+            }
             
-            v1 = this.toBinary(this.modificarBase(v1));
-
             this.binary = true;
             this.decimal = false;
             this.octal = false;
             this.hexadecimal = false;
     
-            this.pila.pushMyPila(v1);
-            this.show();
+            this.show(pilaBases);
             this.deshabilitarBotones();
         }
     }
@@ -170,6 +173,7 @@ class CalculadoraBases extends CalculadoraRPN{
         this.octal = false;
         this.hexadecimal = false;
         this.pila.empty();
+        this.pilaBases.empty();
         document.querySelector('input[type=text][name=\"currentnum\"]').value = "";
         document.querySelector('textarea[name=\"pantalla\"]').innerHTML = "";
         this.habilitarBotones();
@@ -183,11 +187,12 @@ class CalculadoraBases extends CalculadoraRPN{
         this.hexadecimal = false;
         this.pila.pushMyPila(Number(document.querySelector('input[type=text][name=\"currentnum\"]').value));
         document.querySelector('input[type=text][name=\"currentnum\"]').value = "";
-        this.show();
+        this.show(this.pila);
     }
 }
 var pila = new Pila();//creamos la pila
-calculadora = new CalculadoraBases(pila);//creamos la calculadora
+var pilaBases = new Pila();//creamos la pila de bases
+calculadora = new CalculadoraBases(pila, pilaBases);//creamos la calculadora
 
 document.addEventListener('keydown', function (event) {
     if(event.key === 'Delete'){//Borrar todo

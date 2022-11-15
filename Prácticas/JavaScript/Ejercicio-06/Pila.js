@@ -61,8 +61,14 @@ class Pila {
         return this.last+1;
     }
 
-    //función que devuelve todos los datos
+    //función que devuelve una copia de todos los datos
     getAll(){
-        return [...this.data];
+        const x = [...data];
+        return x;
+    }
+
+    //función que reestablece los valores
+    setData(newData){
+        this.data = this.data;
     }
 }

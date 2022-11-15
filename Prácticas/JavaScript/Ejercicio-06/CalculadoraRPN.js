@@ -4,9 +4,9 @@ class CalculadoraRPN{
         this.pila = pila;
     }
     //función que muestra la pila
-    show(){
+    show(stack){
         if(!this.pila.isEmpty()){
-            document.querySelector('textarea[name=\"pantalla\"]').innerHTML = this.pila.show(this.pila);
+            document.querySelector('textarea[name=\"pantalla\"]').innerHTML = stack.show(stack);
         }
     }
     //función digito
@@ -17,7 +17,7 @@ class CalculadoraRPN{
     suma(){
         if(this.pila.size() >= 2){
             this.pila.pushMyPila(this.pila.popMyPila()+this.pila.popMyPila());
-            this.show();
+            this.show(this.pila);
         }
     }
     //función resta
@@ -26,7 +26,7 @@ class CalculadoraRPN{
             var v1 = this.pila.popMyPila();
             var v2 = this.pila.popMyPila();
             this.pila.pushMyPila(v2-v1);
-            this.show();
+            this.show(this.pila);
         }
 
     }
@@ -36,7 +36,7 @@ class CalculadoraRPN{
             var v1 = this.pila.popMyPila();
             var v2 = this.pila.popMyPila();
             this.pila.pushMyPila(v2*v1);
-            this.show();
+            this.show(this.pila);
         }
     }
     //función división
@@ -45,21 +45,21 @@ class CalculadoraRPN{
             var v1 = this.pila.popMyPila();
             var v2 = this.pila.popMyPila();
             this.pila.pushMyPila(v2/v1);
-             this.show();
+             this.show(this.pila);
         }
     }
     //función seno
     sin(){
         if(this.pila.size() >= 1){
             this.pila.pushMyPila(Math.sin(this.pila.popMyPila()));
-            this.show();
+            this.show(this.pila);
         }
     }
     //función coseno
     cos(){
         if(this.pila.size() >= 1){
             this.pila.pushMyPila(Math.cos(this.pila.popMyPila()));
-            this.show();
+            this.show(this.pila);
         }
 
     }
@@ -67,28 +67,28 @@ class CalculadoraRPN{
     tan(){
         if(this.pila.size() >= 1){
             this.pila.pushMyPila(Math.tan(this.pila.popMyPila()));
-            this.show();
+            this.show(this.pila);
         }
     }
     //función arc seno
     arcsin(){
         if(this.pila.size() >= 1){
             this.pila.pushMyPila(Math.asin(this.pila.popMyPila()));
-            this.show();
+            this.show(this.pila);
         }
     }
     //función arc tangente
     arctan(){
         if(this.pila.size() >= 1){
             this.pila.pushMyPila(Math.atan(this.pila.popMyPila()));
-            this.show();
+            this.show(this.pila);
         }
     }
     //función arc coseno
     arccos(){
         if(this.pila.size() >= 1){
             this.pila.pushMyPila(Math.acos(this.pila.popMyPila()));
-            this.show();
+            this.show(this.pila);
         }
 
     }
@@ -96,7 +96,7 @@ class CalculadoraRPN{
     changeSign(){
         if(this.pila.size() >= 1){
             this.pila.pushMyPila(this.pila.popMyPila() * (-1));
-            this.show();
+            this.show(this.pila);
         }
     }
 }
