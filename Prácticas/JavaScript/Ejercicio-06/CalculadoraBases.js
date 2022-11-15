@@ -44,7 +44,7 @@ class CalculadoraBases extends CalculadoraRPN{
 
     //función que convierte a base 2 (ha de haber sólo un número en la pila)
     base2(){
-        if(this.pila.size() >= 1){
+        if(this.pila.size() === 1 || this.pila.size() === 2){
             this.pilaBases.empty();
             for(let i = 0; i<this.pila.size();i++){
                 var elem = this.pila.get(i);
@@ -57,13 +57,13 @@ class CalculadoraBases extends CalculadoraRPN{
             this.hexadecimal = false;
     
             this.show(pilaBases);
-            this.deshabilitarBotones();
+            this.deshabilitarBotonesParaBases();
         }
     }
 
     //función que convierte a base 8 (ha de haber sólo un número en la pila)
     base8(){
-        if(this.pila.size() >= 1){
+        if(this.pila.size() === 1 || this.pila.size() === 2){
             this.pilaBases.empty();
             for(let i = 0; i<this.pila.size();i++){
                 var elem = this.toOctal(this.pila.get(i));
@@ -76,18 +76,19 @@ class CalculadoraBases extends CalculadoraRPN{
             this.hexadecimal = false;
     
             this.show(pilaBases);
-            this.deshabilitarBotones();
+            this.deshabilitarBotonesParaBases();
         }
     }
 
     //función que convierte a base 16 (ha de haber sólo un número en la pila)
     base16(){
-        if(this.pila.size() >= 1){
+        if(this.pila.size() === 1 || this.pila.size() === 2){
             this.pilaBases.empty();
             for(let i = 0; i<this.pila.size();i++){
                 var elem = this.toHex(this.pila.get(i));
                 this.pilaBases.pushMyPila(elem);
             }
+            console.log(this.pilaBases);
             
             this.binary = true;
             this.decimal = false;
@@ -95,13 +96,13 @@ class CalculadoraBases extends CalculadoraRPN{
             this.hexadecimal = false;
     
             this.show(pilaBases);
-            this.deshabilitarBotones();
+            this.deshabilitarBotonesParaBases();
         }
     }
 
     //función que convierte a base 10 (ha de haber sólo un número en la pila)
     baseDecimal(){
-        if(this.pila.size() >= 1){
+        if(this.pila.size() === 1 || this.pila.size() === 2){
             this.pilaBases.empty();
             for(let i = 0; i<this.pila.size();i++){
                 var elem = this.toDecimal(this.pila.get(i));
@@ -114,33 +115,33 @@ class CalculadoraBases extends CalculadoraRPN{
             this.hexadecimal = false;
     
             this.show(pilaBases);
-            this.deshabilitarBotones();
+            this.deshabilitarBotonesParaBases();
         }
     }
 
     //cuando trabajamos en base 8, se desabilitan x botones
-    deshabilitarBotones(){
+    deshabilitarBotonesParaBases(){
         document.getElementsByName("sin")[0].disabled = true;
         document.getElementsByName("cos")[0].disabled = true;
         document.getElementsByName("tan")[0].disabled = true;
-        document.getElementsByName("mas")[0].disabled = true;
+        // document.getElementsByName("mas")[0].disabled = true;
         document.getElementsByName("arcsin")[0].disabled = true;
         document.getElementsByName("arccos")[0].disabled = true;
         document.getElementsByName("arctan")[0].disabled = true;
-        document.getElementsByName("menos")[0].disabled = true;
-        document.getElementsByName("1")[0].disabled = true;
-        document.getElementsByName("2")[0].disabled = true;
-        document.getElementsByName("3")[0].disabled = true;
-        document.getElementsByName("entre")[0].disabled = true;
-        document.getElementsByName("4")[0].disabled = true;
-        document.getElementsByName("5")[0].disabled = true;
-        document.getElementsByName("6")[0].disabled = true;
-        document.getElementsByName("por")[0].disabled = true;
-        document.getElementsByName("7")[0].disabled = true;
-        document.getElementsByName("8")[0].disabled = true;
-        document.getElementsByName("9")[0].disabled = true;
-        document.getElementsByName("0")[0].disabled = true;
-        document.getElementsByName("ENTER")[0].disabled = true;
+        // document.getElementsByName("menos")[0].disabled = true;
+        // document.getElementsByName("1")[0].disabled = true;
+        // document.getElementsByName("2")[0].disabled = true;
+        // document.getElementsByName("3")[0].disabled = true;
+        // document.getElementsByName("entre")[0].disabled = true;
+        // document.getElementsByName("4")[0].disabled = true;
+        // document.getElementsByName("5")[0].disabled = true;
+        // document.getElementsByName("6")[0].disabled = true;
+        // document.getElementsByName("por")[0].disabled = true;
+        // document.getElementsByName("7")[0].disabled = true;
+        // document.getElementsByName("8")[0].disabled = true;
+        // document.getElementsByName("9")[0].disabled = true;
+        // document.getElementsByName("0")[0].disabled = true;
+        // document.getElementsByName("ENTER")[0].disabled = true;
     }
 
     //función que rehabilita todos los botones
@@ -178,7 +179,15 @@ class CalculadoraBases extends CalculadoraRPN{
         this.pilaBases.empty();
         document.querySelector('input[type=text][name=\"currentnum\"]').value = "";
         document.querySelector('textarea[name=\"pantalla\"]').innerHTML = "";
+        this.deshabilitarOHabilitaBotonesBases(false);
         this.habilitarBotones();
+    }
+
+    deshabilitarOHabilitaBotonesBases(cond){
+        document.getElementsByName("base2")[0].disabled = cond;
+        document.getElementsByName("base8")[0].disabled = cond;
+        document.getElementsByName("base16")[0].disabled = cond;
+        document.getElementsByName("base10")[0].disabled = cond;
     }
 
     //función enter
@@ -190,6 +199,11 @@ class CalculadoraBases extends CalculadoraRPN{
         this.pila.pushMyPila(Number(document.querySelector('input[type=text][name=\"currentnum\"]').value));
         document.querySelector('input[type=text][name=\"currentnum\"]').value = "";
         this.show(this.pila);
+        if(this.pila.size() <= 2){
+            this.deshabilitarOHabilitaBotonesBases(false);
+        }else{
+            this.deshabilitarOHabilitaBotonesBases(true);
+        }
     }
 }
 var pila = new Pila();//creamos la pila
