@@ -13,6 +13,13 @@ class CalculadoraRPN{
     digito(x){
        document.querySelector('input[type=text][name=\"currentnum\"]').value += x;
     }
+    //función suma
+    suma(){
+        if(this.pila.size() >= 2){
+            this.pila.pushMyPila(this.pila.popMyPila()+this.pila.popMyPila());
+            this.show();
+        }
+    }
     //función resta
     resta(){
         if(this.pila.size() >= 2){
@@ -92,12 +99,20 @@ class CalculadoraRPN{
             this.show();
         }
     }
+    //función enter
+    enter(){
+        this.pila.pushMyPila(Number(document.querySelector('input[type=text][name=\"currentnum\"]').value));
+        document.querySelector('input[type=text][name=\"currentnum\"]').value = "";
+        this.show();
+    }
 }
-
 var pila = new Pila();//creamos la pila
 calculadora = new CalculadoraRPN(pila);//creamos la calculadora
 
 document.addEventListener('keydown', function (event) {
+    if (event.key === '+') {//suma
+        calculadora.suma();
+    }
     if (event.key === '-') {//resta
         calculadora.resta();
     }
@@ -109,5 +124,9 @@ document.addEventListener('keydown', function (event) {
     }
     if(event.key >= '0' && event.key <= '9'){//números
         calculadora.digito(Number(event.key));
+    }
+    if(event.key === 'Enter'){//Enter
+        event.preventDefault();
+        calculadora.enter();
     }
   });
