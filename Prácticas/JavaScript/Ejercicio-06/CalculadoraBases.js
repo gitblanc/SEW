@@ -174,6 +174,17 @@ class CalculadoraBases extends CalculadoraRPN{
         document.querySelector('textarea[name=\"pantalla\"]').innerHTML = "";
         this.habilitarBotones();
     }
+
+    //función enter
+    enter(){
+        this.binary = false;
+        this.decimal = true;
+        this.octal = false;
+        this.hexadecimal = false;
+        this.pila.pushMyPila(Number(document.querySelector('input[type=text][name=\"currentnum\"]').value));
+        document.querySelector('input[type=text][name=\"currentnum\"]').value = "";
+        this.show();
+    }
 }
 var pila = new Pila();//creamos la pila
 calculadora = new CalculadoraBases(pila);//creamos la calculadora
@@ -182,5 +193,9 @@ document.addEventListener('keydown', function (event) {
     if(event.key === 'Delete'){//Borrar todo
         event.preventDefault();
         calculadora.vaciar();
+    }
+    if(event.key === 'Enter'){//Enter
+        event.preventDefault();
+        calculadora.enter();
     }
 });

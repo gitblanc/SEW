@@ -60,4 +60,9 @@ class Pila {
     size(){
         return this.last+1;
     }
+
+    //función que devuelve todos los datos
+    getAll(){
+        return [...this.data];
+    }
 }
