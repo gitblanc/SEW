@@ -52,9 +52,6 @@ class Pila {
     }
     //función get element
     get(x){
-        // if(x >= this.size()-1){
-        //     return this.data[x];
-        // }
         return this.data[x];
     }
     //función que devuelve el tamaño de la pila
