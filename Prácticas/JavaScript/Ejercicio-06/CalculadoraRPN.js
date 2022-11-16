@@ -13,41 +13,6 @@ class CalculadoraRPN{
     digito(x){
        document.querySelector('input[type=text][name=\"currentnum\"]').value += x;
     }
-    //función suma
-    suma(){
-        if(this.pila.size() >= 2){
-            this.pila.pushMyPila(this.pila.popMyPila()+this.pila.popMyPila());
-            this.show(this.pila);
-        }
-    }
-    //función resta
-    resta(){
-        if(this.pila.size() >= 2){
-            var v1 = this.pila.popMyPila();
-            var v2 = this.pila.popMyPila();
-            this.pila.pushMyPila(v2-v1);
-            this.show(this.pila);
-        }
-
-    }
-    //función multiplicación
-    multiplicacion(){
-        if(this.pila.size() >= 2){
-            var v1 = this.pila.popMyPila();
-            var v2 = this.pila.popMyPila();
-            this.pila.pushMyPila(v2*v1);
-            this.show(this.pila);
-        }
-    }
-    //función división
-    division(){
-        if(this.pila.size() >= 2){
-            var v1 = this.pila.popMyPila();
-            var v2 = this.pila.popMyPila();
-            this.pila.pushMyPila(v2/v1);
-             this.show(this.pila);
-        }
-    }
     //función seno
     sin(){
         if(this.pila.size() >= 1){
@@ -104,18 +69,6 @@ var pila = new Pila();//creamos la pila
 calculadora = new CalculadoraRPN(pila);//creamos la calculadora
 
 document.addEventListener('keydown', function (event) {
-    if (event.key === '+') {//suma
-        calculadora.suma();
-    }
-    if (event.key === '-') {//resta
-        calculadora.resta();
-    }
-    if (event.key === '*') {//multiplicación
-        calculadora.multiplicacion();
-    }
-    if (event.key === '/') {//división
-        calculadora.division();
-    }
     if(event.key >= '0' && event.key <= '9'){//números
         calculadora.digito(Number(event.key));
     }

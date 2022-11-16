@@ -50,7 +50,7 @@ class CalculadoraBases extends CalculadoraRPN{
                 var elem = this.pila.get(i);
                 this.pilaBases.pushMyPila(this.toBinary(elem));
             }
-            
+            console.log(pilaBases);
             this.binary = true;
             this.decimal = false;
             this.octal = false;
@@ -66,8 +66,8 @@ class CalculadoraBases extends CalculadoraRPN{
         if(this.pila.size() === 1 || this.pila.size() === 2){
             this.pilaBases.empty();
             for(let i = 0; i<this.pila.size();i++){
-                var elem = this.toOctal(this.pila.get(i));
-                this.pilaBases.pushMyPila(elem);
+                var elem = this.pila.get(i);
+                this.pilaBases.pushMyPila(this.toOctal(elem));
             }
             
             this.binary = true;
@@ -85,10 +85,9 @@ class CalculadoraBases extends CalculadoraRPN{
         if(this.pila.size() === 1 || this.pila.size() === 2){
             this.pilaBases.empty();
             for(let i = 0; i<this.pila.size();i++){
-                var elem = this.toHex(this.pila.get(i));
-                this.pilaBases.pushMyPila(elem);
+                var elem = this.pila.get(i);
+                this.pilaBases.pushMyPila(this.toHex(elem));
             }
-            console.log(this.pilaBases);
             
             this.binary = true;
             this.decimal = false;
@@ -105,8 +104,8 @@ class CalculadoraBases extends CalculadoraRPN{
         if(this.pila.size() === 1 || this.pila.size() === 2){
             this.pilaBases.empty();
             for(let i = 0; i<this.pila.size();i++){
-                var elem = this.toDecimal(this.pila.get(i));
-                this.pilaBases.pushMyPila(elem);
+                var elem = this.pila.get(i);
+                this.pilaBases.pushMyPila(this.toDecimal(elem));
             }
             
             this.binary = true;
@@ -179,7 +178,7 @@ class CalculadoraBases extends CalculadoraRPN{
         this.pilaBases.empty();
         document.querySelector('input[type=text][name=\"currentnum\"]').value = "";
         document.querySelector('textarea[name=\"pantalla\"]').innerHTML = "";
-        this.deshabilitarOHabilitaBotonesBases(false);
+        this.comprobarBotonesBases();
         this.habilitarBotones();
     }
 
@@ -188,6 +187,14 @@ class CalculadoraBases extends CalculadoraRPN{
         document.getElementsByName("base8")[0].disabled = cond;
         document.getElementsByName("base16")[0].disabled = cond;
         document.getElementsByName("base10")[0].disabled = cond;
+    }
+    //función que comprueba si las bases se pueden volver a habilitar
+    comprobarBotonesBases(){
+        if(this.pila.size() <= 2){
+            this.deshabilitarOHabilitaBotonesBases(false);
+        }else{
+            this.deshabilitarOHabilitaBotonesBases(true);
+        }
     }
 
     //función enter
@@ -199,10 +206,46 @@ class CalculadoraBases extends CalculadoraRPN{
         this.pila.pushMyPila(Number(document.querySelector('input[type=text][name=\"currentnum\"]').value));
         document.querySelector('input[type=text][name=\"currentnum\"]').value = "";
         this.show(this.pila);
-        if(this.pila.size() <= 2){
-            this.deshabilitarOHabilitaBotonesBases(false);
-        }else{
-            this.deshabilitarOHabilitaBotonesBases(true);
+        this.comprobarBotonesBases();
+    }
+
+    //función suma
+    suma(){
+        if(this.pila.size() >= 2){
+            this.pila.pushMyPila(this.pila.popMyPila()+this.pila.popMyPila());
+            this.show(this.pila);
+            this.comprobarBotonesBases();
+        }
+    }
+    //función resta
+    resta(){
+        if(this.pila.size() >= 2){
+            var v1 = this.pila.popMyPila();
+            var v2 = this.pila.popMyPila();
+            this.pila.pushMyPila(v2-v1);
+            this.show(this.pila);
+            this.comprobarBotonesBases();
+        }
+
+    }
+    //función multiplicación
+    multiplicacion(){
+        if(this.pila.size() >= 2){
+            var v1 = this.pila.popMyPila();
+            var v2 = this.pila.popMyPila();
+            this.pila.pushMyPila(v2*v1);
+            this.show(this.pila);
+            this.comprobarBotonesBases();
+        }
+    }
+    //función división
+    division(){
+        if(this.pila.size() >= 2){
+            var v1 = this.pila.popMyPila();
+            var v2 = this.pila.popMyPila();
+            this.pila.pushMyPila(v2/v1);
+             this.show(this.pila);
+             this.comprobarBotonesBases();
         }
     }
 }
@@ -214,9 +257,27 @@ document.addEventListener('keydown', function (event) {
     if(event.key === 'Delete'){//Borrar todo
         event.preventDefault();
         calculadora.vaciar();
+        this.comprobarBotonesBases();
     }
     if(event.key === 'Enter'){//Enter
         event.preventDefault();
         calculadora.enter();
+        this.comprobarBotonesBases();
+    }
+    if (event.key === '+') {//suma
+        calculadora.suma();
+        this.comprobarBotonesBases();
+    }
+    if (event.key === '-') {//resta
+        calculadora.resta();
+        this.comprobarBotonesBases();
+    }
+    if (event.key === '*') {//multiplicación
+        calculadora.multiplicacion();
+        this.comprobarBotonesBases();
+    }
+    if (event.key === '/') {//división
+        calculadora.division();
+        this.comprobarBotonesBases();
     }
 });
