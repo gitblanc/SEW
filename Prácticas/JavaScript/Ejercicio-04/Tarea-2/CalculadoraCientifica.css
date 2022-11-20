@@ -76,3 +76,9 @@ label {
     color: rgb(255, 255, 255);
     background-color: rgba(248, 248, 248, 0);
 }
+
+/*Especificidad:021*/
+button[ value = "igual"]{
+    background-color: rgb(0, 255, 72);
+    color: black;
+}

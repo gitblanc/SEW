@@ -26,7 +26,6 @@ class CalculadoraRPN{
             this.pila.pushMyPila(Math.cos(this.pila.popMyPila()));
             this.show(this.pila);
         }
-
     }
     //función tangente
     tan(){
@@ -63,6 +62,10 @@ class CalculadoraRPN{
             this.pila.pushMyPila(this.pila.popMyPila() * (-1));
             this.show(this.pila);
         }
+    }
+    //función que imprime el punto de los decimales
+    punto() {
+        document.querySelector('input[type=text][name=\"currentnum\"]').value += ".";
     }
 }
 var pila = new Pila();//creamos la pila
