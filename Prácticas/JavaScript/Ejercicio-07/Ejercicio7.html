@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Ejercicio 7</title>
+        <link rel="stylesheet" type="text/css" href="Ejercicio7.css" />
+    
+        <meta name="author" content="Eduardo Blanco Bielsa" />
+        <meta name="description" content="Ejercicio 7 jQuery" />
+        <meta name ="viewport" content ="width=device-width, initial scale=1.0" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="Ejercicio7.js"></script>
+           
+    </head>
+    <body>
+        <h1>Ejercicio 7</h1>
+        <h2>Uso de jQuery</h2>
+        <h3>Esta práctica fue hecha por: Eduardo Blanco Bielsa - UO285176</h3>
+        <p>Esta ejercicio forma parte de la segunda entrega de JavaScript para la asignatura de SEW.</p>
+
+        <table>
+            <tr>
+                <th scope="col" id="filas">Datos</th>
+                <th scope="col" id="persona1">Juan</th>
+                <th scope="col" id="persona2">Pedro</th>
+                <th scope="col" id="persona3">Marcos</th>
+            </tr>
+            <tr>
+                <th scope="row" id="filas">Dinero</th>
+                <td scope="col" id="persona1">248663</td>
+                <td scope="col" id="persona2">3653</td>
+                <td scope="col" id="persona3">23874</td>
+            </tr>
+            <tr>
+                <th scope="row" id="filas">Hijos</td>
+                <td scope="col" id="persona1">1</td>
+                <td scope="col" id="persona2">0</td>
+                <td scope="col" id="persona3">2</td>
+            </tr>          
+        </table>
+
+        <h2>Botones de funcionalidad de jQuery</h2>
+        <label for="totSum">Suma de filas y columnas:</label>
+        <input type="text" id="totSum" value="" readonly>
+        <button onClick="ej7.ocultarTabla()">Ocultar tabla</button>
+        <button onClick="ej7.mostrarTabla()">Mostrar tabla</button>
+        <button onClick="ej7.modificarTitulo()">Modificar título</button>
+        <button onClick="ej7.retornarTitulo()">Retornar título</button>
+        <button onClick="ej7.addElemento()">Añadir elemento</button>
+        <button onClick="ej7.eliminarElemento()">Eliminar elemento</button>
+        <button onClick="ej7.hacerRecorrido()">Recorrido</button>
+        <button onClick="ej7.sumarFilasColumnas()">Sumar Filas y Columnas</button>
+    </body>
+</html>

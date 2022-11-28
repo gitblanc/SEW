@@ -1,0 +1,15 @@
+/*UO285176 - Eduardo Blanco Bielsa*/
+
+/*Especificidad:001*/
+body {
+    margin: 5%;
+    font-size: 100%;
+    color:black;
+    text-align: left;
+}
+
+/*Especificidad:001*/
+button{
+    background-color: rgb(33, 255, 218);
+    color: black;
+}
