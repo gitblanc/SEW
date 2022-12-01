@@ -19,6 +19,7 @@ button{
 /*Especificidad 001*/
 li{
     padding-left: 1em;
-    background-color: aliceblue;
+    padding-right: 1em;
+    background-color: rgb(149, 204, 255);
     color: black;
 }

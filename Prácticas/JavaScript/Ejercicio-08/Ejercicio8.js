@@ -28,7 +28,7 @@ class Meteorologia{
             success: function(datos){//si la petición no devuelve error volcamos los datos
                     this.datos = datos;
                     var listaDatos = "<ul><li><em>Ciudad: " + datos.name + "</em>";
-                    listaDatos += "<aside><img src=\"https://openweathermap.org/img/w/" + datos.weather[0].icon + ".png\" alt=\"Icono del tiempo\"></aside></li>"
+                    listaDatos += "<img src=\"https://openweathermap.org/img/w/" + datos.weather[0].icon + ".png\" alt=\"Icono del tiempo\"></li>"
                     listaDatos += "<li>Datos de " + datos.name + ":</li>";
                     listaDatos += "<li>País: " + datos.sys.country + "</li>";
                     listaDatos += "<li>Latitud: " + datos.coord.lat + " º</li>";
