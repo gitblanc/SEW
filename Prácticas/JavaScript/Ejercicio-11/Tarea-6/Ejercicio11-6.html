@@ -13,9 +13,15 @@
            
     </head>
     <body>
-        <h1>Geolocalización con mapa dinámico temática libre</h1>
+        <h1>Buscador de ruta más rapida en coche a un destino</h1>
         <h2>Hecho por Eduardo Blanco Bielsa - UO285176</h2>
-        <button value="mapa" onclick=mapaExtra.mostrarMapa()>Mostrar mapa</button>
+        
+        <label for="origen">Origen:</label>
+        <input type="text" id="origen" value="origen"/>
+        <label for="destino">Destino:</label>
+        <input type="text" id="destino" value="destino"/>
+
+        <button value="mapa" onclick=ruta.calcularRuta()>Mostrar ruta</button>
         <main id="map"></main>
     </body>
 </html>

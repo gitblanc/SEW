@@ -24,7 +24,7 @@ class MapaDinamicoGoogle {
         this.latitud = c.coords.latitude;
     }
     mostrarMapa(){
-        $('h2').after("<script src=\"https://maps.googleapis.com/maps/api/js?key=AIzaSyBD7jyWNUS7OqzQhquJQw5x5WEfsRk4R4A&callback=mapa.initMap&v=weekly\"defer></script>")
+        $('h2').after("<script src=\"https://maps.googleapis.com/maps/api/js?key=AIzaSyApmnMoES2D1Bm3GmduR8lEhRXYUk_hh78&callback=mapa.initMap&v=weekly\"defer></script>")
     }
     initMap(){
         var lugar = {lat: this.latitud, lng: this.longitud};
