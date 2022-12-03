@@ -34,5 +34,3 @@ class MapaDinamicoGoogle {
 }
 
 var mapa = new MapaDinamicoGoogle();
-console.log(mapa.longitud);
-console.log(mapa.latitud);

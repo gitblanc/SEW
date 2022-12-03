@@ -1,0 +1,33 @@
+/*Especificidad 001*/
+body{
+    background-color: black;
+    color: white;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+/*Especificidad 001*/
+h1{
+    color: yellowgreen;
+}
+/*Especificidad 001*/
+img{
+    color: white;
+}
+/*Especificidad 001*/
+button{
+    background-color:rgb(255, 255, 255);
+    border-radius: 0.6em;
+}
+/*Especificidad 001*/
+li{
+    background-color: rgb(149, 204, 255);
+    color: black;
+}
+/*Especificidad 001*/
+a{
+    color: rgb(255, 0, 212);
+}
+/*Especificidad 001*/
+strong{
+    color: yellowgreen;
+}
