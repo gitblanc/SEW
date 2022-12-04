@@ -29,7 +29,7 @@ class Pacman{
     }
 
     createPacman() {
-        const canvas = document.getElementById('canvas');
+        const canvas = document.querySelector('canvas');
         if (canvas.getContext) {
           const ctx = canvas.getContext('2d');
           

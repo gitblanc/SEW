@@ -47,21 +47,23 @@ class FileUploader{
         var tipoTxt = "text/plain";
         var tipoXml = "text/xml";
       
-        $('label').before("<section>"+nombre);
+        $('label').before("<p>"+nombre);
 
         //comprobampos el tipo de los ficheros   
         if(file.type ===  tipoJson || file.type === tipoTxt || file.type === tipoXml){
-            $("strong:last").after("<p name=\"" +  file.name + "\"></p></section>");
+            $("strong:last").after("<p name=\"" +  file.name + "\"></p></p>");
 
             lector = new FileReader();
 
             lector.onload = function(evento){ 
-                document.querySelector("p[name=\"" + file.name + "\"").innerText = lector.result;
+                    var x = lector.result.replace(/</g, "&lt;");
+                    x = x.replace(/>/g, "&gt;");
+                    $("p:last").after("<pre><code>" + x + "</code></pre>");
             }
             lector.readAsText(file);
         }
         else{
-            nombre = "<p>El tipo de l archivo no está contemplado...</p></section>";
+            nombre = "<p>El tipo de l archivo no está contemplado...</p></p>";
             $('h3:last').before(nombre);
         }
     }
