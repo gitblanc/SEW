@@ -1,11 +1,10 @@
 //tomado del ejemplo de cueva
 class MapaKML {
     constructor(){
-        this.resultKml;
+        this.mapa;
         this.numFiles = 0;
         this.totalBytes = 0;
         this.files;
-        this.src = '/Tarea-1/redSocial.kml';
         navigator.geolocation.getCurrentPosition(this.cargarDatos.bind(this), this.verErrores.bind(this));
     }
     verErrores(error){
@@ -33,18 +32,28 @@ class MapaKML {
     }
     initMap(){
         var lugar = {lat: this.latitud, lng: this.longitud};
-        var mapa = new google.maps.Map(document.querySelector('main'),{center:lugar, zoom: 8});
-        //this.parsearKml(mapa);
-        // var kmlLayer = new google.maps.KmlLayer(this.src, {
-        //     suppressInfoWindows: true,
-        //     preserveViewport: false,
-        //     map: mapa
-        // });
-        // kmlLayer.addListener('click', function(event) {
-        //     var content = event.featureData.infoWindowHtml;
-        //     var testimonial = document.querySelector('section');
-        //     testimonial.innerHTML = content;
-        // });
+        this.mapa = new google.maps.Map(document.querySelector('main'),{center:lugar, zoom: 8});
+    }
+    insertarMarcador(file){
+        console.log(file);
+        var lineas = file.split(/\r?\n/);
+        for(var i =0; i < lineas.length(); i++){
+            if(lineas[i].includes("<coordinates>")){
+                var splitted = lineas[i].replace("<coordinates> ", "");
+                splitted = splitted.replace("</coordinates>", "");
+                splitted = splitted.split(",");
+                var lat = splitted[0];
+                var lng = splitted[1];
+                new googlr.maps.Marker({
+                    position:{lat:parseFloat(lat), lng: parseFloat(lng),
+                    map:this.mapa
+                    }
+                })
+            }
+        }
+
+        // var lugar = {lat: xlat, lng: xlon};
+        // var marcador = new google.maps.Marker({position:lugar,map:this.mapa});
     }
     leerKml(file){
         var nombre = "<strong>"+file.name + "</strong>";
@@ -58,11 +67,12 @@ class MapaKML {
             $("h2:last").after("<p name=\"" +  file.name + "\"></p></section>");
 
             lector = new FileReader();
-
+            var lines;
             lector.onload = function(evento){ 
-                this.resultKml = lector.result;
+                lines = lector.result;
             }
-            lector.readAsText(file);
+            lines = lector.readAsText(file);
+            this.insertarMarcador(lines);
         }
         else{
             nombre = "<p>El tipo de l archivo no está contemplado...</p></section>";
@@ -96,9 +106,6 @@ class MapaKML {
        
         this.mostrarArchivos();
     }
-    // parsearKml(map){
-
-    // }
 }
 
 var mapa = new MapaKML();

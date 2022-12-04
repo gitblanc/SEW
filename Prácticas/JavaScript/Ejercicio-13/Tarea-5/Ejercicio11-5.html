@@ -13,9 +13,13 @@
            
     </head>
     <body>
-        <h1>Geolocalización con mapa dinámico indicando la posición del usuario</h1>
+        <h1>Mapa con KML precargado</h1>
         <h2>Hecho por Eduardo Blanco Bielsa - UO285176</h2>
+        <label for="upload">Subir archivos:</label>
+        <input id="upload" type="file" name="upload" onchange="mapa.mostrarInfoArchivos()" multiple="">
         <button value="mapa" onclick=mapa.mostrarMapa()>Mostrar mapa</button>
-        <main id="map"></main>
+        <main id="map">
+
+        </main>
     </body>
 </html>
