@@ -2,24 +2,20 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8" />
-        <title>Mapa KML</title>
-        <link rel="stylesheet" type="text/css" href="MapaKML.css" />
+        <title>Ejercicio 11-5</title>
+        <link rel="stylesheet" type="text/css" href="Ejercicio11-5.css" />
     
         <meta name="author" content="Eduardo Blanco Bielsa" />
-        <meta name="description" content="Mapa KML" />
+        <meta name="description" content="Ejercicio 11-5 jQuery" />
         <meta name ="viewport" content ="width=device-width, initial scale=1.0" />
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="MapaKML.js"></script>
+        <script src="Ejercicio11-5.js"></script>
            
     </head>
     <body>
-        <h1>Mapa con KML precargado</h1>
+        <h1>Geolocalización con mapa dinámico indicando la posición del usuario</h1>
         <h2>Hecho por Eduardo Blanco Bielsa - UO285176</h2>
-        <label for="upload">Subir archivos:</label>
-        <input id="upload" type="file" name="upload" onchange="mapa.mostrarInfoArchivos()" multiple="">
         <button value="mapa" onclick=mapa.mostrarMapa()>Mostrar mapa</button>
-        <main id="map">
-
-        </main>
+        <main id="map"></main>
     </body>
 </html>

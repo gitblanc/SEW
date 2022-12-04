@@ -35,9 +35,15 @@ a{
 #map {
     height: 100%;
   }
-
-/*Especificidad 001*/
-strong{
-    color: yellowgreen;
-}  
+  
+  /* 
+   * Optional: Makes the sample page fill the window. 
+   */
+  /*Especificidad 001*/
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
   

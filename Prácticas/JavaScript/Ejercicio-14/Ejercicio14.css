@@ -1,11 +1,11 @@
 /*Especificidad 001*/
 body{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     color: white;
 }
 /*Especificidad 001*/
 h1{
-    color: yellowgreen;
+    color: #9acd32;
 }
 /*Especificidad 001*/
 img{
@@ -23,21 +23,3 @@ li{
     background-color: rgb(149, 204, 255);
     color: black;
 }
-/*Especificidad 001*/
-a{
-    color: rgb(255, 0, 212);
-}
-/* 
- * Always set the map height explicitly to define the size of the div element
- * that contains the map. 
- */
-/*Especificidad 100*/
-#map {
-    height: 100%;
-  }
-
-/*Especificidad 001*/
-strong{
-    color: yellowgreen;
-}  
-  
