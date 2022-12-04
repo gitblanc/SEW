@@ -5,20 +5,19 @@ body{
 }
 /*Especificidad 001*/
 h1{
+    background-color: black;
     color: yellowgreen;
-}
-/*Especificidad 001*/
-img{
-    color: white;
 }
 /*Especificidad 001*/
 button{
     background-color:rgb(255, 255, 255);
     border-radius: 0.6em;
+    color: black;
 }
 /*Especificidad 001*/
 li{
     padding-left: 1em;
-    background-color: aliceblue;
+    padding-right: 1em;
+    background-color: rgb(149, 204, 255);
     color: black;
 }

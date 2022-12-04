@@ -5,16 +5,14 @@ body{
 }
 /*Especificidad 001*/
 h1{
+    background-color: black;
     color: yellowgreen;
-}
-/*Especificidad 001*/
-img{
-    color: white;
 }
 /*Especificidad 001*/
 button{
     background-color:rgb(255, 255, 255);
     border-radius: 0.6em;
+    color: black;
 }
 /*Especificidad 001*/
 li{
@@ -25,6 +23,7 @@ li{
 }
 /*Especificidad 001*/
 a{
+    background-color: black;
     color: rgb(255, 0, 212);
 }
 /* 
