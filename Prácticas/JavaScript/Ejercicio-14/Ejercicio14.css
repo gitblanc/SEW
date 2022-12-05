@@ -6,7 +6,7 @@ body{
 /*Especificidad 001*/
 h1{
     background-color: black;
-    color: #9acd32;
+    color: white;
 }
 /*Especificidad 001*/
 button{
@@ -20,4 +20,9 @@ li{
     padding-right: 1em;
     background-color: rgb(149, 204, 255);
     color: black;
+}
+/*Especificidad 001*/
+canvas{
+    width: 30%;
+    height: 30%;
 }

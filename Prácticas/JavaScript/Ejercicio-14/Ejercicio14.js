@@ -34,12 +34,12 @@ class Pacman{
           const ctx = canvas.getContext('2d');
           
           
-          this.roundedRect(ctx, 12, 12, 200, 200, 15);
-          this.roundedRect(ctx, 19, 19, 186, 186, 9);
-          this.roundedRect(ctx, 53, 53, 49, 33, 10);
-          this.roundedRect(ctx, 53, 119, 49, 16, 6);
+          this.roundedRect(ctx, 12, 12, 200, 200-70, 15);
+          this.roundedRect(ctx, 19, 19, 186, 186-70, 9);
+          this.roundedRect(ctx, 27, 53, 70, 33-10, 10);
+          this.roundedRect(ctx, 27, 119, 70, 16-7, 6);
           this.roundedRect(ctx, 135, 53, 49, 33, 10);
-          this.roundedRect(ctx, 135, 119, 25, 49, 10);
+          this.roundedRect(ctx, 135, 119-9, 45, 49-30, 10);
             
           ctx.fillStyle = 'yellow';
           ctx.beginPath();
@@ -49,15 +49,15 @@ class Pacman{
       
           ctx.fillStyle = 'orange';
           for (let i = 0; i < 10; i++) {
-            ctx.fillRect(51 + i * 16, 35, 4, 4);
+            ctx.fillRect(51 + i * 16, 35, 3, 3);
           }
       
-          for (let i = 0; i < 10; i++) {
-            ctx.fillRect(115, 51 + i * 16, 4, 4);
+          for (let i = 0; i < 6; i++) {
+            ctx.fillRect(115, 51 + i * 16, 3, 3);
           }
           
           for (let i = 0; i < 10; i++) {
-            ctx.fillRect(51 + i * 16, 99, 4, 4);
+            ctx.fillRect(51 + i * 16, 99, 3, 3);
           }
           
           ctx.fillStyle = 'red';
@@ -107,7 +107,7 @@ class FullScreen{
     }
     pantallaCompleta(){
         /* Get the element you want to display in fullscreen */
-        var elem = document.querySelector("#canvas");
+        var elem = document.querySelector("canvas");
 
         if (elem.requestFullscreen) {
             elem.requestFullscreen();

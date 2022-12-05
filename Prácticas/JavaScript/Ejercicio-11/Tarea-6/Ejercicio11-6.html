@@ -3,25 +3,29 @@
     <head>
         <meta charset="UTF-8" />
         <title>Ejercicio 11-6</title>
-        <link rel="stylesheet" type="text/css" href="Ejercicio11-6.css" />
+        <link rel="stylesheet" type="text/css" href="./Ejercicio11-6.css" />
     
         <meta name="author" content="Eduardo Blanco Bielsa" />
         <meta name="description" content="Ejercicio 11-6 jQuery" />
         <meta name ="viewport" content ="width=device-width, initial scale=1.0" />
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="Ejercicio11-6.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="./Ejercicio11-6.js"></script>
            
     </head>
     <body>
         <h1>Buscador de ruta más rapida en coche a un destino</h1>
         <h2>Hecho por Eduardo Blanco Bielsa - UO285176</h2>
-        
-        <label for="origen">Origen:</label>
-        <input type="text" id="origen" value="origen"/>
-        <label for="destino">Destino:</label>
-        <input type="text" id="destino" value="destino"/>
-
+        <p>
+            <label for="origen">Origen:</label>
+            <input type="text" id="origen" value="origen"/>
+        </p>
+        <p>
+            <label for="destino">Destino:</label>
+            <input type="text" id="destino" value="destino"/>
+        </p>
+        <p>
         <button value="mapa" onclick=ruta.calcularRuta()>Mostrar ruta</button>
+        </p>
         <main id="map"></main>
     </body>
 </html>
