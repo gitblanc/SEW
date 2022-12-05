@@ -1,7 +1,8 @@
 //tomado del ejemplo de cueva
 class MapaDinamicoGoogle {
     constructor(){
-        this.mapa;
+        this.longitud = -5.8502461;
+        this.latitud = 43.3672702;
         this.numFiles = 0;
         this.totalBytes = 0;
         this.files;
@@ -27,35 +28,27 @@ class MapaDinamicoGoogle {
         this.longitud = c.coords.longitude;
         this.latitud = c.coords.latitude;
     }
-    mostrarMapa(){
-        $('h2').after("<script src=\"https://maps.googleapis.com/maps/api/js?key=AIzaSyApmnMoES2D1Bm3GmduR8lEhRXYUk_hh78&callback=mapa.initMap&v=weekly\"defer></script>")
-    }
     initMap(){
         var lugar = {lat: this.latitud, lng: this.longitud};
-        var mapa = new google.maps.Map(document.querySelector('main'),{center:lugar, zoom: 15});
-        var marcador = new google.maps.Marker({position:lugar,map:mapa});
+        new google.maps.Map(document.querySelector('main'),{center:lugar, zoom: 15});
+        //var marcador = new google.maps.Marker({position:lugar,map:mapa});
     }
     //KML
     insertarMarcador(file){
-        console.log(file);
+        var lugar = {lat: this.latitud, lng: this.longitud};
+        var mapa = new google.maps.Map(document.querySelector('main'),{center:lugar, zoom: 8});
         var lineas = file.split(/\r?\n/);
-        for(var i =0; i < lineas.length(); i++){
+        for(var i =0; i < lineas.length; i++){
             if(lineas[i].includes("<coordinates>")){
                 var splitted = lineas[i].replace("<coordinates> ", "");
                 splitted = splitted.replace("</coordinates>", "");
                 splitted = splitted.split(",");
-                var lat = splitted[0];
-                var lng = splitted[1];
-                new googlr.maps.Marker({
-                    position:{lat:parseFloat(lat), lng: parseFloat(lng),
-                    map:this.mapa
-                    }
-                })
+                var lng1 = splitted[0];
+                var lat1 = splitted[1];
+                var lugarcoord = {lat:parseFloat(lat1), lng: parseFloat(lng1)};
+                var marcador = new google.maps.Marker({position:lugarcoord,map:mapa});
             }
         }
-
-        // var lugar = {lat: xlat, lng: xlon};
-        // var marcador = new google.maps.Marker({position:lugar,map:this.mapa});
     }
     leerKml(file){
         var nombre = "<strong>"+file.name + "</strong>";
@@ -69,12 +62,8 @@ class MapaDinamicoGoogle {
             $("h2:last").after("<p name=\"" +  file.name + "\"></p></section>");
 
             lector = new FileReader();
-            var lines;
-            lector.onload = function(evento){ 
-                lines = lector.result;
-            }
-            lines = lector.readAsText(file);
-            this.insertarMarcador(lines);
+            lector.onload = (e) => this.insertarMarcador(lector.result);
+            lector.readAsText(file);
         }
         else{
             nombre = "<p>El tipo de l archivo no está contemplado...</p></section>";
@@ -110,4 +99,4 @@ class MapaDinamicoGoogle {
     }
 }
 
-var mapa = new MapaDinamicoGoogle();
+var ej13 = new MapaDinamicoGoogle();
