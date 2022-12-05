@@ -12,5 +12,26 @@ body {
 /*Especificidad:001*/
 button{
     background-color: rgb(33, 255, 218);
+    padding-left: 1em;
+    padding-right: 1em;
     color: black;
+}
+/*Especificidad:001*/
+form{
+    display:grid;
+    background-color: white;
+    grid-template-columns: [columna1] 4em [columna2] 4em[end];
+    grid-template-rows: [fila1] 4em [fila2] 4em [fila3] 4em [fila4] 4em[end];
+    row-gap: 0.7em;
+    column-gap: 0.7em;
+}
+/*Especificidad:001*/
+table{
+    border: 0.1em;
+    border-style: groove;
+}
+/*Especificidad:001*/
+td, th{
+    border: 0.1em;
+    border-style: groove;
 }
