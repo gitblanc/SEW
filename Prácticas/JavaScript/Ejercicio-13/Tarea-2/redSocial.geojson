@@ -1,0 +1,214 @@
+{
+    "type": "FeatureCollection",
+    "name": "redSocial",
+    "features": [
+        {
+            "type": "coord",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [2.0653854852963143, 41.52988683790763]
+            },
+            "properties": "Aquí nació Eduardo Blanco Bielsa"
+        },
+        {
+            "type": "coord",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [1.5003019989289033, 41.56067105642616]
+            },
+            "properties": "Aquí reside Eduardo Blanco Bielsa"
+        },
+        {
+            "type": "coord",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-5.919837069722076, 43.53648741128185]
+            },
+            "properties": "Aquí nació María Estrada Muñiz"
+        },
+        {
+            "type": "coord",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-5.919837069722076, 43.53648741128185]
+            },
+            "properties": "Aquí reside María Estrada Muñiz"
+        },
+        {
+            "type": "coord",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-5.919837069722076, 43.53648741128185]
+            },
+            "properties": "Aquí nació Killian Perez Gonzalez"
+        },
+        {
+            "type": "coord",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-5.919837069722076, 43.53648741128185]
+            },
+            "properties": "Aquí reside Killian Perez Gonzalez"
+        },
+        {
+            "type": "coord",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-5.97454710877856, 43.56322977597883]
+            },
+            "properties": "Aquí nació Paco Perez Gonzalez"
+        },
+        {
+            "type": "coord",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-5.97454710877856, 43.56322977597883]
+            },
+            "properties": "Aquí reside Paco Perez Gonzalez"
+        },
+        {
+            "type": "coord",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-5.198427950070287, 43.35821014744797]
+            },
+            "properties": "Aquí nació Carlos Perez Gonzalez"
+        },
+        {
+            "type": "coord",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-5.198427950070287, 43.35821014744797]
+            },
+            "properties": "Aquí reside Carlos Perez Gonzalez"
+        },
+        {
+            "type": "coord",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-5.7684302174494775, 43.24246527762923]
+            },
+            "properties": "Aquí nació Chen Xin Pan Wang"
+        },
+        {
+            "type": "coord",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-5.7684302174494775, 43.24246527762923]
+            },
+            "properties": "Aquí reside Chen Xin Pan Wang"
+        },
+        {
+            "type": "coord",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-6.2366463656538125, 43.28045387817449]
+            },
+            "properties": "Aquí nació Luis Perez Gonzalez"
+        },
+        {
+            "type": "coord",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-6.2366463656538125, 43.28045387817449]
+            },
+            "properties": "Aquí reside Luis Perez Gonzalez"
+        },
+        {
+            "type": "coord",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-5.994904332613531, 43.249879548784264]
+            },
+            "properties": "Aquí nació Marcos Perez Perez"
+        },
+        {
+            "type": "coord",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-5.994904332613531, 43.249879548784264]
+            },
+            "properties": "Aquí reside Marcos Perez Perez"
+        },
+        {
+            "type": "coord",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-5.994904332613531, 43.249879548784264]
+            },
+            "properties": "Aquí nació Carla Perez Gonzalez"
+        },
+        {
+            "type": "coord",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-5.684456669130222, 43.399824356920135]
+            },
+            "properties": "Aquí reside Carla Perez Gonzalez"
+        },
+        {
+            "type": "coord",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-6.381691585477982, 43.55032115030053]
+            },
+            "properties": "Aquí nació Alejandro Coalla Martinez"
+        },
+        {
+            "type": "coord",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-6.381691585477982, 43.55032115030053]
+            },
+            "properties": "Aquí reside Alejandro Coalla Martinez"
+        },
+        {
+            "type": "coord",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-5.062289015673917, 43.457112703914234]
+            },
+            "properties": "Aquí nació Luis Perez Gonzalez"
+        },
+        {
+            "type": "coord",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-5.062289015673917, 43.457112703914234]
+            },
+            "properties": "Aquí reside Luis Perez Gonzalez"
+        },
+        {
+            "type": "coord",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-4.950324284581576, 43.332302447494754]
+            },
+            "properties": "Aquí nació Marcos Perez Gonzalez"
+        },
+        {
+            "type": "coord",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-4.950324284581576, 43.332302447494754]
+            },
+            "properties": "Aquí reside Marcos Perez Gonzalez"
+        },
+        {
+            "type": "coord",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-5.559768673141023, 43.237830899898434]
+            },
+            "properties": "Aquí nació Lorena Perez Vidal"
+        },
+        {
+            "type": "coord",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-5.559768673141023, 43.237830899898434]
+            },
+            "properties": "Aquí reside Lorena Perez Vidal"
+        }
+    ]
+}

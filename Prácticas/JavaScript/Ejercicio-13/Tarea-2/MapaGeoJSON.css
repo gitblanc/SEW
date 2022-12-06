@@ -1,0 +1,42 @@
+/*Especificidad 001*/
+body{
+    background-color: black;
+    color: white;
+}
+/*Especificidad 001*/
+h1{
+    background-color: black;
+    color: white;
+}
+/*Especificidad 001*/
+button{
+    background-color:rgb(255, 255, 255);
+    border-radius: 0.6em;
+    color: black;
+}
+/*Especificidad 001*/
+li{
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: rgb(149, 204, 255);
+    color: black;
+}
+/*Especificidad 001*/
+a{
+    background-color: black;
+    color: rgb(255, 0, 212);
+}
+/*Especificidad 001*/
+strong{
+    background-color: black;
+    color: yellowgreen;
+} 
+/* 
+ * Always set the map height explicitly to define the size of the div element
+ * that contains the map. 
+ */
+/*Especificidad 100*/
+#map {
+    height: 30em;
+}
+  

@@ -1,5 +1,6 @@
-//tomado del ejemplo de cueva
-class MapaDinamicoGoogle {
+//para crear el geojson -> https://geojson.io/
+
+class MapaGeoJson {
     constructor(){
         this.longitud = -5.8502461;
         this.latitud = 43.3672702;
@@ -39,9 +40,12 @@ class MapaDinamicoGoogle {
         var mapa = new google.maps.Map(document.querySelector('main'),{center:lugar, zoom: 8});
         var lineas = file.split(/\r?\n/);
         for(var i =0; i < lineas.length; i++){
-            if(lineas[i].includes("<coordinates>")){
-                var splitted = lineas[i].replace("<coordinates> ", "");
-                splitted = splitted.replace("</coordinates>", "");
+            if(lineas[i].includes("\"coordinates\"")){
+                var splitted = lineas[i].replace("\"coordinates\"", "");
+                splitted = splitted.replace(": ", "");
+                splitted = splitted.replace("[", "");
+                splitted = splitted.replace("]", "");
+                splitted = splitted.split(" ").join("");
                 splitted = splitted.split(",");
                 var lng1 = splitted[0];
                 var lat1 = splitted[1];
@@ -50,15 +54,15 @@ class MapaDinamicoGoogle {
             }
         }
     }
-    leerKml(file){
+    leerGeoJson(file){
         var nombre = "<strong>"+file.name + "</strong>";
         var lector;
-        var tipoKml = "kml";
+        var tipoGeoJson = "geojson";
       
         $('label').before("<section>"+nombre);
 
         //comprobampos el tipo de los ficheros   
-        if(file.name.split(".")[1] === (tipoKml)){
+        if(file.name.split(".")[1] === (tipoGeoJson)){
             $("h2:last").after("<p name=\"" +  file.name + "\"></p></section>");
 
             lector = new FileReader();
@@ -76,7 +80,7 @@ class MapaDinamicoGoogle {
         $('label').before("<h3>Contenido de los archivos:</h3>");
         for (var i = 0; i <  this.numFiles; i++) {
             file = this.fileArray[i];
-            this.leerKml(file);
+            this.leerGeoJson(file);
         }
     }
     mostrarInfoArchivos(){
@@ -99,4 +103,4 @@ class MapaDinamicoGoogle {
     }
 }
 
-var ej13 = new MapaDinamicoGoogle();
+var ej13 = new MapaGeoJson();
