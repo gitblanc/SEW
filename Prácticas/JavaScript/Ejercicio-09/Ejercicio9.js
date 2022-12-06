@@ -76,7 +76,7 @@ class Meteorologia{
                     var fechaMedidaLocal      = (new Date(horaMedidaMiliSeg1970)).toLocaleDateString("es-ES");
                     var icono                 = $('weather',datos).attr("icon");  
                     
-                    var stringDatos =  "<ul><li>Número de elementos del XML: " + totalNodos + "</li>";
+                    var stringDatos =  "<li>Número de elementos del XML: " + totalNodos + "</li>";
                         stringDatos += "<li><em>Ciudad: " + ciudad + "</em></li>";
                         stringDatos += "<li><img src=\"https://openweathermap.org/img/w/" + icono + ".png\" alt=\"Icono del tiempo\"></li>";
                         stringDatos += "<li>Longitud: " + longitud + " º</li>";
@@ -102,7 +102,7 @@ class Meteorologia{
                         stringDatos += "<li>Precipitación modo: " + precipitacionMode + "</li>";
                         stringDatos += "<li>Descripción: " + descripcion + "</li>";
                         stringDatos += "<li>Hora de la medida: " + horaMedidaLocal + "</li>";
-                        stringDatos += "<li>Fecha de la medida: " + fechaMedidaLocal + "</li></ul>";
+                        stringDatos += "<li>Fecha de la medida: " + fechaMedidaLocal + "</li>";
                     
                     $("ol:last").append(stringDatos);
             },

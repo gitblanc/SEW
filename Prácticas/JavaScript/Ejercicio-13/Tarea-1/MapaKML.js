@@ -55,25 +55,23 @@ class MapaDinamicoGoogle {
         var lector;
         var tipoKml = "kml";
       
-        $('label').before("<section>"+nombre);
 
         //comprobampos el tipo de los ficheros   
         if(file.name.split(".")[1] === (tipoKml)){
-            $("h2:last").after("<p name=\"" +  file.name + "\"></p></section>");
+            $("h2:last").after(nombre);
 
             lector = new FileReader();
             lector.onload = (e) => this.insertarMarcador(lector.result);
             lector.readAsText(file);
         }
         else{
-            nombre = "<p>El tipo de l archivo no está contemplado...</p></section>";
+            nombre = "<p>El tipo de l archivo no está contemplado...</p>";
             $('h3:last').before(nombre);
         }
     }
     mostrarArchivos(){
         var file;
-     
-        $('label').before("<h3>Contenido de los archivos:</h3>");
+        
         for (var i = 0; i <  this.numFiles; i++) {
             file = this.fileArray[i];
             this.leerKml(file);

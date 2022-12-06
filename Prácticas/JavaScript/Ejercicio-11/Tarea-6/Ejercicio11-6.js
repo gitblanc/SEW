@@ -48,7 +48,7 @@ class Buscador {
 
         let query =  "origin=" + origen + "&destination=" + destino;
 
-        $('button').after("<br><iframe  loading=\"lazy\" allowfullscreen src=\"https://www.google.com/maps/embed/v1/directions?" + query +"&key=AIzaSyApmnMoES2D1Bm3GmduR8lEhRXYUk_hh78&mode=driving\"></iframe>");
+        $('button').after("<iframe  loading=\"lazy\" allowfullscreen src=\"https://www.google.com/maps/embed/v1/directions?" + query +"&key=AIzaSyApmnMoES2D1Bm3GmduR8lEhRXYUk_hh78&mode=driving\"></iframe>");
     }
 }
 

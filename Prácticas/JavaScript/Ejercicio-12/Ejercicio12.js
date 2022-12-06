@@ -51,7 +51,6 @@ class FileUploader{
 
         //comprobampos el tipo de los ficheros   
         if(file.type ===  tipoJson || file.type === tipoTxt || file.type === tipoXml){
-            $("strong:last").after("<p name=\"" +  file.name + "\"></p></p>");
 
             lector = new FileReader();
 

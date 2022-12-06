@@ -4,6 +4,7 @@ class Ciudades{
     }
     mostrarDatos(){
         let i = 0;
+        $('h2').after('<ol></ol>');
         for(i = 0;i < this.ciudades.length ;i++){
             this.ciudades[i].obtenerDatos();
         }
@@ -27,7 +28,7 @@ class Meteorologia{
             method: 'GET',//hacemos la petición GET
             success: function(datos){//si la petición no devuelve error volcamos los datos
                     this.datos = datos;
-                    var listaDatos = "<ul><li><em>Ciudad: " + datos.name + "</em>";
+                    var listaDatos = "<li><em>Ciudad: " + datos.name + "</em>";
                     listaDatos += "<li><img src=\"https://openweathermap.org/img/w/" + datos.weather[0].icon + ".png\" alt=\"Icono del tiempo\"></li>"
                     listaDatos += "<li>Datos de " + datos.name + ":</li>";
                     listaDatos += "<li>País: " + datos.sys.country + "</li>";
@@ -46,8 +47,8 @@ class Meteorologia{
                     listaDatos += "<li>Fecha de la medida: " + new Date(datos.dt *1000).toLocaleDateString() + "</li>";
                     listaDatos += "<li>Descripción: " + datos.weather[0].description + "</li>";
                     listaDatos += "<li>Visibilidad: " + datos.visibility + " metros</li>";
-                    listaDatos += "<li>Nubosidad: " + datos.clouds.all + " %</li></ul>";
-                $("h2:last").after(listaDatos);
+                    listaDatos += "<li>Nubosidad: " + datos.clouds.all + " %</li>";
+                    $("ol:last").append(listaDatos);
                 }
         });
     }
