@@ -27,16 +27,16 @@ class Ejercicio7{
     }
 
     hacerRecorrido(){
-        // $("*", document.body).each(function() {
-        //     var padre = $(this).parent().get(0).tagName;
-        //     $(this).prepend(document.createTextNode( "Etiqueta_padre : <"  + padre + 
-        //     "> elemento : <" + $(this).get(0).tagName +"> valor: "));
-        // });
+        $("p:last").remove();
+        $("strong:last").remove();
 
+        $("p:last").after("<p></p>");
+        $("p:last").before("<strong>Recorrido:</strong>")
         $("*", document.body).each(function() {
             var padre = $(this).parent().get(0).tagName;
-            var res = "Etiqueta padre: <"  + padre + ">, elemento: <" + $(this).get(0).tagName;
-            $("ul:last").append("<li>" + res + "</li>");
+            var elem = $(this).get(0);
+            $("p:last").prepend(document.createTextNode( "Etiqueta padre : <"  + padre + 
+            "> elemento : <" + $(elem).get(0).tagName + "> "));
         });
     }
 
