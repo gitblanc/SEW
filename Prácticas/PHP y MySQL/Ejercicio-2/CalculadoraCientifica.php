@@ -24,7 +24,7 @@ class CalculadoraMilan{
 
     public function igual(){
         try{
-            $res = eval("return $this->pantalla;");
+            $res = eval('return ' . $this->pantalla . ' ;');
             $this->pantalla = $res;
             return $res;
         }catch(Error $e){
@@ -62,6 +62,19 @@ class CalculadoraMilan{
 class CalculadoraCientifica extends CalculadoraMilan{
     public function __construct(){
         parent::__construct();
+        $this->deg = false; //para los radianes
+    }
+
+    public function deg(){
+        $value = $this->igual();
+
+        if($this->deg == true){
+            $this->pantalla .= $value * (pi()/180);
+            $this->deg = false;
+        }else{
+            $this->pantalla .= $value * (180/pi());
+            $this->deg = true;
+        }
     }
 
     public function mc(){
@@ -105,7 +118,35 @@ class CalculadoraCientifica extends CalculadoraMilan{
     }
 
     public function borrarUltimo(){
-        $this->pantalla .= 'sin(';
+        $this->pantalla = substr($this->pantalla,0,-1);
+    }
+
+    public function fact(){
+        $aux=0;
+        try{
+            $aux = $this->igual();
+            $res = 1;
+            for($i = 1; $i <= $aux; $i++){
+                $res = $res * $i;
+            }
+            $this->pantalla = $res;
+        }catch (Error $e){
+            $this->pantalla = 'Error';
+        }catch (Exception $e){
+            $this->pantalla ='Error';
+        }
+    }
+
+    public function parentesisIzq(){
+        $this->pantalla .= '(';
+    }
+
+    public function parentesisDer(){
+        $this->pantalla .= ')';
+    }
+
+    public function exp(){
+        $this->pantalla .= 'exp(';
     }
 }
 
@@ -124,26 +165,41 @@ if(count($_POST)>0){
      if(isset($_POST['%'])) $c->operationOrDigit('%');
      if(isset($_POST['raiz'])) $c->raiz();
      if(isset($_POST['+/-'])) $c->masmenos();
- 
      if(isset($_POST['7'])) $c->operationOrDigit('7');
      if(isset($_POST['8'])) $c->operationOrDigit('8');
      if(isset($_POST['9'])) $c->operationOrDigit('9');
      if(isset($_POST['*'])) $c->operationOrDigit('*');
- 
      if(isset($_POST['4'])) $c->operationOrDigit('4');
      if(isset($_POST['5'])) $c->operationOrDigit('5');
      if(isset($_POST['6'])) $c->operationOrDigit('6');
      if(isset($_POST['-'])) $c->operationOrDigit('-');
- 
      if(isset($_POST['1'])) $c->operationOrDigit('1');
      if(isset($_POST['2'])) $c->operationOrDigit('2');
      if(isset($_POST['3'])) $c->operationOrDigit('3');
      if(isset($_POST['+'])) $c->operationOrDigit('+');
- 
      if(isset($_POST['0'])) $c->operationOrDigit('0');
      if(isset($_POST['decimal'])) $c->operationOrDigit('.');
      if(isset($_POST['c'])) $c->borrar();
      if(isset($_POST['='])) $c->igual();
+
+     if(isset($_POST['deg'])) $c->deg();
+     if(isset($_POST['mc'])) $c->mc();
+     if(isset($_POST['mr'])) $c->mr();
+     if(isset($_POST['x^2'])) $c->cuadrado();
+     if(isset($_POST['x^y'])) $c->potencia();
+     if(isset($_POST['sin'])) $c->seno();
+     if(isset($_POST['cos'])) $c->coseno();
+     if(isset($_POST['('])) $c->parentesisIzq();
+     if(isset($_POST[')'])) $c->parentesisDer();
+     if(isset($_POST['tan'])) $c->tan();
+     if(isset($_POST['10^x'])) $c->potencia10();
+     if(isset($_POST['log'])) $c->logBase10();
+     if(isset($_POST['ln'])) $c->logNeperiano();
+     if(isset($_POST['borraruno'])) $c->borrarUltimo();
+     if(isset($_POST['pi'])) $c->pi();
+     if(isset($_POST['fact'])) $c->fact();
+     if(isset($_POST['Exp'])) $c->exp();
+
  
      $_SESSION['calc'] = $c;
  }
