@@ -1,0 +1,73 @@
+/*UO285176 - Eduardo Blanco Bielsa*/
+
+/*especifidad: 001*/
+body {
+    color: #000000 ;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+/*especifidad: 001*/
+h1 {
+    font-size: 2em;
+    padding: 1.6em 1.6em;
+    text-align: center;     
+}
+
+/*especifidad 001*/
+button {
+    font-size: 1.2em;
+    background-color: rgb(75,75,75);
+    border-radius: 0.8em;
+    border-width: 0.2em;
+    color: white;
+}
+
+/*especifidad:001*/
+input {
+    resize: none;
+    border-radius: 0.3em;
+    font-size: 3em;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 1;
+    background-color: #9bfdff;
+    color: #000000;
+}
+
+/*especifidad:001*/
+form {
+    position: absolute;
+    left: 27%;
+    display:grid;
+    background-color: rgb(0, 0, 0);
+    border-radius: 1em;
+    grid-template-columns: [columna1] 4em [columna2] 4em [columna3] 4em [columna4] 4em[end];
+    grid-template-rows: [fila1] 4em [fila2] 4em [fila3] 4em [fila4] 4em [fila5] 4em [fila6] 4em [fila7] 4em[end];
+    row-gap: 0.7em;
+    column-gap: 0.7em;
+    padding: 2em;
+}
+
+/*especifidad:001*/
+label{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-end: 1;
+    text-align: center;
+    color: white;
+}
+
+/*Especificidad:021*/
+button[ value = "suma"]{
+    width: 3.4em;
+    grid-row: span 2;
+}
+
+/*Especificidad:021*/
+button[ value = "="]{
+    background-color: rgb(0, 255, 72);
+    color: black;
+    grid-column: span 2;
+}
