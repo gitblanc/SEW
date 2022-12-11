@@ -1,0 +1,98 @@
+/*UO285176 - Eduardo Blanco Bielsa*/
+
+/*Especificidad:001*/
+body {
+    width: 60%;
+    margin: 5%;
+    font-size: 100%;
+    color:black;
+    text-align: center;
+}
+
+/*Especificidad:001*/
+form{
+    position: absolute;
+    left: 27%;
+    display:grid;
+    background-color: rgb(0, 0, 0);
+    border-radius: 1em;
+    grid-template-columns: [columna1] 4em [columna2] 4em [columna3] 4em [columna4] 4em[end];
+    grid-template-rows: [fila1] 4em [fila2] 4em [fila3] 4em [fila4] 4em [fila5] 4em [fila6] 4em [fila7] 4em [fila8] 4em [fila9] 4em [fila10] 4em[end];
+    row-gap: 0.7em;
+    column-gap: 0.7em;
+    padding: 2em;
+}
+
+/*Especificidad:001*/
+h1 {
+    text-transform: uppercase;
+    text-align: left;
+    color:  rgb(30, 41, 75);
+    background-color: rgb(240, 193, 132);
+    font-size: 100%;
+    margin-bottom: 3%;
+    margin-left: 2%;
+}
+
+/*Especificidad:001*/
+label {
+    color: rgb(255, 255, 255);
+    background-color: rgba(248, 248, 248, 0);
+    grid-column: span 4;
+    text-align: center;
+}
+
+/*Especificidad:011*/
+label[for="currentnum"] {
+    color: rgb(255, 255, 255);
+    background-color: rgba(248, 248, 248, 0);
+    grid-row-start: 4;
+    grid-column: span 1;
+    text-align: center;
+    padding-top: 1.5em;
+}
+
+/*Especificidad:001*/
+button{
+    font-size: 1.2em;
+    width: 3.8em;
+    background-color: rgb(75,75,75);
+    border-radius: 0.6em;
+    color: white;
+}
+
+/*Especificidad:021*/
+button[ value = "enter"]{
+    background-color: rgb(0, 255, 72);
+    /* width: 7.7em; */
+    color:rgb(0, 0, 0);
+    /* grid-column: span 2; */
+}
+
+/*Especificidad:021*/
+input[type=text][name='currentnum'] {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-column: span 3;
+    grid-row-start: 4;
+    color: black;
+    background-color: rgb(212, 255, 246);
+    width: 100%;
+    text-align: right;
+    margin: auto;
+    font-size: 100%;
+    align-self: center;
+}
+
+/*Especificidad:001*/
+textarea{
+    grid-column: span 4;
+    grid-row: span 2;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    text-align: right;
+    margin: auto;
+    font-size: 100%;
+    align-self: center;
+}
