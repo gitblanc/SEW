@@ -1,0 +1,36 @@
+/*Especificidad 001*/
+body{
+    background-color: #000000;
+    color: #ffffff;
+}
+/*Especificidad 001*/
+h1{
+    background-color: #000000;
+    color: #ffffff;
+}
+/*Especificidad 001*/
+input{
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-color:#ffffff;
+    border-radius: 0.6em;
+    color: #000000;
+}
+/*Especificidad 001*/
+section{
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: #95ccff;
+    color: #000000;
+}
+/*Especificidad 001*/
+img{
+    max-width: 10em;
+    max-height: 10em;
+}

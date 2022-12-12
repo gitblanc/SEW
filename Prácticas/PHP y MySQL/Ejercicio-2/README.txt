@@ -1,0 +1,1 @@
+Puesto que el enunciado pone que no son obligatorias todas las funcionalidades de la calculadora Windows, se obviaron la flecha hacia arriba (sin^-1, cos^-1 etc), HYP, FE y CE. El resto funcionan todos.

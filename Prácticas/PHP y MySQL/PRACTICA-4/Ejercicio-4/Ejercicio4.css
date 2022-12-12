@@ -1,0 +1,31 @@
+/*Especificidad 001*/
+body{
+    background-color: black;
+    color: white;
+}
+/*Especificidad 001*/
+h1{
+    background-color: black;
+    color: white;
+}
+/*Especificidad 001*/
+input{
+    background-color:rgb(255, 255, 255);
+    border-radius: 0.6em;
+    color: black;
+}
+/*Especificidad 001*/
+p {
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: #95ccff;
+    color: #000000;
+}
+/*Especificidad 002*/
+form > p {
+    padding-left: 0em;
+    padding-right: 0em;
+    background-color: black;
+    color: white;
+}
+

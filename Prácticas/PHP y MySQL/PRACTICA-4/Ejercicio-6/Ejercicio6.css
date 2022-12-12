@@ -1,0 +1,24 @@
+/*Especificidad 001*/
+body{
+    background-color: #000000;
+    color: #ffffff;
+}
+/*Especificidad 001*/
+h1{
+    background-color: #000000;
+    color: #ffffff;
+}
+/*Especificidad 001*/
+input{
+    background-color:#ffffff;
+    border-radius: 0.6em;
+    color: #000000;
+}
+/*Especificidad 001*/
+section{
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: #95ccff;
+    color: #000000;
+}
+
