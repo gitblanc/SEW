@@ -38,6 +38,7 @@ input {
 
 /*especifidad:001*/
 form {
+    color: white;
     position: absolute;
     left: 27%;
     display:grid;
@@ -56,6 +57,7 @@ label{
     grid-column-end: 5;
     grid-row-end: 1;
     text-align: center;
+    background-color: black;
     color: white;
 }
 

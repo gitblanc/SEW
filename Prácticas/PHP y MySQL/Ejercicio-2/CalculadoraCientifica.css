@@ -5,6 +5,7 @@ body {
     width: 60%;
     margin: 5%;
     font-size: 100%;
+    background-color: #ffffff;
     color:black;
     text-align: center;
 }
@@ -39,6 +40,7 @@ input {
 /*especifidad:001*/
 form {
     background-color: #000000;
+    color: white;
     position: absolute;
     left: 27%;
     display:grid;

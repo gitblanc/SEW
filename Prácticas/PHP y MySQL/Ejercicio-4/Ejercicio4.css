@@ -18,8 +18,8 @@ input{
 p {
     padding-left: 1em;
     padding-right: 1em;
-    background-color: rgb(149, 204, 255);
-    color: black;
+    background-color: #95ccff;
+    color: #000000;
 }
 /*Especificidad 002*/
 form > p {

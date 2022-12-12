@@ -249,8 +249,7 @@ echo"
             <input type='text' id='currentnum' name='currentnum' value='";
             
             echo $_SESSION['calculadoraRPN']->getPantalla();
-            echo "
-            ' lang='es' readonly/>
+            echo "' lang='es' readonly/>
                 
             <button type='submit' value='sin' name='sin'>sin</button>
             <button type='submit' value='cos' name='cos'>cos</button>

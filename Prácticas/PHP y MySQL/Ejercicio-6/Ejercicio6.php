@@ -323,8 +323,7 @@ echo "
             <p><input type='submit' value='Cargar datos al CSV' name='cargar'/></p>
         </form>
 
-        <strong>Último comando ejecutado:</strong>
-        <section>";
+        <section><h3>Último comando ejecutado:</h3>";
         echo $_SESSION['database']->getLastCommand();
         echo "</section>
     </body>

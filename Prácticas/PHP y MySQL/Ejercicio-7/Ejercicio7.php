@@ -294,6 +294,32 @@ class Evangelion{
         return $result;
     }
 
+    public function buscarPaisesConSusEva()
+    {
+        $this->seleccionarBase();
+        $res = $this->executeQuery("SELECT * FROM Pais;");
+        if ($res) {
+            $this->lastCommand = "<p>Países y sus eva:</p>";
+            while($row = $res->fetch_array()){
+                $eva = $this->buscarEvaPorPais($row['id_p']);
+                $this->lastCommand .= "<p>" . $row['nombre'] . " <img src='./img/" . $row['nombre'] .  ".jpg' alt='" . $row['nombre'] ."'/> tiene el Eva" . $eva . " <img src='./img/" . $eva .  ".jpg' alt='" . $eva ."'/></p>";
+            }
+        } else {
+            $this->lastCommand = "<p>Hubo un error al buscar los paises y sus eva...</p>";
+        }
+    }
+
+    public function buscarEvaPorPais($idP)
+    {
+        $query = "SELECT nombre FROM Eva  WHERE id_pais = ?";
+        $res = $this->db->prepare($query);
+        $res->bind_param('i', $idP);
+        $result = $res->execute();
+        $result = $res->get_result();
+        $result = $result->fetch_array()[0];
+        return $result;
+    }
+
 }
 
 if(!isset($_SESSION['evangelion'])){
@@ -314,6 +340,7 @@ if(count($_POST)>0){
     if(isset($_POST['pilotoseva']))  $e->buscarPilotosConSusEva();
     if(isset($_POST['lucha']))  $e->buscarLuchas();
     if(isset($_POST['direccion']))  $e->listarEjecucion();
+    if(isset($_POST['paises']))  $e->listarPaisesConSusEva();
     
     $_SESSION['evangelion'] = $e;
 }
@@ -338,6 +365,7 @@ echo "
             <input type='submit' value='Crear Base de Datos' name='crearBD'/>
             <input type='submit' value='Crear datos' name='crearTabla'/>
             <input type='submit' value='Listar pilotos' name='pilotos'/>
+            <input type='submit' value='Listar países con sus eva' name='paises'/>
             <input type='submit' value='Listar evas' name='evas'/>
             <input type='submit' value='Listar ángeles' name='angeles'/>
             <input type='submit' value='Listar superiores' name='superiores'/>
