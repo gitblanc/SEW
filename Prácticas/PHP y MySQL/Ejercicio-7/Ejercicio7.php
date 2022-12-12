@@ -302,7 +302,7 @@ class Evangelion{
             $this->lastCommand = "<p>Países y sus eva:</p>";
             while($row = $res->fetch_array()){
                 $eva = $this->buscarEvaPorPais($row['id_p']);
-                $this->lastCommand .= "<p>" . $row['nombre'] . " <img src='./img/" . $row['nombre'] .  ".jpg' alt='" . $row['nombre'] ."'/> tiene el Eva" . $eva . " <img src='./img/" . $eva .  ".jpg' alt='" . $eva ."'/></p>";
+                $this->lastCommand .= "<p>" . $row['nombre_pais'] . " <img src='./img/" . $row['nombre_pais'] .  ".jpg' alt='" . $row['nombre_pais'] ."'/> tiene el Eva" . $eva . " <img src='./img/" . $eva .  ".jpg' alt='" . $eva ."'/></p>";
             }
         } else {
             $this->lastCommand = "<p>Hubo un error al buscar los paises y sus eva...</p>";
@@ -311,7 +311,7 @@ class Evangelion{
 
     public function buscarEvaPorPais($idP)
     {
-        $query = "SELECT nombre FROM Eva  WHERE id_pais = ?";
+        $query = "SELECT id_eva FROM Eva WHERE id_pais = ?";
         $res = $this->db->prepare($query);
         $res->bind_param('i', $idP);
         $result = $res->execute();
@@ -340,7 +340,7 @@ if(count($_POST)>0){
     if(isset($_POST['pilotoseva']))  $e->buscarPilotosConSusEva();
     if(isset($_POST['lucha']))  $e->buscarLuchas();
     if(isset($_POST['direccion']))  $e->listarEjecucion();
-    if(isset($_POST['paises']))  $e->listarPaisesConSusEva();
+    if(isset($_POST['paises']))  $e->buscarPaisesConSusEva();
     
     $_SESSION['evangelion'] = $e;
 }
@@ -374,8 +374,7 @@ echo "
             <input type='submit' value='Listar ejecución' name='direccion'/>
         </form>
         <p></p>
-        <strong>Último comando ejecutado:</strong>
-        <section>";
+        <section><h3>Último comando ejecutado:</h3>";
         echo $_SESSION['evangelion']->getLastCommand();
         echo "</section>
     </body>
