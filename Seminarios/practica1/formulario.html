@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<!--En este documento se solicita rellenar un formulario para la recepción de la próxima beta del lenguaje-->
+<html lang="es">
+<!--En head va la metainformación y los enlaces a recursos para poder servir el documento-->
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <!--Metadatos de los documentos HTML5-->
+    <meta name ="author" content ="Eduardo Blanco Bielsa" />
+    <meta name ="description" content ="Página para rellenar un formulario" />
+    <meta name ="keywords" content ="Formulario" />
+
+    <!--Definición de la ventana gráfica-->
+    <meta name ="viewport" content ="width=device-width, initial scale=1.0" />
+    <title>Formulario</title>
+    <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+</head>
+<!--Todo el contenido que se visualice ha de estar dentro de body-->
+<body>
+    <header>
+        <h1>Ruby</h1>
+    </header>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    <nav>
+        <h2>Enlaces a otros documentos</h2>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="autor.html">Creador</a></li>
+            <li><a href="caracteristicas.html">Características</a></li>
+            <li><a href="formulario.html">Formulario de acceso a beta</a></li>
+        </ul>
+        <aside>
+            <img src="multimedia/archivos_graficos/rubik.jpg" alt="Rubik">
+        </aside>
+    </nav>
+    <main>
+        <h2>Formulario para recibir la próxima beta de Ruby</h2>
+	    <form name="datos">
+            <p><label for="nombre"> Nombre:  </label> <input id="nombre" type="text" placeholder="Escriba su nombre..." required /> </p>
+            <p><label for="apellidos"> Apellidos:  </label> <input id="apellidos" type="text" placeholder="Escriba sus apellidos..." required /> </p>
+            <p><label for="email"> E-mail:  </label> <input id="email" type="email" placeholder="Escriba su email..." required /> </p> 
+            <p><label for="fecha">Fecha de nacimiento: </label><input id="fecha" type="date" /></p>
+            <p><label for="rango">Grado de satisfacción con Ruby </label><input id="rango" type="range" /></p>
+            <fieldset>
+                <legend> ¿Estás interesado en obtener la nueva beta de Ruby?  </legend>
+                <p><input id="si" type=radio /> <label  for="si">  Si </label></p>
+                <p><input id="no" type=radio  /><label  for="no"> De momento no</label></p>
+            </fieldset>
+            <p><label for="texto"> Comentarios (opcionales):  </label> </p>
+            <textarea id="texto" name="comments" maxlength=1000 ></textarea>
+            
+            <p><input type="submit" value="Enviar"></p>
+	</form>
+    </main>
+    <!-- anadir la sección footer dentro del body despues del párrafo -->
+    <footer>
+        <p>Eduardo Blanco Bielsa - UO285176</p>
+    </footer>
+</body>
+</html>

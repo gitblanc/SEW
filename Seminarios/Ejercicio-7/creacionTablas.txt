@@ -1,0 +1,49 @@
+CREATE DATABASE IF NOT EXISTS Ejercicio7 COLLATE utf8_spanish_ci ;
+
+CREATE TABLE IF NOT EXISTS `Pais`(
+    `id_p` int NOT NULL,
+    `nombre_pais` varchar(120) NOT NULL,
+    PRIMARY KEY (`id_p`)
+);
+
+CREATE TABLE IF NOT EXISTS `Superior`(
+    `id_s` int NOT NULL,
+    `nombre` varchar(120) NOT NULL,
+    `nacionalidad` varchar(120) NOT NULL,
+    PRIMARY KEY(`id_s`)
+);
+
+CREATE TABLE IF NOT EXISTS `Eva`(
+    `id_eva` int NOT NULL,
+    `color` varchar(120) NOT NULL,
+    `arma` varchar(120) NOT NULL,
+    `id_pil` int NOT NULL,
+    `id_pais` int NOT NULL,
+    `id_a` int NOT NULL,
+    PRIMARY KEY(`id_eva`)
+);
+
+CREATE TABLE IF NOT EXISTS `Piloto`(
+    `id_p` int NOT NULL,
+    `nombre` varchar(120) NOT NULL,
+    `apellidos` varchar(120) NOT NULL,
+    `nacionalidad` varchar(120) NOT NULL,
+    `edad` int NOT NULL,
+    `id_s` int NOT NULL,
+    PRIMARY KEY(`id_p`)
+);
+
+CREATE TABLE IF NOT EXISTS `Angel`(
+    `id_a` int NOT NULL,
+    `nombre` varchar(120) NOT NULL,
+    `poder` varchar(120) NOT NULL,
+    PRIMARY KEY(`id_a`)
+);
+
+ALTER TABLE `Eva` ADD CONSTRAINT `Eva_fk0` FOREIGN KEY (`id_pil`) REFERENCES `Piloto`(`id_p`);
+
+ALTER TABLE `Piloto` ADD CONSTRAINT `Piloto_fk0` FOREIGN KEY (`id_s`) REFERENCES `Superior`(`id_s`);
+
+ALTER TABLE `Eva` ADD CONSTRAINT `Eva_fk1` FOREIGN KEY (`id_pais`) REFERENCES `Pais`(`id_p`);
+
+ALTER TABLE `Eva` ADD CONSTRAINT `Eva_fk2` FOREIGN KEY (`id_a`) REFERENCES `Angel`(`id_a`);

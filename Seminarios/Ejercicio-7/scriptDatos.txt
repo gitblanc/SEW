@@ -1,0 +1,22 @@
+INSERT INTO `Pais` (`id_p`, `nombre_pais`) VALUES (1, 'Japon');
+INSERT INTO `Pais` (`id_p`, `nombre_pais`) VALUES (2, 'España');
+INSERT INTO `Pais` (`id_p`, `nombre_pais`) VALUES (3, 'Alemania');
+
+INSERT INTO `Angel` (`id_a`, `nombre`, `poder`) VALUES (1, 'N1', 'Lanzallamas');
+INSERT INTO `Angel` (`id_a`, `nombre`, `poder`) VALUES (2, 'N2', 'Espada');
+INSERT INTO `Angel` (`id_a`, `nombre`, `poder`) VALUES (3, 'N3', 'Láser');
+INSERT INTO `Angel` (`id_a`, `nombre`, `poder`) VALUES (4, 'N4', 'Teleport');
+
+INSERT INTO `Superior` (`id_s`, `nombre`, `nacionalidad`) VALUES (1, 'Katsuragi', 'japonesa');
+
+
+INSERT INTO `Piloto` (`id_p`, `nombre`, `apellidos`, `nacionalidad`, `edad`, `id_s`) VALUES (1, 'Shinji', 'Ikari', 'japonesa', '18', 1);
+INSERT INTO `Piloto` (`id_p`, `nombre`, `apellidos`, `nacionalidad`, `edad`, `id_s`) VALUES (0, 'Rei', 'Ayanami', 'japonesa', '18', 1);
+INSERT INTO `Piloto` (`id_p`, `nombre`, `apellidos`, `nacionalidad`, `edad`, `id_s`) VALUES (2, 'Asuka', 'Uoriu', 'alemana', '18', 1);
+INSERT INTO `Piloto` (`id_p`, `nombre`, `apellidos`, `nacionalidad`, `edad`, `id_s`) VALUES (3, 'Kendo', 'Suzuhara', 'japonesa', '18', 1);
+
+INSERT INTO `Eva` (`id_eva`, `color`, `arma`, `id_pais`, `id_pil`, `id_a`) VALUES (0, 'azul', 'rifle', 1, 0, 1);
+INSERT INTO `Eva` (`id_eva`, `color`, `arma`, `id_pais`, `id_pil`, `id_a`) VALUES (1, 'violeta', 'cuchillo', 1, 1, 2);
+INSERT INTO `Eva` (`id_eva`, `color`, `arma`, `id_pais`, `id_pil`, `id_a`) VALUES (2, 'rojo', 'dientes', 3, 2, 3);
+INSERT INTO `Eva` (`id_eva`, `color`, `arma`, `id_pais`, `id_pil`, `id_a`) VALUES (3, 'azul', 'escopeta', 2, 3, 4);
+

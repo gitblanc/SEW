@@ -1,0 +1,2 @@
+Es posible que la herramienta achecker de un error de contraste que es inexistente. Esto es debido a que a veces malinterpreta los valores de los colores.
+Puede comprobarse que el color escogido proporciona un contraste mucho mayor al necesario, concretamente de 12.1.
